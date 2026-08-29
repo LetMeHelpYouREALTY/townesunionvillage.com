@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import AgentPhoto from './agent-photo'
-import { calendly, nap, searchConsolePlatforms } from 'app/config/community'
+import { calendly, nap, pricing, searchConsolePlatforms } from 'app/config/community'
 
 export default function LuxuryFooter() {
   return (
@@ -164,18 +164,17 @@ export default function LuxuryFooter() {
             <div>
               <h4 className="text-lg font-semibold text-amber-400 mb-6 tracking-wide">Floor Plans</h4>
               <ul className="space-y-3">
-                <li>
-                  <span className="text-gray-300 font-light">Residence 1405</span>
-                  <span className="text-amber-400 block text-sm">From $374,990</span>
-                </li>
-                <li>
-                  <span className="text-gray-300 font-light">Residence 1478</span>
-                  <span className="text-amber-400 block text-sm">From $379,990</span>
-                </li>
-                <li>
-                  <span className="text-gray-300 font-light">Residence 1479</span>
-                  <span className="text-amber-400 block text-sm">From $379,990</span>
-                </li>
+                {pricing.plans.map((plan) => (
+                  <li key={plan.slug}>
+                    <Link
+                      href={`/floor-plans#${plan.slug}`}
+                      className="text-gray-300 hover:text-amber-400 transition-colors font-light"
+                    >
+                      {plan.name}
+                    </Link>
+                    <span className="text-amber-400 block text-sm">From {plan.fromLabel}</span>
+                  </li>
+                ))}
               </ul>
               
               <div className="mt-6">

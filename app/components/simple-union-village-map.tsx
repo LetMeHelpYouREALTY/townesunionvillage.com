@@ -1,5 +1,7 @@
 'use client'
 
+import { pricing } from 'app/config/community'
+
 interface SimpleUnionVillageMapProps {
   className?: string
   showDirections?: boolean
@@ -120,7 +122,7 @@ export function AdvancedUnionVillageMap({ className = '' }: { className?: string
                   <div style="padding: 10px;">
                     <h3 style="margin: 0 0 8px 0; color: #1f2937; font-weight: 600;">The Townes at Union Village</h3>
                     <p style="margin: 0 0 8px 0; color: #4b5563;">1001 Gearus Place, Henderson, NV 89011</p>
-                    <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 14px;">New townhomes starting from $374,990</p>
+                    <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 14px;">New townhomes starting from ${pricing.startingFromLabel}</p>
                     <div style="margin-top: 8px;">
                       <a href="tel:7025001955" style="display: inline-block; background: #2563eb; color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-size: 14px; margin-right: 8px;">Call (702) 500-1955</a>
                       <a href="https://www.google.com/maps/dir/?api=1&destination=1001+Gearus+Place,+Henderson,+NV+89011" target="_blank" style="display: inline-block; background: #059669; color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-size: 14px;">Directions</a>

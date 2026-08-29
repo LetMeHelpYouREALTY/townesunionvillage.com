@@ -3,7 +3,7 @@ import RealScoutOfficeListings from '../components/realscout-office-listings'
 import PhotoGrid from '../components/photo-grid'
 import NapStrip from '../components/nap-strip'
 import ContentImage from '../components/content-image'
-import { gallery, photos } from '../config/community'
+import { gallery, photos, pricing } from '../config/community'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -400,8 +400,8 @@ export default function Community() {
             </span>
           </h2>
           <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
-            Several exceptional quick move-in homes are available starting from $374,990 with immediate occupancy. 
-            These exceptional residences represent the pinnacle of luxury new construction - don't miss this opportunity.
+            Several quick move-in homes are listed. Floor plans start from {pricing.startingFromLabel}.
+            Confirm the homesite price with Dr. Jan Duffy before you write an offer.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 

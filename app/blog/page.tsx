@@ -1,17 +1,18 @@
 import Link from 'next/link'
 import { BlogPosts } from 'app/components/posts'
+import { pricing } from 'app/config/community'
 
 export const metadata = {
   title: 'Union Village Guides | Henderson Townhomes',
   description:
-    'First-party guides from Dr. Jan Duffy on The Townes at Union Village in Henderson, NV: floor plans from $374,990, inventory, and how to tour 1001 Gearus Place.',
+    `First-party guides from Dr. Jan Duffy on The Townes at Union Village in Henderson, NV: floor plans from ${pricing.startingFromLabel}, inventory, and how to tour 1001 Gearus Place.`,
 }
 
 const firstPartyGuides = [
   {
     href: '/floor-plans',
     title: 'Floor plans at The Townes',
-    body: 'Compare Residence 1405, 1478, and 1602 square footage, beds, baths, and starting prices.',
+    body: 'Compare Residence 1405, 1478, and 1479 square footage, beds, baths, and starting prices.',
   },
   {
     href: '/community',
@@ -21,7 +22,7 @@ const firstPartyGuides = [
   {
     href: '/quick-move-in',
     title: 'Quick move-in homes',
-    body: 'Review current inventory, including the Residence 1602 model at 8990 Rimerton Street.',
+    body: 'Review current inventory and move-in ready homesites at The Townes at Union Village.',
   },
   {
     href: '/buyers',

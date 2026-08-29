@@ -4,7 +4,7 @@ import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
 import RealScoutOfficeListings from './components/realscout-office-listings'
 import ContentImage from './components/content-image'
-import { photos } from './config/community'
+import { photos, pricing } from './config/community'
 
 export default function Page() {
   return (
@@ -59,11 +59,11 @@ export default function Page() {
           <div className="mb-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-200 font-light mb-3 tracking-wide">PRICED FROM</p>
             <div className="text-6xl md:text-7xl font-light text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-              $374,990
+              {pricing.startingFromLabel}
             </div>
             <p className="text-lg text-gray-300 tracking-wider">TOWNHOMES UP TO 1,479 SQ FT</p>
             <div className="mt-6 flex justify-center space-x-4 text-sm text-gray-400">
-              <span>• 2-3 Bedrooms</span>
+              <span>• 3 Bedrooms</span>
               <span>• 2.5 Bathrooms</span>
               <span>• 2-Car Garage</span>
             </div>
@@ -214,116 +214,54 @@ export default function Page() {
             and exceptional attention to detail. Each residence represents the pinnacle of modern luxury living.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-            {/* Residence 1602 */}
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
-              <div className="h-64 relative">
-                <ContentImage src={photos.exterior.src} alt={photos.exterior.alt} className="w-full h-full object-cover" />
-              </div>
-              <div className="p-8">
-                <div className="mb-6">
-                  <h3 className="text-3xl font-light text-gray-900 mb-2 tracking-wide">Residence 1602</h3>
-                  <div className="text-3xl font-light text-amber-600 mb-4">From $374,990</div>
-                </div>
-                <div className="space-y-3 mb-8">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Square Feet</span>
-                    <span className="font-semibold text-gray-900">1,405</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Bedrooms</span>
-                    <span className="font-semibold text-gray-900">2</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Bathrooms</span>
-                    <span className="font-semibold text-gray-900">2.5</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600 font-light">Garage</span>
-                    <span className="font-semibold text-gray-900">2 Car</span>
-                  </div>
-                </div>
-                <Link
-                  href="/floor-plans#residence-1602"
-                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
+            {pricing.plans.map((plan, index) => {
+              const planPhoto =
+                index === 0 ? photos.exterior : index === 1 ? photos.kitchen : photos.living
+              return (
+                <div
+                  key={plan.slug}
+                  className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu"
                 >
-                  EXPLORE DETAILS
-                </Link>
-              </div>
-            </div>
-
-            {/* Residence 1478 */}
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
-              <div className="h-64 relative">
-                <ContentImage src={photos.kitchen.src} alt={photos.kitchen.alt} className="w-full h-full object-cover" />
-              </div>
-              <div className="p-8">
-                <div className="mb-6">
-                  <h3 className="text-3xl font-light text-gray-900 mb-2 tracking-wide">Residence 1478</h3>
-                  <div className="text-3xl font-light text-amber-600 mb-4">From $379,990</div>
-                </div>
-                <div className="space-y-3 mb-8">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Square Feet</span>
-                    <span className="font-semibold text-gray-900">1,478</span>
+                  <div className="h-64 relative">
+                    <ContentImage
+                      src={planPhoto.src}
+                      alt={planPhoto.alt}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Bedrooms</span>
-                    <span className="font-semibold text-gray-900">3</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Bathrooms</span>
-                    <span className="font-semibold text-gray-900">2.5</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600 font-light">Garage</span>
-                    <span className="font-semibold text-gray-900">2 Car</span>
-                  </div>
-                </div>
-                <Link
-                  href="/floor-plans#residence-1478"
-                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
-                >
-                  EXPLORE DETAILS
-                </Link>
-              </div>
-            </div>
-
-            {/* Residence 1479 */}
-            <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
-              <div className="h-64 relative">
-                <ContentImage src={photos.living.src} alt={photos.living.alt} className="w-full h-full object-cover" />
-              </div>
-              <div className="p-8">
-                <div className="mb-6">
-                  <h3 className="text-3xl font-light text-gray-900 mb-2 tracking-wide">Residence 1479</h3>
-                  <div className="text-3xl font-light text-amber-600 mb-4">From $379,990</div>
-                </div>
-                <div className="space-y-3 mb-8">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Square Feet</span>
-                    <span className="font-semibold text-gray-900">1,479</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Bedrooms</span>
-                    <span className="font-semibold text-gray-900">3</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-light">Bathrooms</span>
-                    <span className="font-semibold text-gray-900">2.5</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600 font-light">Garage</span>
-                    <span className="font-semibold text-gray-900">2 Car</span>
+                  <div className="p-8">
+                    <div className="mb-6">
+                      <h3 className="text-3xl font-light text-gray-900 mb-2 tracking-wide">{plan.name}</h3>
+                      <div className="text-3xl font-light text-amber-600 mb-4">From {plan.fromLabel}</div>
+                    </div>
+                    <div className="space-y-3 mb-8">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="text-gray-600 font-light">Square Feet</span>
+                        <span className="font-semibold text-gray-900">{plan.sqft.toLocaleString('en-US')}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="text-gray-600 font-light">Bedrooms</span>
+                        <span className="font-semibold text-gray-900">{plan.beds}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                        <span className="text-gray-600 font-light">Bathrooms</span>
+                        <span className="font-semibold text-gray-900">{plan.baths}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-gray-600 font-light">Garage</span>
+                        <span className="font-semibold text-gray-900">2 Car</span>
+                      </div>
+                    </div>
+                    <Link
+                      href={`/floor-plans#${plan.slug}`}
+                      className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
+                    >
+                      EXPLORE DETAILS
+                    </Link>
                   </div>
                 </div>
-                <Link
-                  href="/floor-plans#residence-1479"
-                  className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
-                >
-                  EXPLORE DETAILS
-                </Link>
-              </div>
-            </div>
+              )
+            })}
           </div>
         </div>
       </section>

@@ -65,30 +65,39 @@ export const pricing = {
   plans: [
     {
       name: 'Residence 1405',
+      slug: 'residence-1405',
       sqft: 1405,
       beds: 3,
       baths: '2.5',
       garage: '2-car',
+      from: 335_990,
       fromLabel: '$335,990',
     },
     {
       name: 'Residence 1478',
+      slug: 'residence-1478',
       sqft: 1478,
       beds: 3,
       baths: '2.5',
       garage: '2-car',
+      from: 339_990,
       fromLabel: '$339,990',
     },
     {
       name: 'Residence 1479',
+      slug: 'residence-1479',
       sqft: 1479,
       beds: 3,
       baths: '2.5',
       garage: '2-car',
+      from: 352_990,
       fromLabel: '$352,990',
     },
   ],
-}
+} as const
+
+/** Floor-plan starting range for visible copy and JSON-LD. Confirm before quoting a buyer. */
+export const priceRangeLabel = `${pricing.startingFromLabel} - ${pricing.plans[pricing.plans.length - 1].fromLabel}`
 
 export const amenities = ['Dog park', 'Walking trail', 'Picnic areas'] as const
 

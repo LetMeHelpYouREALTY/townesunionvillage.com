@@ -1,5 +1,7 @@
 'use client'
 
+import { nap, pricing } from 'app/config/community'
+
 interface SEOOptimizedMapProps {
   className?: string
   title?: string
@@ -12,7 +14,7 @@ interface SEOOptimizedMapProps {
 export default function SEOOptimizedMap({ 
   className = '', 
   title = "The Townes at Union Village - New Homes in Henderson, NV",
-  description = "Century Communities new townhomes at 1001 Gearus Place, Henderson, NV 89011. Starting from $374,990. Expert guidance from Dr. Jan Duffy.",
+  description = `Century Communities new townhomes at ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}. Starting from ${pricing.startingFromLabel}. Expert guidance from Dr. Jan Duffy.`,
   showDirections = true,
   showBusinessInfo = true,
   variant = 'business-profile'
@@ -143,7 +145,7 @@ export default function SEOOptimizedMap({
             <p><strong>Business Type:</strong> New Home Builder - Century Communities</p>
             <p><strong>Agent:</strong> Dr. Jan Duffy, Preferred Buyer Agent</p>
             <p><strong>Hours:</strong> Monday-Sunday: 10:00 AM - 6:00 PM</p>
-            <p><strong>Starting Price:</strong> From $374,990</p>
+            <p><strong>Starting Price:</strong> From {pricing.startingFromLabel}</p>
           </div>
 
           {showDirections && (
@@ -224,7 +226,7 @@ export default function SEOOptimizedMap({
           
           <div>
             <h4 className="font-semibold text-gray-900 mb-2">🏠 Community Info</h4>
-            <p className="text-gray-600 text-sm">New townhomes starting from $374,990</p>
+            <p className="text-gray-600 text-sm">New townhomes starting from {pricing.startingFromLabel}</p>
             <p className="text-gray-600 text-sm">3 floor plans: 1,405 - 1,479 sq ft</p>
           </div>
         </div>

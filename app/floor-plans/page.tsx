@@ -1,7 +1,9 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import ContentImage from '../components/content-image'
-import { photos } from '../config/community'
+import { photos, pricing } from '../config/community'
+
+const [plan1405, plan1478, plan1479] = pricing.plans
 
 export default function FloorPlans() {
   return (
@@ -80,7 +82,7 @@ export default function FloorPlans() {
                       EXCLUSIVE FLOOR PLAN
                     </div>
                     <h3 className="text-4xl font-light text-gray-900 mb-2 tracking-wide">Residence 1405</h3>
-                    <div className="text-4xl font-light text-amber-600 mb-6">From $374,990</div>
+                    <div className="text-4xl font-light text-amber-600 mb-6">From {plan1405.fromLabel}</div>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-6 mb-10">
@@ -89,7 +91,7 @@ export default function FloorPlans() {
                       <div className="text-gray-600 text-sm font-light tracking-wide">Square Feet</div>
                     </div>
                     <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200">
-                      <div className="text-3xl font-light text-gray-900 mb-1">2</div>
+                      <div className="text-3xl font-light text-gray-900 mb-1">{plan1405.beds}</div>
                       <div className="text-gray-600 text-sm font-light tracking-wide">Bedrooms</div>
                     </div>
                     <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200">
@@ -115,7 +117,7 @@ export default function FloorPlans() {
                       </li>
                       <li className="flex items-start">
                         <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="font-light">2 bedrooms with spacious, well-appointed layout</span>
+                        <span className="font-light">{plan1405.beds} bedrooms with spacious, well-appointed layout</span>
                       </li>
                       <li className="flex items-start">
                         <span className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -173,7 +175,7 @@ export default function FloorPlans() {
                 </div>
                 <div className="p-8 lg:order-1">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1478</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">From $379,990</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-6">From {plan1478.fromLabel}</div>
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -231,7 +233,7 @@ export default function FloorPlans() {
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="p-8">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1479</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">From $379,990</div>
+                  <div className="text-4xl font-bold text-blue-600 mb-6">From {plan1479.fromLabel}</div>
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -389,7 +391,7 @@ export default function FloorPlans() {
                   <div className="text-2xl mr-3">📐</div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Floor Plan Options</h4>
-                    <p className="text-gray-600 text-sm">Choose from Residence 1405 (2 bed), 1478 (3 bed), or 1479 (3 bed) - all with 2.5 baths and 2-car garages.</p>
+                    <p className="text-gray-600 text-sm">Choose from Residence 1405 (3 bed), 1478 (3 bed), or 1479 (3 bed) - all with 2.5 baths and 2-car garages.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -402,7 +404,7 @@ export default function FloorPlans() {
                 <div className="flex items-start">
                   <div className="text-2xl mr-3">💰</div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Starting from $374,990</h4>
+                    <h4 className="font-semibold text-gray-900">Starting from {pricing.startingFromLabel}</h4>
                     <p className="text-gray-600 text-sm">Competitive pricing with Century Communities quality construction and Dr. Jan Duffy's expert guidance.</p>
                   </div>
                 </div>
@@ -412,7 +414,7 @@ export default function FloorPlans() {
             <SEOOptimizedMap 
               variant="business-profile"
               title="Floor Plans at The Townes at Union Village - Henderson, NV"
-              description="Model homes open daily. Residence 1405, 1478, and 1479 floor plans starting from $374,990."
+              description={`Model homes open daily. Residence 1405, 1478, and 1479 floor plans starting from ${pricing.startingFromLabel}.`}
             />
           </div>
         </div>

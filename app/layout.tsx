@@ -6,7 +6,7 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import LuxuryFooter from './components/luxury-footer'
-import { siteUrl } from './config/site'
+import { siteDescription, siteName, siteUrl } from './config/site'
 import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/local-business-schema'
 
 export const metadata: Metadata = {
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     default: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     template: '%s | Townes at Union Village | Homes by Dr. Jan Duffy',
   },
-  description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent. Century Communities.',
+  description: siteDescription,
   keywords: 'new homes Henderson NV, townhomes Henderson, Century Communities, Union Village, Dr. Jan Duffy, real estate agent',
   openGraph: {
     title: 'Townes at Union Village | Homes by Dr. Jan Duffy',
-    description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent.',
+    description: siteDescription,
     url: siteUrl,
     siteName: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     locale: 'en_US',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'The Townes at Union Village - New Homes in Henderson, NV',
-    description: 'New townhomes for sale in Henderson, NV starting from $374,990.',
+    description: siteDescription,
     images: ['/og-image.jpg'],
   },
   robots: {
