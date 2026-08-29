@@ -17,6 +17,30 @@ export const nap = {
   email: 'DrJanSells@UnionVillage.com',
 } as const
 
+/**
+ * Official profiles listed on Dr. Jan Duffy's BHHS agent page (2026-08-29).
+ * Search Console platform properties (globally available 2026-07-29) cover
+ * Instagram, TikTok, X, and YouTube only. Add each as its own GSC property.
+ * https://support.google.com/webmasters/answer/17148418
+ */
+export const socialProfiles = {
+  instagram: 'https://www.instagram.com/drjanduffy/',
+  tiktok: 'https://www.tiktok.com/@drjanduffy',
+  x: 'https://x.com/DrJanDuffy',
+  youtube: 'https://www.youtube.com/channel/UCIMieP7FSUSwN0vw8FVNprA',
+  facebook: 'https://www.facebook.com/DrJanDuffy',
+  pinterest: 'https://www.pinterest.com/DrJanDuffy/',
+  linkedin: 'https://www.linkedin.com/in/drjanduffy',
+} as const
+
+/** The four platforms Search Console can track as platform properties. */
+export const searchConsolePlatforms = [
+  { name: 'Instagram', href: socialProfiles.instagram },
+  { name: 'TikTok', href: socialProfiles.tiktok },
+  { name: 'X', href: socialProfiles.x },
+  { name: 'YouTube', href: socialProfiles.youtube },
+] as const
+
 export const hours = {
   note: 'Dr. Jan Duffy tours by appointment seven days a week.',
   builderModel:

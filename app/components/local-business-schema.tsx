@@ -1,3 +1,5 @@
+import { socialProfiles } from 'app/config/community'
+
 export default function LocalBusinessSchema() {
   const schemaData = {
     "@context": "https://schema.org",
@@ -43,9 +45,12 @@ export default function LocalBusinessSchema() {
     ],
     "image": "https://www.townesunionvillage.com/og-image.jpg",
     "sameAs": [
-      "https://www.townesunionvillage.com",
-      "mailto:DrJanSells@UnionVillage.com",
-      "tel:+17025001955"
+      socialProfiles.instagram,
+      socialProfiles.tiktok,
+      socialProfiles.x,
+      socialProfiles.youtube,
+      socialProfiles.facebook,
+      socialProfiles.linkedin,
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

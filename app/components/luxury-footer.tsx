@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { nap, searchConsolePlatforms } from 'app/config/community'
 
 export default function LuxuryFooter() {
   return (
@@ -50,6 +51,28 @@ export default function LuxuryFooter() {
                       DrJanSells@UnionVillage.com
                     </a>
                   </p>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold text-amber-400 mb-3 tracking-wide">
+                  Follow {nap.agentName}
+                </h4>
+                <p className="text-gray-400 text-sm font-light mb-3 max-w-md">
+                  Union Village tours, new listings, and Henderson market clips on Instagram, TikTok, X, and YouTube.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {searchConsolePlatforms.map((platform) => (
+                    <a
+                      key={platform.name}
+                      href={platform.href}
+                      rel="me noopener noreferrer"
+                      target="_blank"
+                      className="border border-white/20 hover:border-amber-400 hover:text-amber-400 text-gray-200 px-3 py-1.5 rounded-md text-sm font-medium tracking-wide"
+                    >
+                      {platform.name}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

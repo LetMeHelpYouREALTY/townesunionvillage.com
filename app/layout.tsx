@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'The Townes at Union Village - New Homes in Henderson, NV',
+        alt: 'Sunset street of new townhomes at The Townes at Union Village in Henderson, NV',
       },
     ],
   },
