@@ -184,7 +184,7 @@ export default function RealScoutOfficeListings({
       {/* Footer Note */}
       <div className="bg-gray-50 px-8 py-4 border-t border-gray-100">
         <p className="text-center text-gray-600 text-sm font-light">
-          Powered by RealScout • Expert guidance from Dr. Jan Duffy
+          Homes for sale nearby. Call Dr. Jan Duffy at (702) 500-1955 to tour.
         </p>
       </div>
     </div>
