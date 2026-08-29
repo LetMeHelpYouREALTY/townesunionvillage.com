@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import AgentPhoto from './agent-photo'
 
 const navItems = {
   '/': {
@@ -30,8 +31,9 @@ export function Navbar() {
   return (
     <nav className="flex items-center justify-between w-full py-4 px-4 bg-white shadow-sm">
       <div className="flex items-center space-x-8">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-          Townes at Union Village
+        <Link href="/" className="flex items-center gap-3 text-2xl font-bold text-blue-600">
+          <AgentPhoto size={40} priority className="ring-2 ring-amber-400 shrink-0" />
+          <span className="leading-tight">Townes at Union Village</span>
         </Link>
         <div className="hidden md:flex space-x-6">
           {Object.entries(navItems).map(([path, { name }]) => {

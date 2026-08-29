@@ -17,6 +17,14 @@ export const nap = {
   email: 'DrJanSells@UnionVillage.com',
 } as const
 
+export const calendly = {
+  url: 'https://calendly.com/drjanduffy/15min',
+  embedUrl:
+    'https://calendly.com/drjanduffy/15min?hide_gdpr_banner=1&primary_color=1e40af',
+  eventName: 'Free Market Strategy Call (15 min)',
+  ctaLabel: 'Book a 15-min call',
+} as const
+
 /**
  * Official profiles listed on Dr. Jan Duffy's BHHS agent page (2026-08-29).
  * Search Console platform properties (globally available 2026-07-29) cover

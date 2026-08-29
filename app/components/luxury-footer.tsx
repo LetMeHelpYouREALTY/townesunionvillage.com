@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { nap, searchConsolePlatforms } from 'app/config/community'
+import AgentPhoto from './agent-photo'
+import { calendly, nap, searchConsolePlatforms } from 'app/config/community'
 
 export default function LuxuryFooter() {
   return (
@@ -198,10 +199,10 @@ export default function LuxuryFooter() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="tel:7025001955"
+                    href={calendly.url}
                     className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-3 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide text-sm"
                   >
-                    SCHEDULE CONSULTATION
+                    {calendly.ctaLabel.toUpperCase()}
                   </a>
                   <a
                     href="/about-dr-jan"
@@ -213,9 +214,7 @@ export default function LuxuryFooter() {
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">🏆</span>
-                  </div>
+                  <AgentPhoto size={112} className="mx-auto mb-4 ring-2 ring-amber-400" />
                   <h5 className="text-lg font-semibold text-white mb-2">Dr. Jan Duffy</h5>
                   <p className="text-amber-400 text-sm mb-3">Nevada License S.0197614</p>
                   <p className="text-gray-300 font-light text-sm">

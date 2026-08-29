@@ -1,4 +1,4 @@
-import { nap } from 'app/config/community'
+import { calendly, nap } from 'app/config/community'
 
 type CtaBandProps = {
   title: string
@@ -19,10 +19,10 @@ export default function CtaBand({ title, body }: CtaBandProps) {
             Call {nap.phoneDisplay}
           </a>
           <a
-            href={`mailto:${nap.email}`}
+            href="/contact#book"
             className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-amber-900"
           >
-            Email {nap.agentName}
+            {calendly.ctaLabel}
           </a>
         </div>
         <p className="mt-6 text-sm text-amber-100 font-light">

@@ -43,7 +43,10 @@ export default function LocalBusinessSchema() {
       "Sa 10:00-18:00",
       "Su 10:00-18:00"
     ],
-    "image": "https://www.townesunionvillage.com/og-image.jpg",
+    "image": [
+      "https://www.townesunionvillage.com/images/dr-jan-duffy.jpg",
+      "https://www.townesunionvillage.com/og-image.jpg",
+    ],
     "sameAs": [
       socialProfiles.instagram,
       socialProfiles.tiktok,

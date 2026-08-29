@@ -1,7 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
-import ContentImage from '../components/content-image'
-import { photos } from '../config/community'
+import AgentPhoto from '../components/agent-photo'
+import { calendly } from '../config/community'
 
 export default function AboutDrJan() {
   return (
@@ -9,6 +9,7 @@ export default function AboutDrJan() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <AgentPhoto size={128} priority className="mx-auto mb-6 ring-4 ring-amber-400" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             About Dr. Jan Duffy
           </h1>
@@ -22,11 +23,11 @@ export default function AboutDrJan() {
             >
               📞 Call (702) 500-1955
             </a>
-            <a 
-              href="mailto:DrJanSells@UnionVillage.com"
+            <a
+              href="/contact#book"
               className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
             >
-              📧 Contact Dr. Jan
+              {calendly.ctaLabel}
             </a>
           </div>
         </div>
@@ -64,12 +65,8 @@ export default function AboutDrJan() {
                 </div>
               </div>
             </div>
-            <div className="h-96 rounded-lg overflow-hidden shadow-lg">
-              <ContentImage
-                src={photos.tour.src}
-                alt="Dr. Jan Duffy tours new construction townhomes at The Townes at Union Village in Henderson, Nevada"
-                className="w-full h-full object-cover"
-              />
+            <div className="flex justify-center">
+              <AgentPhoto size={320} className="ring-4 ring-amber-400 shadow-lg" />
             </div>
           </div>
         </div>
