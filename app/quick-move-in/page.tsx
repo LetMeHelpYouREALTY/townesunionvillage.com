@@ -1,5 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
+import ContentImage from '../components/content-image'
+import { photos } from '../config/community'
 
 export default function QuickMoveIn() {
   return (
@@ -147,8 +149,12 @@ export default function QuickMoveIn() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Home 1 - 8990 Rimerton Street */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
-              <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">8990 Rimerton Street</span>
+              <div className="h-64 relative">
+                <ContentImage
+                  src={photos.exterior.src}
+                  alt="New Henderson townhome exterior for quick move-in inventory at Townes at Union Village"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
@@ -202,8 +208,12 @@ export default function QuickMoveIn() {
 
             {/* Home 2 - 862 ANGWIN LN */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
-              <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">862 ANGWIN LN</span>
+              <div className="h-64 relative">
+                <ContentImage
+                  src={photos.kitchen.src}
+                  alt="Quartz kitchen in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
@@ -247,8 +257,12 @@ export default function QuickMoveIn() {
 
             {/* Home 3 - 849 ANGWIN LN */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
-              <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">849 ANGWIN LN</span>
+              <div className="h-64 relative">
+                <ContentImage
+                  src={photos.living.src}
+                  alt="Open living room in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
@@ -292,8 +306,12 @@ export default function QuickMoveIn() {
 
             {/* Home 4 - 825 ATLEIGH AVE */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
-              <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">825 ATLEIGH AVE</span>
+              <div className="h-64 relative">
+                <ContentImage
+                  src={photos.suite.src}
+                  alt="Primary bedroom in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
@@ -337,8 +355,12 @@ export default function QuickMoveIn() {
 
             {/* Home 5 - 823 ATLEIGH AVE */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
-              <div className="h-64 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">823 ATLEIGH AVE</span>
+              <div className="h-64 relative">
+                <ContentImage
+                  src={photos.garage.src}
+                  alt="Two-car garage in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">

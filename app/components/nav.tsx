@@ -13,14 +13,11 @@ const navItems = {
   '/community': {
     name: 'Community',
   },
-  '/quick-move-in': {
-    name: 'Quick Move-In',
+  '/buyers': {
+    name: 'Buyers',
   },
-  '/about-dr-jan': {
-    name: 'About Dr. Jan',
-  },
-  '/home-value': {
-    name: 'Home Value',
+  '/sellers': {
+    name: 'Sellers',
   },
   '/contact': {
     name: 'Contact',

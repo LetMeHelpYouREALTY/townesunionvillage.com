@@ -74,8 +74,48 @@ export default function LuxuryFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/buyers" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Buyers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sellers" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Sellers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/new-construction" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    New Construction
+                  </Link>
+                </li>
+                <li>
                   <Link href="/quick-move-in" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
                     Quick Move-In
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/henderson" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Henderson
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/union-village" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Union Village
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/schedule-tour" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Schedule a Tour
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faq" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/financing" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Financing
                   </Link>
                 </li>
                 <li>

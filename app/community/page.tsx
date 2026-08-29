@@ -1,12 +1,31 @@
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
-import DebugEnv from '../components/debug-env'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
+import PhotoGrid from '../components/photo-grid'
+import NapStrip from '../components/nap-strip'
+import ContentImage from '../components/content-image'
+import { gallery, photos } from '../config/community'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Union Village Community | Townes in Henderson NV 89011',
+  description:
+    'The Townes at Union Village community in Henderson, NV: dog park, walking trail, picnic areas, near Henderson Hospital, Highway 95 and I-215. 1001 Gearus Place.',
+}
 
 export default function Community() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <ContentImage
+            src={photos.dusk.src}
+            alt={photos.dusk.alt}
+            priority
+            className="w-full h-full object-cover"
+            sizes="100vw"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
@@ -46,6 +65,7 @@ export default function Community() {
           </div>
         </div>
       </section>
+      <NapStrip />
 
       {/* Community Overview */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -79,13 +99,12 @@ export default function Community() {
                 shopping, dining and entertainment via Highway 95 and I-215.
               </p>
               <ul className="space-y-3 text-gray-600">
-                <li>• Minutes from Henderson Hospital</li>
-                <li>• Easy access to Highway 95 & I-215</li>
-                <li>• Close to shopping and dining</li>
-                <li>• Proximity to outdoor recreation</li>
+                <li>• Near Henderson Hospital at 1050 W. Galleria Drive</li>
+                <li>• Access via Highway 95 and I-215</li>
+                <li>• Galleria at Sunset at 1300 West Sunset Road</li>
+                <li>• On-site walking trail, picnic areas, and dog park</li>
               </ul>
             </div>
-            <DebugEnv />
             <SimpleUnionVillageMap className="h-96" />
           </div>
         </div>
@@ -108,35 +127,10 @@ export default function Community() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
-            Discover the sophisticated lifestyle awaiting you at The Townes at Union Village. 
-            From meticulously designed interiors to thoughtfully planned community spaces, 
-            every detail reflects our commitment to exceptional living.
+            Interiors, garages, and outdoor spaces styled for Townes at Union Village buyers in Henderson, NV.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="text-gray-600 font-light tracking-wide relative z-10">Luxury Home Exterior</span>
-            </div>
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="text-gray-600 font-light tracking-wide relative z-10">Modern Luxury Kitchen</span>
-            </div>
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="text-gray-600 font-light tracking-wide relative z-10">Spacious Living Room</span>
-            </div>
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="text-gray-600 font-light tracking-wide relative z-10">Elegant Master Suite</span>
-            </div>
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="text-gray-600 font-light tracking-wide relative z-10">Premium Bathroom</span>
-            </div>
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-80 rounded-xl flex items-center justify-center relative overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="text-gray-600 font-light tracking-wide relative z-10">Community Amenities</span>
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <PhotoGrid photos={gallery} />
           </div>
         </div>
       </section>
@@ -306,26 +300,19 @@ export default function Community() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            {[
-              'Modern Townhome Exterior',
-              'Spacious Living Room',
-              'Gourmet Kitchen',
-              'Master Bedroom',
-              'Luxury Bathroom',
-              'Community Pool',
-              'Walking Trails',
-              'Dog Park Area'
-            ].map((title, i) => (
-              <div key={i} className="bg-gray-200 rounded-lg shadow-md overflow-hidden">
-                <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <div className="text-4xl mb-2">🏠</div>
-                    <p className="text-sm">{title}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="mb-12">
+            <PhotoGrid
+              photos={[
+                photos.exterior,
+                photos.living,
+                photos.kitchen,
+                photos.suite,
+                photos.bath,
+                photos.picnic,
+                photos.trail,
+                photos.dogPark,
+              ]}
+            />
           </div>
 
           <div className="text-center">
@@ -361,6 +348,13 @@ export default function Community() {
                 <li>• Francis H. Cortney Junior High School</li>
                 <li>• Basic Academy of International Studies High School</li>
               </ul>
+              <p className="text-sm text-gray-500 mt-4">
+                Names listed by Century Communities. Confirm assignment in the{' '}
+                <a href="https://www.ccsd.net/zoning" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">
+                  CCSD zoning search
+                </a>
+                .
+              </p>
             </div>
 
             {/* Shopping */}

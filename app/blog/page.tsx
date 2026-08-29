@@ -24,9 +24,24 @@ const firstPartyGuides = [
     body: 'Review current inventory, including the Residence 1602 model at 8990 Rimerton Street.',
   },
   {
-    href: '/home-value',
-    title: 'Home value',
-    body: 'Get a property value estimate from Dr. Jan Duffy before you buy or sell in Henderson.',
+    href: '/buyers',
+    title: 'Buy at Union Village',
+    body: 'Independent buyer representation for Century townhomes at 1001 Gearus Place.',
+  },
+  {
+    href: '/sellers',
+    title: 'Sell and move to Union Village',
+    body: 'Time your current-home sale to a new-construction close in Henderson 89011.',
+  },
+  {
+    href: '/henderson',
+    title: 'Henderson 89011',
+    body: 'Galleria Drive, Highway 95, I-215, Henderson Hospital, and Galleria at Sunset.',
+  },
+  {
+    href: '/faq',
+    title: 'FAQ',
+    body: 'Prices, plans, amenities, school names, and how to tour with Dr. Jan Duffy.',
   },
 ]
 

@@ -1,5 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
+import ContentImage from '../components/content-image'
+import { photos } from '../config/community'
 
 export default function AboutDrJan() {
   return (
@@ -62,12 +64,12 @@ export default function AboutDrJan() {
                 </div>
               </div>
             </div>
-            <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <div className="text-8xl mb-4">👩‍💼</div>
-                <p>Dr. Jan Duffy</p>
-                <p className="text-sm">Professional Photo</p>
-              </div>
+            <div className="h-96 rounded-lg overflow-hidden shadow-lg">
+              <ContentImage
+                src={photos.tour.src}
+                alt="Dr. Jan Duffy tours new construction townhomes at The Townes at Union Village in Henderson, Nevada"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

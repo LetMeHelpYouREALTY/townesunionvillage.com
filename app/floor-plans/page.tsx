@@ -1,5 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
+import ContentImage from '../components/content-image'
+import { photos } from '../config/community'
 
 export default function FloorPlans() {
   return (
@@ -149,13 +151,12 @@ export default function FloorPlans() {
                     </a>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center min-h-[500px] relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10"></div>
-                  <div className="text-center text-gray-600 relative z-10">
-                    <div className="text-8xl mb-6">🏠</div>
-                    <p className="text-xl font-light tracking-wide">Floor Plan Image</p>
-                    <p className="text-sm font-light text-gray-500">Residence 1405</p>
-                  </div>
+                <div className="relative min-h-[500px]">
+                  <ContentImage
+                    src={photos.kitchen.src}
+                    alt="Open kitchen and dining nook in Residence 1405-style townhome at Townes at Union Village, Henderson NV"
+                    className="w-full h-full object-cover absolute inset-0"
+                  />
                 </div>
               </div>
             </div>
@@ -163,12 +164,12 @@ export default function FloorPlans() {
             {/* Residence 1478 */}
             <div id="residence-1478" className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-300">
               <div className="grid lg:grid-cols-2 gap-8">
-                <div className="bg-gray-200 flex items-center justify-center min-h-[400px] lg:order-2">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">🏠</div>
-                    <p>Floor Plan Image</p>
-                    <p className="text-sm">Residence 1478</p>
-                  </div>
+                <div className="relative min-h-[400px] lg:order-2">
+                  <ContentImage
+                    src={photos.living.src}
+                    alt="Open living room in Residence 1478-style townhome at Townes at Union Village, Henderson NV"
+                    className="w-full h-full object-cover absolute inset-0"
+                  />
                 </div>
                 <div className="p-8 lg:order-1">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1478</h3>
@@ -278,12 +279,12 @@ export default function FloorPlans() {
                     </a>
                   </div>
                 </div>
-                <div className="bg-gray-200 flex items-center justify-center min-h-[400px]">
-                  <div className="text-center text-gray-500">
-                    <div className="text-6xl mb-4">🏠</div>
-                    <p>Floor Plan Image</p>
-                    <p className="text-sm">Residence 1479</p>
-                  </div>
+                <div className="relative min-h-[400px]">
+                  <ContentImage
+                    src={photos.suite.src}
+                    alt="Primary suite in Residence 1479-style townhome at Townes at Union Village, Henderson NV"
+                    className="w-full h-full object-cover absolute inset-0"
+                  />
                 </div>
               </div>
             </div>

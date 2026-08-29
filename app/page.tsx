@@ -3,14 +3,24 @@ import Link from 'next/link'
 import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
 import RealScoutOfficeListings from './components/realscout-office-listings'
+import ContentImage from './components/content-image'
+import { photos } from './config/community'
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white overflow-hidden">
+        <Image
+          src={photos.exterior.src}
+          alt={photos.exterior.alt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         {/* Dynamic Background Elements */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/75" />
         
         {/* Animated Floating Orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl animate-pulse" />
@@ -206,9 +216,8 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
             {/* Residence 1602 */}
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
-              <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10" />
-                <span className="text-gray-600 font-light tracking-wide">Residence 1602</span>
+              <div className="h-64 relative">
+                <ContentImage src={photos.exterior.src} alt={photos.exterior.alt} className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
                 <div className="mb-6">
@@ -244,9 +253,8 @@ export default function Page() {
 
             {/* Residence 1478 */}
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
-              <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10" />
-                <span className="text-gray-600 font-light tracking-wide">Residence 1478</span>
+              <div className="h-64 relative">
+                <ContentImage src={photos.kitchen.src} alt={photos.kitchen.alt} className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
                 <div className="mb-6">
@@ -282,9 +290,8 @@ export default function Page() {
 
             {/* Residence 1479 */}
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-optimized hover:scale-105 transform-gpu">
-              <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 to-blue-600/10" />
-                <span className="text-gray-600 font-light tracking-wide">Residence 1479</span>
+              <div className="h-64 relative">
+                <ContentImage src={photos.living.src} alt={photos.living.alt} className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
                 <div className="mb-6">
