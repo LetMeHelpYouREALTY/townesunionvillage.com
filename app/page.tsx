@@ -4,7 +4,7 @@ import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
 import RealScoutOfficeListings from './components/realscout-office-listings'
 import ContentImage from './components/content-image'
-import { photos } from './config/community'
+import { listingSearch, photos } from './config/community'
 
 export default function Page() {
   return (
@@ -347,7 +347,7 @@ export default function Page() {
           </div>
           <RealScoutOfficeListings 
             title="Henderson Neighborhood Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
+            subtitle={`Expert guidance from Dr. Jan Duffy • Properties ${listingSearch.rangeLabel} • Single Family & Other Homes`}
           />
         </div>
       </section>

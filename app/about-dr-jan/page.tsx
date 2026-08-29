@@ -1,7 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import AgentPhoto from '../components/agent-photo'
-import { calendly } from '../config/community'
+import { calendly, listingSearch } from '../config/community'
 
 export default function AboutDrJan() {
   return (
@@ -424,7 +424,7 @@ export default function AboutDrJan() {
           </div>
           <RealScoutOfficeListings 
             title="Henderson Properties with Dr. Jan Duffy"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
+            subtitle={`Expert guidance from Dr. Jan Duffy • Properties ${listingSearch.rangeLabel} • Single Family & Other Homes`}
           />
         </div>
       </section>

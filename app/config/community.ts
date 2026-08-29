@@ -90,6 +90,37 @@ export const pricing = {
   ],
 }
 
+/**
+ * Price band for the RealScout "other nearby homes" widget.
+ *
+ * Centered on the mean of the current Union Village starting prices, then
+ * widened ~20% on each side so the widget surfaces comparable Henderson
+ * 89011 homes both under and over the community's own price points. The
+ * widget filter (`price-min`/`price-max`) and its caption both read from
+ * here, so the numbers and the "$Xk–$Yk" copy can never drift apart.
+ * Prices move with inventory, options, and incentives — confirm live
+ * numbers with Dr. Jan Duffy before quoting a buyer.
+ */
+export const listingSearch = (() => {
+  const planPrices = pricing.plans.map((plan) =>
+    Number(plan.fromLabel.replace(/[^0-9]/g, ''))
+  )
+  const mean = Math.round(
+    planPrices.reduce((sum, price) => sum + price, 0) / planPrices.length
+  )
+  const roundToStep = (value: number, step: number) =>
+    Math.round(value / step) * step
+  const priceMin = roundToStep(mean * 0.8, 5_000)
+  const priceMax = roundToStep(mean * 1.2, 5_000)
+  const toK = (value: number) => `$${Math.round(value / 1_000)}K`
+  return {
+    mean,
+    priceMin,
+    priceMax,
+    rangeLabel: `${toK(priceMin)}–${toK(priceMax)}`,
+  }
+})()
+
 export const amenities = ['Dog park', 'Walking trail', 'Picnic areas'] as const
 
 export const nearby = {
