@@ -4,7 +4,7 @@ export default function LocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "name": "Dr. Jan Duffy - Real Estate Agent",
     "description": "Nevada licensed real estate agent specializing in new construction homes at The Townes at Union Village in Henderson, NV. Expert guidance for Century Communities new home buyers.",
-    "url": "https://townesunionvillage.com",
+    "url": "https://www.townesunionvillage.com",
     "telephone": "(702) 500-1955",
     "email": "DrJanSells@UnionVillage.com",
     "address": {
@@ -41,9 +41,9 @@ export default function LocalBusinessSchema() {
       "Sa 10:00-18:00",
       "Su 10:00-18:00"
     ],
-    "image": "https://townesunionvillage.com/og-image.jpg",
+    "image": "https://www.townesunionvillage.com/og-image.jpg",
     "sameAs": [
-      "https://townesunionvillage.com",
+      "https://www.townesunionvillage.com",
       "mailto:DrJanSells@UnionVillage.com",
       "tel:+17025001955"
     ],
@@ -122,7 +122,7 @@ export function NewHomeDevelopmentSchema() {
     "@type": "ResidentialComplex",
     "name": "The Townes at Union Village",
     "description": "New townhomes by Century Communities in Henderson, NV. Starting from $374,990 with 3 floor plans available.",
-    "url": "https://townesunionvillage.com",
+    "url": "https://www.townesunionvillage.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1001 Gearus Place",
@@ -168,7 +168,7 @@ export function NewHomeDevelopmentSchema() {
     "numberOfBathroomsTotal": "2.5",
     "numberOfBedrooms": "3",
     "priceRange": "$374,990 - $387,890",
-    "image": "https://townesunionvillage.com/og-image.jpg",
+    "image": "https://www.townesunionvillage.com/og-image.jpg",
     "sameAs": [
       "https://www.centurycommunities.com/find-your-new-home/nevada/las-vegas-metro/henderson-nv/union-village/"
     ]

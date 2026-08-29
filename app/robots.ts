@@ -1,12 +1,16 @@
-import { baseUrl } from 'app/sitemap'
+import type { MetadataRoute } from 'next'
+import { siteUrl } from 'app/config/site'
 
-export default function robots() {
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: '*',
+        allow: '/',
+        disallow: ['/og', '/api/'],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   }
 }

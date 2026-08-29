@@ -4,8 +4,13 @@ import { formatDate, getBlogPosts } from 'app/blog/utils'
 export function BlogPosts() {
   let allBlogs = getBlogPosts()
 
+  if (allBlogs.length === 0) {
+    return null
+  }
+
   return (
     <div>
+      <h2 className="font-semibold text-xl mb-4">Notes from Dr. Jan Duffy</h2>
       {allBlogs
         .sort((a, b) => {
           if (
