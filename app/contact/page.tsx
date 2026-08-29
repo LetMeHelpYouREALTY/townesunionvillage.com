@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import CalendlyEmbed from '../components/calendly-embed'
 import AgentPhoto from '../components/agent-photo'
-import { calendly, nap } from '../config/community'
+import { calendly, listingSearch, nap } from '../config/community'
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Jan Duffy | Book a Union Village Tour',
@@ -222,7 +222,7 @@ export default function Contact() {
           </div>
           <RealScoutOfficeListings 
             title="Henderson Properties with Dr. Jan Duffy"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
+            subtitle={`Expert guidance from Dr. Jan Duffy • Properties ${listingSearch.rangeLabel} • Single Family & Other Homes`}
           />
         </div>
       </section>

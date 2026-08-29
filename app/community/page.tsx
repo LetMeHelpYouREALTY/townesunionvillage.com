@@ -3,7 +3,7 @@ import RealScoutOfficeListings from '../components/realscout-office-listings'
 import PhotoGrid from '../components/photo-grid'
 import NapStrip from '../components/nap-strip'
 import ContentImage from '../components/content-image'
-import { gallery, photos } from '../config/community'
+import { gallery, listingSearch, photos } from '../config/community'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -190,7 +190,7 @@ export default function Community() {
           </div>
           <RealScoutOfficeListings 
             title="Henderson Neighborhood Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
+            subtitle={`Expert guidance from Dr. Jan Duffy • Properties ${listingSearch.rangeLabel} • Single Family & Other Homes`}
           />
         </div>
       </section>

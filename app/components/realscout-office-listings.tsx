@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { listingSearch } from '../config/community'
 
 declare global {
   namespace JSX {
@@ -21,12 +22,18 @@ interface RealScoutOfficeListingsProps {
   className?: string
   title?: string
   subtitle?: string
+  /** Lower bound of the price filter. Defaults to the hyperlocal band. */
+  priceMin?: number
+  /** Upper bound of the price filter. Defaults to the hyperlocal band. */
+  priceMax?: number
 }
 
 export default function RealScoutOfficeListings({ 
   className = '', 
   title = "Explore Other Henderson Properties",
-  subtitle = "Properties $350K-$450K • Single Family & Other Homes • Expert guidance from Dr. Jan Duffy"
+  subtitle = `Properties ${listingSearch.rangeLabel} • Single Family & Other Homes • Expert guidance from Dr. Jan Duffy`,
+  priceMin = listingSearch.priceMin,
+  priceMax = listingSearch.priceMax,
 }: RealScoutOfficeListingsProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
@@ -175,8 +182,8 @@ export default function RealScoutOfficeListings({
             sort-order="PRICE_LOW" 
             listing-status="For Sale" 
             property-types=",SFR,OTHER" 
-            price-min="350000" 
-            price-max="450000"
+            price-min={String(priceMin)} 
+            price-max={String(priceMax)}
           ></realscout-office-listings>
         )}
       </div>
