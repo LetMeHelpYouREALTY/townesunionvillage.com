@@ -1,8 +1,7 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // next-mdx-remote 4 ships a prebundled React runtime; transpile so RSC
-  // prerender uses this app's React copy instead of a stale element type.
+  // Required for next-mdx-remote under Turbopack until Next.js issue 64525 is fixed.
   transpilePackages: ['next-mdx-remote'],
 }
 
