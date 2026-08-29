@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",
@@ -13,7 +14,7 @@
     "@vercel/analytics": "^1.1.3",
     "@vercel/speed-insights": "^1.0.9",
     "geist": "1.2.2",
-    "next": "canary",
+    "next": "15.5.24",
     "next-mdx-remote": "^4.4.1",
     "postcss": "^8.4.35",
     "react": "18.2.0",
@@ -24,6 +25,14 @@
   },
   "devDependencies": {
     "@types/google.maps": "^3.58.1",
-    "eslint": "^9.37.0"
+    "eslint": "^9.37.0",
+    "eslint-config-next": "15.5.24"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "@vercel/speed-insights",
+      "unrs-resolver"
+    ]
   }
 }
