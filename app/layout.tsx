@@ -6,11 +6,14 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import LuxuryFooter from './components/luxury-footer'
-import { baseUrl } from './sitemap'
+import { siteUrl } from './config/site'
 import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/local-business-schema'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: siteUrl,
+  },
   title: {
     default: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     template: '%s | Townes at Union Village | Homes by Dr. Jan Duffy',
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     description: 'New townhomes for sale in Henderson, NV starting from $374,990. Expert guidance from Dr. Jan Duffy, your preferred buyer agent.',
-    url: baseUrl,
+    url: siteUrl,
     siteName: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     locale: 'en_US',
     type: 'website',

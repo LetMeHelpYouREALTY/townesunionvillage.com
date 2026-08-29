@@ -88,6 +88,11 @@ export default function LuxuryFooter() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link href="/blog" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Guides
+                  </Link>
+                </li>
               </ul>
             </div>
 
