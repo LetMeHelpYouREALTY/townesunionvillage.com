@@ -6,6 +6,7 @@ import ContentImage from '../components/content-image'
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import CalendlyEmbed from '../components/calendly-embed'
 import { calendly, hours, nap, photos } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Schedule a Tour | Townes at Union Village Henderson NV',
@@ -22,6 +23,7 @@ export default function ScheduleTourPage() {
         subtitle="1001 GEARUS PLACE, HENDERSON"
         lede={`${nap.agentName} meets you at the community. Book a ${calendly.eventName.toLowerCase()} or call ${nap.phoneDisplay}.`}
         image={photos.tour}
+        breadcrumb={breadcrumbTrail('Schedule a tour', '/schedule-tour')}
         primaryHref={`tel:${nap.phoneTel}`}
         primaryLabel={`Call ${nap.phoneDisplay}`}
         secondaryHref="/contact#book"

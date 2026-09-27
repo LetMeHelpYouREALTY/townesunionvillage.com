@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import NearbyAmenitiesSection from '../components/nearby-amenities-section'
 import ContentImage from '../components/content-image'
 import { nearby, photos } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Henderson NV 89011 Real Estate | Townes at Union Village',
@@ -22,6 +23,7 @@ export default function HendersonPage() {
         subtitle="GALLERIA DRIVE CORRIDOR"
         lede="Townhomes at 1001 Gearus Place sit in eastern Henderson, with hospital, highway, and retail addresses you can verify."
         image={photos.dusk}
+        breadcrumb={breadcrumbTrail('Henderson', '/henderson')}
         secondaryHref="/union-village"
         secondaryLabel="Union Village map notes"
       />

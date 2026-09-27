@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { BlogPosts } from 'app/components/posts'
+import BreadcrumbJsonLd from 'app/components/breadcrumb-jsonld'
 import { pricing } from 'app/config/community'
+import { breadcrumbTrail } from 'app/lib/breadcrumbs'
 
 export const metadata = {
   title: 'Union Village Guides | Henderson Townhomes',
@@ -49,6 +51,7 @@ const firstPartyGuides = [
 export default function Page() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-12">
+      <BreadcrumbJsonLd items={breadcrumbTrail('Blog', '/blog')} />
       <h1 className="font-semibold text-3xl mb-4 tracking-tight">
         Union Village guides
       </h1>

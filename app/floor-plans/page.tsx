@@ -2,12 +2,15 @@ import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import ContentImage from '../components/content-image'
 import { photos, pricing } from '../config/community'
+import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 const [plan1405, plan1478, plan1479] = pricing.plans
 
 export default function FloorPlans() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={breadcrumbTrail('Floor plans', '/floor-plans')} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>

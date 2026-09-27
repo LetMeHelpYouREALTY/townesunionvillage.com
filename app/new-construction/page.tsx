@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import NearbyAmenitiesSection from '../components/nearby-amenities-section'
 import ContentImage from '../components/content-image'
 import { amenities, nap, photos, pricing } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'New Construction at Townes at Union Village | Century Process',
@@ -22,6 +23,7 @@ export default function NewConstructionPage() {
         subtitle="TOWNES AT UNION VILLAGE PROCESS"
         lede="Open-concept townhomes, Century Home Connect®, and a builder contract that needs a buyer advocate."
         image={photos.tour}
+        breadcrumb={breadcrumbTrail('New construction', '/new-construction')}
         secondaryHref="/buyers"
         secondaryLabel="Buyer representation"
       />

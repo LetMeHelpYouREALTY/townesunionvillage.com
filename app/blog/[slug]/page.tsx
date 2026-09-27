@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { siteUrl } from 'app/config/site'
+import BreadcrumbJsonLd from 'app/components/breadcrumb-jsonld'
+import { breadcrumbTrail } from 'app/lib/breadcrumbs'
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -60,6 +62,12 @@ export default function Blog({ params }) {
 
   return (
     <section>
+      <BreadcrumbJsonLd
+        items={breadcrumbTrail(post.metadata.title, `/blog/${post.slug}`, {
+          name: 'Blog',
+          path: '/blog',
+        })}
+      />
       <script
         type="application/ld+json"
         suppressHydrationWarning

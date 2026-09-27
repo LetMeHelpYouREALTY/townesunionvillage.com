@@ -4,11 +4,14 @@ import RealScoutWidget from './components/realscout-widget'
 import NearbyAmenitiesSection from './components/nearby-amenities-section'
 import RealScoutOfficeListings from './components/realscout-office-listings'
 import ContentImage from './components/content-image'
+import FaqJsonLd from './components/faq-jsonld'
 import { photos, pricing } from './config/community'
+import { homePageFaqs } from './config/faqs'
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <FaqJsonLd items={homePageFaqs} />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white overflow-hidden">
         <Image
@@ -267,6 +270,36 @@ export default function Page() {
       </section>
 
       <NearbyAmenitiesSection compactList />
+
+      {/* FAQ */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
+              <span className="font-extralight">Common Questions</span>
+            </h2>
+            <p className="text-xl text-gray-600 font-light">
+              Quick answers about buying at The Townes at Union Village in Henderson.
+            </p>
+          </div>
+          <div className="space-y-8">
+            {homePageFaqs.map((item) => (
+              <article key={item.question} className="border-b border-gray-200 pb-8">
+                <h3 className="text-xl font-medium text-gray-900 mb-3">{item.question}</h3>
+                <p className="text-gray-700 leading-relaxed">{item.answer}</p>
+              </article>
+            ))}
+          </div>
+          <p className="text-center mt-10">
+            <Link
+              href="/faq"
+              className="text-amber-700 font-semibold hover:text-amber-800 underline"
+            >
+              See all FAQ answers
+            </Link>
+          </p>
+        </div>
+      </section>
 
       {/* Neighborhood Properties */}
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">
