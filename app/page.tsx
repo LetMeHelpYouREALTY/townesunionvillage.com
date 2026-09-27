@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
+import NearbyAmenitiesSection from './components/nearby-amenities-section'
 import RealScoutOfficeListings from './components/realscout-office-listings'
 import ContentImage from './components/content-image'
 import { photos, pricing } from './config/community'
@@ -265,6 +265,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <NearbyAmenitiesSection compactList />
 
       {/* Neighborhood Properties */}
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PageHero from '../components/page-hero'
 import NapStrip from '../components/nap-strip'
 import CtaBand from '../components/cta-band'
+import NearbyAmenitiesSection from '../components/nearby-amenities-section'
 import ContentImage from '../components/content-image'
 import { nearby, photos } from '../config/community'
 
@@ -80,9 +81,16 @@ export default function HendersonPage() {
         </div>
       </section>
 
+      <NearbyAmenitiesSection
+        title="Henderson amenities from Gearus Place"
+        subtitle="Map grocery, hospitals, and retail along the Galleria and Sunset corridors."
+        compactList
+        initialCategory="shopping"
+      />
+
       <section className="py-12 bg-white text-center">
-        <Link href="/community" className="text-blue-700 font-medium hover:underline">
-          See community amenities and map
+        <Link href="/amenities" className="text-blue-700 font-medium hover:underline">
+          Full nearby amenities guide
         </Link>
       </section>
 

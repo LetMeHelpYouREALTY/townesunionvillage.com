@@ -98,6 +98,11 @@ export default function LuxuryFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/amenities" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Nearby Amenities
+                  </Link>
+                </li>
+                <li>
                   <Link href="/buyers" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
                     Buyers
                   </Link>

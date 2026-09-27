@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PageHero from '../components/page-hero'
 import NapStrip from '../components/nap-strip'
 import CtaBand from '../components/cta-band'
+import NearbyAmenitiesSection from '../components/nearby-amenities-section'
 import ContentImage from '../components/content-image'
 import { amenities, nap, photos, pricing } from '../config/community'
 
@@ -100,6 +101,8 @@ export default function NewConstructionPage() {
           </p>
         </div>
       </section>
+
+      <NearbyAmenitiesSection compactList initialCategory="parks" />
 
       <CtaBand
         title="Do not buy new construction unrepresented"

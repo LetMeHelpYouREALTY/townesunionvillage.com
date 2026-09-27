@@ -1,4 +1,5 @@
 import { nap, priceRangeLabel, pricing, socialProfiles } from 'app/config/community'
+import { communityCenter } from 'app/config/map'
 import { siteUrl } from 'app/config/site'
 
 const unionVillageAddress = {
@@ -56,13 +57,25 @@ export default function LocalBusinessSchema() {
     address: unionVillageAddress,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.0395',
-      longitude: '-115.0362',
+      latitude: String(communityCenter.lat),
+      longitude: String(communityCenter.lng),
     },
-    areaServed: {
-      '@type': 'City',
-      name: 'Henderson, NV',
-    },
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Henderson, NV',
+      },
+      {
+        '@type': 'Place',
+        name: communityCenter.label,
+        address: unionVillageAddress,
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: String(communityCenter.lat),
+          longitude: String(communityCenter.lng),
+        },
+      },
+    ],
     serviceType: [
       'New Home Sales',
       'Real Estate Consulting',
@@ -128,8 +141,8 @@ export function NewHomeDevelopmentSchema() {
     address: unionVillageAddress,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.0395',
-      longitude: '-115.0362',
+      latitude: String(communityCenter.lat),
+      longitude: String(communityCenter.lng),
     },
     developer: {
       '@type': 'Organization',

@@ -1,4 +1,4 @@
-import SimpleUnionVillageMap from '../components/simple-union-village-map'
+import NearbyAmenitiesSection from '../components/nearby-amenities-section'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import PhotoGrid from '../components/photo-grid'
 import NapStrip from '../components/nap-strip'
@@ -105,10 +105,23 @@ export default function Community() {
                 <li>• On-site walking trail, picnic areas, and dog park</li>
               </ul>
             </div>
-            <SimpleUnionVillageMap className="h-96" />
+            <div className="rounded-xl overflow-hidden shadow-xl aspect-[4/3]">
+              <ContentImage src={photos.hospital.src} alt={photos.hospital.alt} />
+            </div>
           </div>
+          <p className="text-center mt-8">
+            <a href="/amenities" className="text-blue-700 font-medium hover:underline">
+              Open the interactive nearby amenities map →
+            </a>
+          </p>
         </div>
       </section>
+
+      <NearbyAmenitiesSection
+        title="What's Nearby in Henderson"
+        subtitle="Healthcare, grocery, parks, and dining around Gearus Place — filter the map by category."
+        initialCategory="healthcare"
+      />
 
       {/* RealScout Search Widget */}
       {/* Community Gallery Section */}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PageHero from '../components/page-hero'
 import NapStrip from '../components/nap-strip'
 import CtaBand from '../components/cta-band'
+import NearbyAmenitiesSection from '../components/nearby-amenities-section'
 import ContentImage from '../components/content-image'
 import { nap, nearby, photos, pricing } from '../config/community'
 
@@ -105,6 +106,13 @@ export default function BuyersPage() {
           </div>
         </div>
       </section>
+
+      <NearbyAmenitiesSection
+        title="What's near your new townhome"
+        subtitle="Filter the map for grocery, schools, and healthcare before you pick a homesite."
+        compactList
+        initialCategory="schools"
+      />
 
       <CtaBand
         title="Register before you walk the model"
