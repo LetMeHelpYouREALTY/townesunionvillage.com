@@ -15,6 +15,7 @@ const staticPages: StaticPage[] = [
   { path: '/floor-plans', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/quick-move-in', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/community', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/amenities', changeFrequency: 'monthly', priority: 0.85 },
   { path: '/buyers', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/sellers', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/new-construction', changeFrequency: 'monthly', priority: 0.8 },

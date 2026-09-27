@@ -14,6 +14,9 @@ const navItems = {
   '/community': {
     name: 'Community',
   },
+  '/amenities': {
+    name: 'Amenities',
+  },
   '/buyers': {
     name: 'Buyers',
   },

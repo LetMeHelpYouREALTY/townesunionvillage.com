@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
+import NearbyAmenitiesSection from './components/nearby-amenities-section'
 import RealScoutOfficeListings from './components/realscout-office-listings'
 import ContentImage from './components/content-image'
 import FaqJsonLd from './components/faq-jsonld'
@@ -268,6 +268,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <NearbyAmenitiesSection compactList />
 
       {/* FAQ */}
       <section className="py-16 bg-white">
