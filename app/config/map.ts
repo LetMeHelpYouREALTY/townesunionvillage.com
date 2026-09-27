@@ -32,7 +32,7 @@ export type AmenityCategory = {
   ariaLabel: string
 }
 
-/** Family townhome community — grocery, healthcare, and parks lead; schools included. */
+/** Townhome community — grocery, healthcare, and parks lead; schools included. */
 export const amenityCategories: AmenityCategory[] = [
   {
     id: 'grocery',
@@ -108,96 +108,134 @@ export type CuratedPlace = {
   category: AmenityCategoryId
   /** schema.org type for ItemList JSON-LD */
   schemaType: string
+  /** Official page used to verify name and address (2026-09-27). */
+  sourceUrl: string
   note?: string
 }
 
 /**
- * Verified names and addresses from site community config and Century Communities listings.
- * Used for fallback lists, static markers, and structured data — not invented ratings or distances.
+ * Names and street addresses verified against primary sources (2026-09-27).
+ * Used for fallback lists and structured data — no invented ratings or distances.
  */
 export const curatedPlaces: CuratedPlace[] = [
   {
     name: nearby.hospitalName,
-    address: nearby.hospitalAddress,
+    address: '1050 W. Galleria Dr., Henderson, NV 89011',
     category: 'healthcare',
     schemaType: 'Hospital',
+    sourceUrl: 'https://www.hendersonhospital.com/maps-directions',
   },
   {
     name: nearby.mallName,
-    address: nearby.mallAddress,
+    address: '1300 West Sunset Road, Henderson, NV 89014',
     category: 'shopping',
     schemaType: 'ShoppingCenter',
+    sourceUrl: 'https://www.galleriaatsunset.com/location',
   },
   {
-    name: 'Costco',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    name: 'Costco Wholesale',
+    address: '791 Marks St, Henderson, NV 89014',
     category: 'grocery',
     schemaType: 'GroceryStore',
-    note: 'Name listed on the Century Communities Union Village community page; confirm store address before you drive.',
+    sourceUrl: 'https://www.costco.com/w/-/nv/henderson/673',
+    note: 'Listed on the Century Communities Union Village community page.',
+  },
+  {
+    name: 'Walmart Supercenter',
+    address: '540 Marks St, Henderson, NV 89014',
+    category: 'grocery',
+    schemaType: 'GroceryStore',
+    sourceUrl: 'https://www.walmart.com/store/2838-henderson-nv',
+    note: 'Listed on the Century Communities Union Village community page.',
   },
   {
     name: 'Target',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    address: '605 N Stephanie St, Henderson, NV 89014',
     category: 'shopping',
     schemaType: 'Store',
-    note: 'Name listed on the Century Communities Union Village community page; confirm store address before you drive.',
+    sourceUrl: 'https://www.target.com/sl/henderson-stephanie-street/680',
+    note: 'Nearest Target store to Union Village per Target store locator; listed by Century Communities.',
   },
   {
     name: 'Best Buy',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    address: '611 Marks St, Henderson, NV 89014',
     category: 'shopping',
     schemaType: 'Store',
-    note: 'Name listed on the Century Communities Union Village community page.',
+    sourceUrl: 'https://stores.bestbuy.com/nv/henderson/611-marks-st-358.html',
+    note: 'Listed on the Century Communities Union Village community page.',
   },
   {
-    name: 'Walmart',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
-    category: 'grocery',
-    schemaType: 'GroceryStore',
-    note: 'Name listed on the Century Communities Union Village community page; confirm store address before you drive.',
-  },
-  {
-    name: 'Dave & Buster\'s',
-    address: 'Henderson, NV 89011 (listed by Century Communities)',
+    name: "Dave & Buster's",
+    address: '821 David Baker Way, Henderson, NV 89011',
     category: 'restaurants',
     schemaType: 'Restaurant',
-    note: 'Named on the Century Communities Union Village community page.',
+    sourceUrl: 'https://www.daveandbusters.com/us/en/about/locations/henderson',
+    note: 'Listed on the Century Communities Union Village community page.',
   },
   {
     name: 'Texas Roadhouse',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    address: '1421 W. Sunset Road, Henderson, NV 89014',
     category: 'restaurants',
     schemaType: 'Restaurant',
-    note: 'Named on the Century Communities Union Village community page.',
+    sourceUrl: 'https://www.texasroadhouse.com/locations/henderson',
+    note: 'Listed on the Century Communities Union Village community page.',
   },
   {
     name: 'In-N-Out Burger',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    address: '1051 W. Sunset Rd., Henderson, NV 89014',
     category: 'restaurants',
     schemaType: 'Restaurant',
-    note: 'Named on the Century Communities Union Village community page.',
+    sourceUrl: 'https://locations.in-n-out.com/150',
+    note: 'Listed on the Century Communities Union Village community page.',
   },
   {
     name: 'Red Robin Gourmet Burgers',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    address: '1300 W Sunset Rd #2545, Henderson, NV 89014',
     category: 'restaurants',
     schemaType: 'Restaurant',
-    note: 'Named on the Century Communities Union Village community page.',
+    sourceUrl: 'https://www.galleriaatsunset.com/dining/red-robin',
+    note: 'Galleria at Sunset tenant; listed by Century Communities.',
   },
   {
     name: 'Starbucks',
-    address: 'Henderson, NV (listed near Union Village by Century Communities)',
+    address: '605 N Stephanie St, Henderson, NV 89014',
     category: 'cafes',
     schemaType: 'CafeOrCoffeeShop',
-    note: 'Named on the Century Communities Union Village community page.',
+    sourceUrl: 'https://www.target.com/sl/henderson-stephanie-street/680',
+    note: 'Starbucks café inside Target Henderson Stephanie St; Century lists Starbucks near Union Village.',
   },
-  ...nearby.schoolNames.map((name) => ({
-    name,
-    address: `${nap.city}, ${nap.state} ${nap.zip}`,
-    category: 'schools' as AmenityCategoryId,
+  {
+    name: 'Harriet Treem Elementary School',
+    address: '1698 Patrick Ln., Henderson, NV 89014',
+    category: 'schools',
     schemaType: 'School',
-    note: 'School name listed by Century Communities. Confirm zoning by address.',
-  })),
+    sourceUrl: 'https://treembears.org/',
+    note: 'School name listed by Century Communities. Confirm zoning by homesite address.',
+  },
+  {
+    name: 'Jim Thorpe Elementary School',
+    address: '1650 Patrick Ln., Henderson, NV 89014',
+    category: 'schools',
+    schemaType: 'School',
+    sourceUrl: 'http://www.thorpeelementary.com/',
+    note: 'School name listed by Century Communities. Confirm zoning by homesite address.',
+  },
+  {
+    name: 'Francis H. Cortney Junior High School',
+    address: '5301 E. Hacienda Ave., Las Vegas, NV 89122',
+    category: 'schools',
+    schemaType: 'School',
+    sourceUrl: 'https://www.cortneyjhs.org/',
+    note: 'School name listed by Century Communities. Confirm zoning by homesite address.',
+  },
+  {
+    name: 'Basic Academy of International Studies High School',
+    address: '400 Palo Verde Dr., Henderson, NV 89015',
+    category: 'schools',
+    schemaType: 'School',
+    sourceUrl: 'https://www.ccsd.net/directory/schools',
+    note: 'Address from CCSD school directory; confirm zoning by homesite address.',
+  },
 ]
 
 export const defaultAmenityCategory: AmenityCategoryId = 'grocery'
