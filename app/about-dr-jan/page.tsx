@@ -2,10 +2,13 @@ import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import AgentPhoto from '../components/agent-photo'
 import { calendly } from '../config/community'
+import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export default function AboutDrJan() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={breadcrumbTrail('About Dr. Jan Duffy', '/about-dr-jan')} />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

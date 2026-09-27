@@ -5,6 +5,7 @@ import NapStrip from '../components/nap-strip'
 import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nap, photos } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'New Construction Financing | Townes at Union Village Henderson',
@@ -21,6 +22,7 @@ export default function FinancingPage() {
         subtitle="PRE-APPROVAL BEFORE THE MODEL"
         lede="We do not publish mortgage rates. They change daily. Get a written pre-approval, then tour."
         image={photos.garage}
+        breadcrumb={breadcrumbTrail('Financing', '/financing')}
         secondaryHref="/buyers"
         secondaryLabel="Buyer steps"
       />

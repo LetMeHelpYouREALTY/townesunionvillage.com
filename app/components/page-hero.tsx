@@ -1,4 +1,5 @@
 import ContentImage from './content-image'
+import BreadcrumbJsonLd, { type BreadcrumbItem } from './breadcrumb-jsonld'
 import { nap } from 'app/config/community'
 
 type PageHeroProps = {
@@ -11,6 +12,7 @@ type PageHeroProps = {
   primaryLabel?: string
   secondaryHref?: string
   secondaryLabel?: string
+  breadcrumb?: BreadcrumbItem[]
 }
 
 export default function PageHero({
@@ -23,8 +25,11 @@ export default function PageHero({
   primaryLabel = `Call ${nap.phoneDisplay}`,
   secondaryHref = '/schedule-tour',
   secondaryLabel = 'Schedule a tour',
+  breadcrumb,
 }: PageHeroProps) {
   return (
+    <>
+      {breadcrumb ? <BreadcrumbJsonLd items={breadcrumb} /> : null}
     <section className="relative min-h-[70vh] flex items-center text-white overflow-hidden">
       <div className="absolute inset-0">
         <ContentImage
@@ -61,5 +66,6 @@ export default function PageHero({
         </div>
       </div>
     </section>
+    </>
   )
 }

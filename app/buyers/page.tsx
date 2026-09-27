@@ -5,6 +5,7 @@ import NapStrip from '../components/nap-strip'
 import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nap, nearby, photos, pricing } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Buy a Townhome at Townes at Union Village | Henderson Buyers',
@@ -23,6 +24,7 @@ export default function BuyersPage() {
         image={photos.keys}
         primaryHref={`tel:${nap.phoneTel}`}
         primaryLabel={`Call ${nap.phoneDisplay}`}
+        breadcrumb={breadcrumbTrail('Buyers', '/buyers')}
         secondaryHref="/floor-plans"
         secondaryLabel="Compare floor plans"
       />

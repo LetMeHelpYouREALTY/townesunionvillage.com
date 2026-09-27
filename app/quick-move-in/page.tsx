@@ -2,10 +2,13 @@ import SEOOptimizedMap from '../components/seo-optimized-map'
 import RealScoutOfficeListings from '../components/realscout-office-listings'
 import ContentImage from '../components/content-image'
 import { photos } from '../config/community'
+import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export default function QuickMoveIn() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={breadcrumbTrail('Quick move-in', '/quick-move-in')} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>

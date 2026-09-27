@@ -3,6 +3,8 @@ import RealScoutOfficeListings from '../components/realscout-office-listings'
 import CalendlyEmbed from '../components/calendly-embed'
 import AgentPhoto from '../components/agent-photo'
 import { calendly, nap } from '../config/community'
+import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Jan Duffy | Book a Union Village Tour',
@@ -14,6 +16,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={breadcrumbTrail('Contact', '/contact')} />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

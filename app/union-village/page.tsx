@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import { amenities, nearby, photos } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Union Village Henderson | Townes at 1001 Gearus Place',
@@ -22,6 +23,7 @@ export default function UnionVillagePage() {
         subtitle="1001 GEARUS PLACE, NV 89011"
         lede="A Century Communities townhome pocket next to the Henderson Hospital campus on Galleria Drive."
         image={photos.exterior}
+        breadcrumb={breadcrumbTrail('Union Village', '/union-village')}
         secondaryHref="/community"
         secondaryLabel="Community amenities"
       />

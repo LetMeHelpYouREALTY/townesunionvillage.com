@@ -5,6 +5,8 @@ import NapStrip from '../components/nap-strip'
 import ContentImage from '../components/content-image'
 import { gallery, photos, pricing } from '../config/community'
 import type { Metadata } from 'next'
+import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Union Village Community | Townes in Henderson NV 89011',
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
 export default function Community() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbJsonLd items={breadcrumbTrail('Community', '/community')} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-24 text-white overflow-hidden">
         <div className="absolute inset-0">

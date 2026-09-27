@@ -5,6 +5,7 @@ import NapStrip from '../components/nap-strip'
 import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nap, photos, pricing } from '../config/community'
+import { breadcrumbTrail } from '../lib/breadcrumbs'
 
 export const metadata: Metadata = {
   title: 'Sell Your Home and Buy Union Village | Henderson Sellers',
@@ -21,6 +22,7 @@ export default function SellersPage() {
         subtitle="ONE AGENT FOR THE MOVE"
         lede="Get a live value on your current house, then lock a Century townhome with the same advocate."
         image={photos.seller}
+        breadcrumb={breadcrumbTrail('Sellers', '/sellers')}
         primaryHref="/home-value"
         primaryLabel="Get a home value"
         secondaryHref={`tel:${nap.phoneTel}`}
