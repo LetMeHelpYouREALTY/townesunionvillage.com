@@ -12,9 +12,6 @@ import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/loca
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  alternates: {
-    canonical: siteUrl,
-  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
@@ -31,7 +28,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     description: siteDescription,
-    url: siteUrl,
     siteName: 'Townes at Union Village | Homes by Dr. Jan Duffy',
     locale: 'en_US',
     type: 'website',

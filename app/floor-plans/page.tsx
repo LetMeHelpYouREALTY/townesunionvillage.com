@@ -4,6 +4,12 @@ import ContentImage from '../components/content-image'
 import { photos, pricing } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
+
+export const metadata = pageMeta('/floor-plans', {
+  title: 'Floor Plans',
+  description: `Residence 1405, 1478, and 1479 at The Townes at Union Village in Henderson, NV. Century Communities starting prices as of ${pricing.asOf}, from ${pricing.startingFromLabel}.`,
+})
 
 const [plan1405, plan1478, plan1479] = pricing.plans
 

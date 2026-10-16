@@ -6,12 +6,13 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { amenities, nap, photos, pricing } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/new-construction', {
   title: 'New Construction at Townes at Union Village | Century Process',
   description:
     'How to buy a Century Communities townhome at The Townes at Union Village in Henderson, NV: registration, options, deposits, and independent buyer representation.',
-}
+})
 
 export default function NewConstructionPage() {
   return (

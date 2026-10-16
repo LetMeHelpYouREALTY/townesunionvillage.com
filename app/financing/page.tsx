@@ -6,12 +6,13 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nap, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/financing', {
   title: 'New Construction Financing | Townes at Union Village Henderson',
   description:
     'How financing works for a Century Communities townhome at The Townes at Union Village in Henderson, NV. Pre-approval, builder-affiliated lending, and independent advice from Dr. Jan Duffy.',
-}
+})
 
 export default function FinancingPage() {
   return (

@@ -7,12 +7,13 @@ import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import CalendlyEmbed from '../components/calendly-embed'
 import { calendly, hours, nap, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/schedule-tour', {
   title: 'Schedule a Tour | Townes at Union Village Henderson NV',
   description:
     'Schedule a private tour of The Townes at Union Village at 1001 Gearus Place, Henderson, NV 89011 with Dr. Jan Duffy. Call (702) 500-1955.',
-}
+})
 
 export default function ScheduleTourPage() {
   return (

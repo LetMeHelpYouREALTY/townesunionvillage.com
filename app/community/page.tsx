@@ -7,12 +7,13 @@ import { gallery, photos, pricing } from '../config/community'
 import type { Metadata } from 'next'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/community', {
   title: 'Union Village Community | Townes in Henderson NV 89011',
   description:
     'The Townes at Union Village community in Henderson, NV: dog park, walking trail, picnic areas, near Henderson Hospital, Highway 95 and I-215. 1001 Gearus Place.',
-}
+})
 
 export default function Community() {
   return (

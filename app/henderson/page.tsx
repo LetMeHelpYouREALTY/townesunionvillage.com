@@ -6,12 +6,13 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nearby, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/henderson', {
   title: 'Henderson NV 89011 Real Estate | Townes at Union Village',
   description:
     'Henderson, Nevada 89011 around The Townes at Union Village: Galleria Drive, Highway 95, I-215, Henderson Hospital, and Galleria at Sunset. Homes by Dr. Jan Duffy.',
-}
+})
 
 export default function HendersonPage() {
   return (

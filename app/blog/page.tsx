@@ -4,12 +4,13 @@ import OfficeListingsBand from 'app/components/office-listings-band'
 import BreadcrumbJsonLd from 'app/components/breadcrumb-jsonld'
 import { pricing } from 'app/config/community'
 import { breadcrumbTrail } from 'app/lib/breadcrumbs'
+import { pageMeta } from 'app/lib/page-meta'
 
-export const metadata = {
+export const metadata = pageMeta('/blog', {
   title: 'Union Village Guides | Henderson Townhomes',
   description:
     `First-party guides from Dr. Jan Duffy on The Townes at Union Village in Henderson, NV: floor plans from ${pricing.startingFromLabel}, inventory, and how to tour 1001 Gearus Place.`,
-}
+})
 
 const firstPartyGuides = [
   {
