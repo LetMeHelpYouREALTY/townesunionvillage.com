@@ -22,7 +22,7 @@ export default function RealScoutWidget({
         realscout-advanced-search {
           --rs-as-button-text-color: #ffffff;
           --rs-as-background-color: #ffffff;
-          --rs-as-button-color: rgb(35, 93, 137);
+          --rs-as-button-color: #92400e;
           --rs-as-widget-width: 100% !important;
           display: block !important;
           min-height: 220px !important;

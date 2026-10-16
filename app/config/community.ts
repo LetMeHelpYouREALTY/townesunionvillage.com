@@ -177,6 +177,18 @@ export const photos = {
     src: '/images/schedule-tour-table.jpg',
     alt: 'New construction tour table with floor plans in Henderson, Nevada',
   },
+  preapproval: {
+    src: '/images/financing-preapproval.jpg',
+    alt: 'Navy folder, brass house key, and a blank card on a stone counter, illustrating pre-approval before a Union Village tour',
+  },
+  newConstruction: {
+    src: '/images/new-construction-townhomes.jpg',
+    alt: 'Illustration of a new desert townhome street at golden hour. Not a photograph of a specific Union Village homesite.',
+  },
+  questions: {
+    src: '/images/faq-townhome-entry.jpg',
+    alt: 'Illustration of a desert townhome entry, bench, and walk. Not a photograph of a specific Gearus Place home.',
+  },
 } as const
 
 export const gallery = [

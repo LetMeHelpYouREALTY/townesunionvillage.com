@@ -168,6 +168,11 @@ export default function LuxuryFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/#atleigh-listings" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Nine Atleigh Avenue homes
+                  </Link>
+                </li>
+                <li>
                   <Link href="/schedule-tour" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
                     Schedule a Tour
                   </Link>

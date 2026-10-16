@@ -113,7 +113,7 @@ export default function HomeValue() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="mb-4">
-              <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
                 FREE VALUATION
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function HomeValue() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="mb-4">
-              <div className="inline-flex items-center bg-green-600/10 px-4 py-2 rounded-full text-sm font-semibold text-green-800 border border-green-200">
+              <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
                 HENDERSON MARKET INSIGHTS
               </div>
             </div>

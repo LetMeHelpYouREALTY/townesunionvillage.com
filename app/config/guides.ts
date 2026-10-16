@@ -254,7 +254,7 @@ const answers: Guide = {
     {
       heading: 'Is this Union Village Henderson NV?',
       paragraphs: [
-        `Yes. Union Village Henderson NV is ZIP ${nap.zip}. The Townes townhomes use ${nap.street}.`,
+        `Yes. Union Village Henderson NV is ZIP ${nap.zip}. The Townes townhomes use ${nap.street}. ${priceSentence} ${hours.note}`,
       ],
     },
     {

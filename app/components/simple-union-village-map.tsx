@@ -51,7 +51,7 @@ export default function SimpleUnionVillageMap({ className = '', showDirections =
               href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
+              className="bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors text-center font-medium tracking-wide"
             >
               🗺️ Get Directions
             </a>
@@ -59,7 +59,7 @@ export default function SimpleUnionVillageMap({ className = '', showDirections =
               href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-center font-medium"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg hover:from-amber-700 hover:to-amber-800 transition-colors text-center font-medium tracking-wide"
             >
               📍 View on Google Maps
             </a>

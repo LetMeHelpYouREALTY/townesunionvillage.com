@@ -1,5 +1,6 @@
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import OfficeListingsBand from '../components/office-listings-band'
+import AtleighListings from '../components/atleigh-listings'
 import PhotoGrid from '../components/photo-grid'
 import NapStrip from '../components/nap-strip'
 import ContentImage from '../components/content-image'
@@ -69,6 +70,7 @@ export default function Community() {
         </div>
       </section>
       <OfficeListingsBand />
+      <AtleighListings />
       <NapStrip />
 
       {/* Community Overview */}
@@ -298,7 +300,7 @@ export default function Community() {
           <div className="text-center">
             <a 
               href="/floor-plans"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors"
             >
               View Available Floor Plans
             </a>
@@ -330,7 +332,7 @@ export default function Community() {
               </ul>
               <p className="text-sm text-gray-500 mt-4">
                 Names listed by Century Communities. Confirm assignment in the{' '}
-                <a href="https://www.ccsd.net/zoning" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.ccsd.net/zoning" className="text-amber-800 underline" target="_blank" rel="noopener noreferrer">
                   CCSD zoning search
                 </a>
                 .
@@ -412,13 +414,13 @@ export default function Community() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               📞 Call (702) 500-1955
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-gray-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-700 transition-colors"
+              className="bg-white border border-stone-300 text-slate-800 hover:border-amber-400 px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               📧 Email Dr. Jan
             </a>

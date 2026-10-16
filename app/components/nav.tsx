@@ -44,7 +44,7 @@ export function Navbar() {
       <div className="flex items-center justify-between w-full py-3 px-4 gap-3 xl:py-4">
         <div className="flex items-center space-x-6 min-w-0">
           <Link href="/" className="flex items-center gap-3 text-lg sm:text-2xl font-bold text-blue-600">
-            <AgentPhoto size={40} priority className="ring-2 ring-amber-400 shrink-0" />
+            <AgentPhoto size={40} className="ring-2 ring-amber-400 shrink-0" />
             <span className="leading-tight">Townes at Union Village</span>
           </Link>
           <div className="hidden xl:flex space-x-5">
@@ -60,7 +60,7 @@ export function Navbar() {
         </div>
         <a
           href="tel:7025001955"
-          className="hidden xl:inline-flex bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 hover-scale transition-optimized font-medium transform-gpu"
+          className="hidden xl:inline-flex bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg hover-scale transition-optimized font-medium tracking-wide transform-gpu"
         >
           Call (702) 500-1955
         </a>
@@ -77,7 +77,7 @@ export function Navbar() {
         </button>
         <a
           href="tel:7025001955"
-          className="flex-1 bg-blue-600 text-white px-3 py-2 rounded-lg text-center font-medium text-sm"
+          className="flex-1 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-3 py-2 rounded-lg text-center font-medium text-sm tracking-wide"
         >
           Call (702) 500-1955
         </a>

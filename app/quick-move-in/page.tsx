@@ -1,5 +1,6 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import OfficeListingsBand from '../components/office-listings-band'
+import AtleighListings from '../components/atleigh-listings'
 import ContentImage from '../components/content-image'
 import { photos } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
@@ -46,6 +47,7 @@ export default function QuickMoveIn() {
       </section>
 
       <OfficeListingsBand />
+      <AtleighListings />
 
       {/* RealScout Search Widget */}
       {/* Limited Availability Alert */}
@@ -133,18 +135,18 @@ export default function QuickMoveIn() {
               <div className="h-64 relative">
                 <ContentImage
                   src={photos.exterior.src}
-                  alt="New Henderson townhome exterior for quick move-in inventory at Townes at Union Village"
+                  alt="Example townhome exterior. This photo is not 8990 Rimerton Street, and that home is in Skye Canyon, not Union Village."
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-gray-900">8990 Rimerton Street</h3>
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-sm font-semibold">
                     Under Construction
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$420,240</div>
+                <div className="text-2xl font-light text-amber-700 mb-4">$420,240</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">1,602</div>
@@ -173,13 +175,13 @@ export default function QuickMoveIn() {
                     href="https://drjanduffy.realscout.com/homesearch/listings/p-8990-rimerton-street-las-vegas-89166-glvartrestle-875"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                    className="block w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white text-center py-3 rounded-lg font-semibold tracking-wide transition-colors"
                   >
                     View Full Listing Details
                   </a>
                   <a 
                     href="tel:7025001955"
-                    className="block w-full bg-gray-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+                    className="block w-full bg-white border border-amber-300 text-amber-950 hover:bg-amber-50 text-center py-3 rounded-lg font-semibold tracking-wide transition-colors"
                   >
                     Call Dr. Jan: (702) 500-1955
                   </a>
@@ -192,18 +194,18 @@ export default function QuickMoveIn() {
               <div className="h-64 relative">
                 <ContentImage
                   src={photos.kitchen.src}
-                  alt="Quartz kitchen in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  alt="Example quartz kitchen in a Henderson townhome. Not a photograph of 862 Angwin Lane."
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-gray-900">862 ANGWIN LN | Lot UV0044</h3>
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-sm font-semibold">
                     Move-in Ready!
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$379,990</div>
+                <div className="text-2xl font-light text-amber-700 mb-4">$379,990</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">1,478</div>
@@ -229,7 +231,7 @@ export default function QuickMoveIn() {
                 </div>
                 <a 
                   href="tel:7025001955"
-                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  className="block w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white text-center py-3 rounded-lg font-semibold tracking-wide transition-colors"
                 >
                   Call Dr. Jan: (702) 500-1955
                 </a>
@@ -241,18 +243,18 @@ export default function QuickMoveIn() {
               <div className="h-64 relative">
                 <ContentImage
                   src={photos.living.src}
-                  alt="Open living room in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  alt="Example open living room in a Henderson townhome. Not a photograph of 849 Angwin Lane."
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-gray-900">849 ANGWIN LN | Lot UV0066</h3>
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-sm font-semibold">
                     Move-in Ready!
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$379,990</div>
+                <div className="text-2xl font-light text-amber-700 mb-4">$379,990</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">1,479</div>
@@ -278,7 +280,7 @@ export default function QuickMoveIn() {
                 </div>
                 <a 
                   href="tel:7025001955"
-                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  className="block w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white text-center py-3 rounded-lg font-semibold tracking-wide transition-colors"
                 >
                   Call Dr. Jan: (702) 500-1955
                 </a>
@@ -290,18 +292,18 @@ export default function QuickMoveIn() {
               <div className="h-64 relative">
                 <ContentImage
                   src={photos.suite.src}
-                  alt="Primary bedroom in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  alt="Example primary bedroom in a Henderson townhome. Not a photograph of 825 Atleigh Avenue."
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-gray-900">825 ATLEIGH AVE | Lot UV0075</h3>
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-sm font-semibold">
                     Move-in Ready!
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$386,890</div>
+                <div className="text-2xl font-light text-amber-700 mb-4">$386,890</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">1,479</div>
@@ -327,7 +329,7 @@ export default function QuickMoveIn() {
                 </div>
                 <a 
                   href="tel:7025001955"
-                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  className="block w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white text-center py-3 rounded-lg font-semibold tracking-wide transition-colors"
                 >
                   Call Dr. Jan: (702) 500-1955
                 </a>
@@ -339,18 +341,18 @@ export default function QuickMoveIn() {
               <div className="h-64 relative">
                 <ContentImage
                   src={photos.garage.src}
-                  alt="Two-car garage in a quick move-in townhome at Townes at Union Village, Henderson NV"
+                  alt="Example two-car garage in a Henderson townhome. Not a photograph of 823 Atleigh Avenue."
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-gray-900">823 ATLEIGH AVE | Lot UV0074</h3>
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-full text-sm font-semibold">
                     Move-in Ready!
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-4">$387,890</div>
+                <div className="text-2xl font-light text-amber-700 mb-4">$387,890</div>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center">
                     <div className="font-bold text-gray-900">1,405</div>
@@ -376,7 +378,7 @@ export default function QuickMoveIn() {
                 </div>
                 <a 
                   href="tel:7025001955"
-                  className="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  className="block w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white text-center py-3 rounded-lg font-semibold tracking-wide transition-colors"
                 >
                   Call Dr. Jan: (702) 500-1955
                 </a>
@@ -390,7 +392,7 @@ export default function QuickMoveIn() {
             </p>
             <a 
               href="tel:7025001955"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               📞 Call Dr. Jan: (702) 500-1955
             </a>
@@ -412,7 +414,7 @@ export default function QuickMoveIn() {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="bg-amber-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4 tracking-wide">
                 1
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Contact Dr. Jan</h3>
@@ -421,7 +423,7 @@ export default function QuickMoveIn() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="bg-amber-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4 tracking-wide">
                 2
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Schedule Tour</h3>
@@ -430,7 +432,7 @@ export default function QuickMoveIn() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="bg-amber-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4 tracking-wide">
                 3
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Make Offer</h3>
@@ -439,7 +441,7 @@ export default function QuickMoveIn() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="bg-amber-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-light mx-auto mb-4 tracking-wide">
                 4
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Move In</h3>
@@ -546,10 +548,10 @@ export default function QuickMoveIn() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-red-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            🚨 ACT FAST - QUICK MOVE-IN HOMES ARE LIMITED!
+            Quick move-in homes are limited
           </h2>
           <p className="text-xl mb-8 max-w-4xl mx-auto">
             These homes won't last long. Contact Dr. Jan Duffy today to secure your quick move-in home at The Townes at Union Village.
@@ -557,13 +559,13 @@ export default function QuickMoveIn() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-white text-amber-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-amber-50 transition-colors tracking-wide"
             >
               📞 SECURE YOUR HOME: (702) 500-1955
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-800 transition-colors"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-amber-900 transition-colors tracking-wide"
             >
               📧 EMAIL DR. JAN
             </a>

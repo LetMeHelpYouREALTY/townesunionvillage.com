@@ -88,10 +88,11 @@ export default function RootLayout({
         <WebSiteSchema />
       </head>
       <body className="antialiased">
+        {/* lazyOnload skips the preload. afterInteractive preloaded this module twice and competed with the hero image. */}
         <Script
           src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
           type="module"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Navbar />
         <main>{children}</main>

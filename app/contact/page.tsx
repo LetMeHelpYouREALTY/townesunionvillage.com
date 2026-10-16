@@ -18,7 +18,7 @@ export default function Contact() {
     <div className="min-h-screen bg-gray-50">
       <BreadcrumbJsonLd items={breadcrumbTrail('Contact', '/contact')} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AgentPhoto size={128} priority className="mx-auto mb-6 ring-4 ring-amber-400" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -30,13 +30,13 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${nap.phoneTel}`}
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-white text-amber-950 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-amber-50 transition-colors tracking-wide"
             >
               Call {nap.phoneDisplay}
             </a>
             <a
               href={calendly.url}
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               {calendly.ctaLabel}
             </a>
@@ -93,7 +93,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-blue-50 rounded-lg p-8">
+              <div className="bg-amber-50 border border-amber-100 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Contact Dr. Jan?</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li>• ✅ Independent agent representing YOUR interests</li>
@@ -176,7 +176,7 @@ export default function Contact() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             Ready to Start Your Home Buying Journey?
@@ -188,19 +188,19 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-white text-amber-950 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-amber-50 transition-colors tracking-wide"
             >
               📞 Call (702) 500-1955
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               📧 Email Dr. Jan
             </a>
             <a 
               href="/floor-plans"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-900 transition-colors"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-amber-950 transition-colors tracking-wide"
             >
               🏠 View Floor Plans
             </a>

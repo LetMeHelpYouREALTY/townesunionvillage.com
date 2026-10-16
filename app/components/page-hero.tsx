@@ -43,7 +43,7 @@ export default function PageHero({
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-        <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
+        <div className="inline-flex items-center bg-amber-800/90 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-300/40">
           {badge}
         </div>
         <h1 className="text-4xl md:text-6xl font-light tracking-wide mb-4">{title}</h1>

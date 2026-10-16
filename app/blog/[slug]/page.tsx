@@ -66,7 +66,7 @@ export default function Blog({ params }) {
 
   return (
     <>
-    <section>
+    <section className="max-w-3xl mx-auto px-4 pt-12">
       <BreadcrumbJsonLd
         items={breadcrumbTrail(post.metadata.title, `/blog/${post.slug}`, {
           name: 'Blog',
@@ -95,18 +95,18 @@ export default function Blog({ params }) {
           }),
         }}
       />
-      <h1 className="title font-semibold text-2xl tracking-tighter">
+      <h1 className="title font-light text-4xl tracking-wide text-slate-900">
         {post.metadata.title}
       </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+      <div className="flex justify-between items-center mt-3 mb-8 text-sm">
+        <p className="text-sm text-amber-800 tracking-wide">
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
     </section>
     <OfficeListingsBand />
-    <section>
-      <article className="prose">
+    <section className="max-w-3xl mx-auto px-4 pb-16">
+      <article className="prose prose-slate">
         <CustomMDX source={post.content} />
       </article>
     </section>

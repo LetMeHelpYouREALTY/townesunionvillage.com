@@ -74,7 +74,7 @@ export default function HendersonPage() {
             </ul>
             <p className="text-gray-700 leading-relaxed">
               Confirm assignment in the Clark County School District{' '}
-              <a href={nearby.zoningUrl} className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">
+              <a href={nearby.zoningUrl} className="text-amber-800 underline" target="_blank" rel="noopener noreferrer">
                 zoning search
               </a>
               . Boundaries change.
@@ -84,7 +84,7 @@ export default function HendersonPage() {
       </section>
 
       <section className="py-12 bg-white text-center">
-        <Link href="/community" className="text-blue-700 font-medium hover:underline">
+        <Link href="/community" className="text-amber-800 font-medium hover:underline">
           See community amenities and map
         </Link>
       </section>

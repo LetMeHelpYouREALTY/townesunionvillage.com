@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
     <div className="min-h-screen bg-gray-50">
       <BreadcrumbJsonLd items={breadcrumbTrail('Privacy policy', '/privacy-policy')} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Privacy Policy
@@ -154,10 +154,10 @@ export default function PrivacyPolicy() {
                 Nevada License S.0197614
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>Phone:</strong> <a href="tel:7025001955" className="text-blue-600 hover:underline">(702) 500-1955</a>
+                <strong>Phone:</strong> <a href="tel:7025001955" className="text-amber-800 hover:underline">(702) 500-1955</a>
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>Email:</strong> <a href="mailto:DrJanSells@UnionVillage.com" className="text-blue-600 hover:underline">DrJanSells@UnionVillage.com</a>
+                <strong>Email:</strong> <a href="mailto:DrJanSells@UnionVillage.com" className="text-amber-800 hover:underline">DrJanSells@UnionVillage.com</a>
               </p>
               <p className="text-gray-700">
                 <strong>Address:</strong> 1001 Gearus Place, Henderson, NV 89011
