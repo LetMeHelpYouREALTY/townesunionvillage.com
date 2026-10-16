@@ -28,7 +28,7 @@ export default function RealScoutWidget({
           min-height: 220px !important;
         }
       `}</style>
-      <div className="bg-gradient-to-r from-amber-600 to-amber-700 px-8 py-6">
+      <div className="bg-gradient-to-r from-amber-800 to-amber-900 px-8 py-6">
         <div className="text-center">
           <h3 className="text-2xl font-light text-white mb-2 tracking-wide">{title}</h3>
           <p className="text-amber-100 font-light text-sm">{subtitle}</p>

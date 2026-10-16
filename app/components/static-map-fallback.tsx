@@ -72,7 +72,7 @@ export default function StaticMapFallback({ className = '', title = "The Townes 
           </a>
           <a
             href={`tel:7025001955`}
-            className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg hover:from-amber-700 hover:to-amber-800 transition-colors text-center font-medium tracking-wide"
+            className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg hover:from-amber-900 hover:to-amber-950 transition-colors text-center font-medium tracking-wide"
           >
             📞 Call Dr. Jan
           </a>

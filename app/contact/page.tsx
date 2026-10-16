@@ -37,7 +37,7 @@ export default function Contact() {
             </a>
             <a
               href={calendly.url}
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               {calendly.ctaLabel}
             </a>
@@ -195,7 +195,7 @@ export default function Contact() {
             </a>
             <a 
               href="mailto:DrJanSells@UnionVillage.com"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               📧 Email Dr. Jan
             </a>
@@ -236,7 +236,7 @@ export default function Contact() {
               <h3 className="text-3xl font-light text-gray-900 mb-8 tracking-wide">Why Choose Henderson, NV?</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-white text-xl">🏥</span>
                   </div>
                   <div>
@@ -245,7 +245,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-white text-xl">🛍️</span>
                   </div>
                   <div>
@@ -254,7 +254,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-white text-xl">🛣️</span>
                   </div>
                   <div>
@@ -263,7 +263,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <span className="text-white text-xl">🌵</span>
                   </div>
                   <div>
@@ -299,7 +299,7 @@ export default function Contact() {
                     href="https://maps.google.com/?q=1001+Gearus+Place,+Henderson,+NV+89011"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-3 rounded-lg text-center font-semibold transition-colors duration-300"
+                    className="bg-amber-800 hover:bg-amber-900 text-white px-4 py-3 rounded-lg text-center font-semibold transition-colors duration-300"
                   >
                     GET DIRECTIONS
                   </a>

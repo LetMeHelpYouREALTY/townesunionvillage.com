@@ -59,7 +59,7 @@ export default function SimpleUnionVillageMap({ className = '', showDirections =
               href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg hover:from-amber-700 hover:to-amber-800 transition-colors text-center font-medium tracking-wide"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg hover:from-amber-900 hover:to-amber-950 transition-colors text-center font-medium tracking-wide"
             >
               📍 View on Google Maps
             </a>
@@ -101,7 +101,7 @@ export function AdvancedUnionVillageMap({ className = '' }: { className?: string
         dangerouslySetInnerHTML={{
           __html: `
             function initUnionVillageMap() {
-              const unionVillageLocation = { lat: 36.0395, lng: -115.0362 };
+              const unionVillageLocation = { lat: 36.074062, lng: -115.0268 };
               
               const map = new google.maps.Map(document.getElementById('union-village-map'), {
                 center: unionVillageLocation,
@@ -133,32 +133,6 @@ export function AdvancedUnionVillageMap({ className = '' }: { className?: string
               
               marker.addListener('click', () => {
                 infoWindow.open(map, marker);
-              });
-              
-              // Add nearby amenities
-              const amenities = [
-                {
-                  position: { lat: 36.0415, lng: -115.0342 },
-                  title: 'Henderson Hospital',
-                  type: 'hospital'
-                },
-                {
-                  position: { lat: 36.0375, lng: -115.0382 },
-                  title: 'Galleria at Sunset',
-                  type: 'shopping'
-                }
-              ];
-              
-              amenities.forEach(amenity => {
-                new google.maps.Marker({
-                  position: amenity.position,
-                  map: map,
-                  title: amenity.title,
-                  icon: {
-                    url: amenity.type === 'hospital' ? 'https://maps.google.com/mapfiles/ms/icons/red-dot.png' : 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-                    scaledSize: new google.maps.Size(32, 32)
-                  }
-                });
               });
             }
           `

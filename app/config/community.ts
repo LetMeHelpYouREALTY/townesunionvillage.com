@@ -52,7 +52,7 @@ export const searchConsolePlatforms = [
 export const hours = {
   note: 'Dr. Jan Duffy tours by appointment seven days a week.',
   builderModel:
-    'Century Communities lists the sales office at 1001 Gearus Place. Confirm same-day hours before you drive over.',
+    'Century Communities lists the sales office at 1001 Gearus Place open 10:00 AM to 6:00 PM Saturday through Thursday, and noon to 6:00 PM on Friday. Confirm the same day before you drive over.',
 }
 
 /** Century Communities listed these starting prices on 2026-08-29. Verify live inventory. */

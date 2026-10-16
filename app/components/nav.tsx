@@ -60,7 +60,7 @@ export function Navbar() {
         </div>
         <a
           href="tel:7025001955"
-          className="hidden xl:inline-flex bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg hover-scale transition-optimized font-medium tracking-wide transform-gpu"
+          className="hidden xl:inline-flex bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-6 py-2 rounded-lg hover-scale transition-optimized font-medium tracking-wide transform-gpu"
         >
           Call (702) 500-1955
         </a>
@@ -77,7 +77,7 @@ export function Navbar() {
         </button>
         <a
           href="tel:7025001955"
-          className="flex-1 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-3 py-2 rounded-lg text-center font-medium text-sm tracking-wide"
+          className="flex-1 bg-gradient-to-r from-amber-800 to-amber-900 text-white px-3 py-2 rounded-lg text-center font-medium text-sm tracking-wide"
         >
           Call (702) 500-1955
         </a>

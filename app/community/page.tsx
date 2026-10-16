@@ -51,7 +51,7 @@ export default function Community() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
               SCHEDULE COMMUNITY TOUR
             </a>
@@ -202,7 +202,7 @@ export default function Community() {
 
           <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
             <div className="bg-white rounded-xl p-10 text-center shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-3xl">🐕</span>
               </div>
               <h3 className="text-2xl font-light text-gray-900 mb-4 tracking-wide">Dog Park</h3>
@@ -211,7 +211,7 @@ export default function Community() {
               </p>
             </div>
             <div className="bg-white rounded-xl p-10 text-center shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-3xl">🚶‍♀️</span>
               </div>
               <h3 className="text-2xl font-light text-gray-900 mb-4 tracking-wide">Walking Trail</h3>
@@ -220,7 +220,7 @@ export default function Community() {
               </p>
             </div>
             <div className="bg-white rounded-xl p-10 text-center shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-3xl">🍽️</span>
               </div>
               <h3 className="text-2xl font-light text-gray-900 mb-4 tracking-wide">Picnic Areas</h3>
@@ -301,7 +301,7 @@ export default function Community() {
           <div className="text-center">
             <a 
               href="/floor-plans"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors"
             >
               View Available Floor Plans
             </a>
@@ -389,7 +389,7 @@ export default function Community() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="/quick-move-in"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
               VIEW QUICK MOVE-IN HOMES
             </a>
@@ -415,7 +415,7 @@ export default function Community() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               📞 Call (702) 500-1955
             </a>

@@ -80,7 +80,7 @@ export default function SEOOptimizedMap({
                 </a>
                 <a
                   href={`tel:7025001955`}
-                  className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide text-center"
+                  className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-900 hover:to-amber-950 transition-colors tracking-wide text-center"
                 >
                   📞 Call (702) 500-1955
                 </a>
@@ -168,7 +168,7 @@ export default function SEOOptimizedMap({
               </a>
               <a
                 href={`tel:7025001955`}
-                className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide text-center flex-1"
+                className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-900 hover:to-amber-950 transition-colors tracking-wide text-center flex-1"
               >
                 📞 Call Now
               </a>
@@ -242,7 +242,7 @@ export default function SEOOptimizedMap({
           </a>
           <a
             href={`tel:7025001955`}
-            className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide"
+            className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-900 hover:to-amber-950 transition-colors tracking-wide"
           >
             📞 Call Dr. Jan
           </a>

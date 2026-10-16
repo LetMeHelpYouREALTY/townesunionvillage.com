@@ -55,10 +55,12 @@ export default function LocalBusinessSchema() {
     telephone: nap.phoneDisplay,
     email: nap.email,
     address: unionVillageAddress,
+    // Walk Score pin on the Zillow community page for The Townes at Union Village.
+    // https://www.zillow.com/community/townes-at-union-village/30528755_plid
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.0395',
-      longitude: '-115.0362',
+      latitude: '36.074062',
+      longitude: '-115.0268',
     },
     areaServed: {
       '@type': 'City',
@@ -80,7 +82,7 @@ export default function LocalBusinessSchema() {
       'Tu 10:00-18:00',
       'We 10:00-18:00',
       'Th 10:00-18:00',
-      'Fr 10:00-18:00',
+      'Fr 12:00-18:00',
       'Sa 10:00-18:00',
       'Su 10:00-18:00',
     ],
@@ -100,15 +102,6 @@ export default function LocalBusinessSchema() {
       '@type': 'OfferCatalog',
       name: 'The Townes at Union Village Floor Plans',
       itemListElement: floorPlanOffers(),
-    },
-    makesOffer: {
-      '@type': 'Offer',
-      description:
-        'Expert real estate guidance for new home buyers at The Townes at Union Village',
-      price: '0',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      validFrom: '2024-01-01',
     },
   }
 
@@ -154,8 +147,8 @@ export function NewHomeDevelopmentSchema() {
     address: unionVillageAddress,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.0395',
-      longitude: '-115.0362',
+      latitude: '36.074062',
+      longitude: '-115.0268',
     },
     developer: {
       '@type': 'Organization',

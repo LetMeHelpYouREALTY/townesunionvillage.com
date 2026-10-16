@@ -54,7 +54,7 @@ export default function PageHero({
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={primaryHref}
-            className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-4 rounded-lg font-semibold tracking-wide"
+            className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-10 py-4 rounded-lg font-semibold tracking-wide"
           >
             {primaryLabel}
           </a>

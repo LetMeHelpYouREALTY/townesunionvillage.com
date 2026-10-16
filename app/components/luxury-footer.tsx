@@ -244,7 +244,7 @@ export default function LuxuryFooter() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href={calendly.url}
-                    className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-3 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide text-sm"
+                    className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-6 py-3 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide text-sm"
                   >
                     {calendly.ctaLabel.toUpperCase()}
                   </a>
