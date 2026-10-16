@@ -23,16 +23,16 @@ export default function RealScoutOfficeListings({
         realscout-office-listings {
           --rs-as-button-text-color: #ffffff;
           --rs-as-background-color: #ffffff;
-          --rs-as-button-color: rgb(35, 93, 137);
+          --rs-as-button-color: #92400e;
           --rs-as-widget-width: 100% !important;
           display: block !important;
           min-height: 400px !important;
         }
       `}</style>
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-6">
+      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 px-8 py-6">
         <div className="text-center">
-          <h3 className="text-2xl font-light text-white mb-2 tracking-wide">{title}</h3>
-          <p className="text-blue-100 font-light text-sm">{subtitle}</p>
+          <h2 className="text-2xl font-light text-white mb-2 tracking-wide">{title}</h2>
+          <p className="text-amber-100 font-light text-sm">{subtitle}</p>
         </div>
       </div>
       <div className="p-8" dangerouslySetInnerHTML={{ __html: markup }} />

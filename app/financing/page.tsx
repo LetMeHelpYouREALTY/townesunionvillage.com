@@ -21,7 +21,7 @@ export default function FinancingPage() {
         title="Pay for a Union Village Townhome"
         subtitle="PRE-APPROVAL BEFORE THE MODEL"
         lede="We do not publish mortgage rates. They change daily. Get a written pre-approval, then tour."
-        image={photos.garage}
+        image={photos.preapproval}
         breadcrumb={breadcrumbTrail('Financing', '/financing')}
         secondaryHref="/buyers"
         secondaryLabel="Buyer steps"
@@ -78,7 +78,7 @@ export default function FinancingPage() {
             </div>
           </div>
           <p className="text-center mt-8">
-            <Link href="/sellers" className="text-blue-700 font-medium hover:underline">
+            <Link href="/sellers" className="text-amber-800 font-medium hover:underline">
               Selling first? Read the seller timing page
             </Link>
           </p>

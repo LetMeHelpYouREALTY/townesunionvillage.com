@@ -16,7 +16,7 @@ export default function CalendlyEmbed({
       ) : null}
       <p className="text-center text-gray-600 mb-6 font-light">
         Pick a time with {nap.agentName}. Or call{' '}
-        <a href={`tel:${nap.phoneTel}`} className="text-blue-700 font-medium">
+        <a href={`tel:${nap.phoneTel}`} className="text-amber-800 font-medium">
           {nap.phoneDisplay}
         </a>
         .

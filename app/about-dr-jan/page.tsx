@@ -10,7 +10,7 @@ export default function AboutDrJan() {
     <div className="min-h-screen bg-gray-50">
       <BreadcrumbJsonLd items={breadcrumbTrail('About Dr. Jan Duffy', '/about-dr-jan')} />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AgentPhoto size={128} priority className="mx-auto mb-6 ring-4 ring-amber-400" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -22,13 +22,13 @@ export default function AboutDrJan() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+              className="bg-white text-amber-950 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-amber-50 transition-colors tracking-wide"
             >
               📞 Call (702) 500-1955
             </a>
             <a
               href="/contact#book"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition-colors"
+              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               {calendly.ctaLabel}
             </a>
@@ -198,27 +198,27 @@ export default function AboutDrJan() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             What Clients Say About Dr. Jan
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-blue-800 rounded-lg p-6">
+            <div className="bg-slate-800 border border-amber-400/20 rounded-xl p-6">
               <p className="text-lg mb-4 italic">
                 "Dr. Jan made buying our new home so easy. Her expertise in new construction was invaluable, 
                 and she saved us thousands through negotiation."
               </p>
               <p className="font-semibold">- Sarah & Mike Johnson</p>
             </div>
-            <div className="bg-blue-800 rounded-lg p-6">
+            <div className="bg-slate-800 border border-amber-400/20 rounded-xl p-6">
               <p className="text-lg mb-4 italic">
                 "We couldn't have asked for a better agent. Dr. Jan's knowledge of the Henderson market 
                 helped us make the perfect choice for our family."
               </p>
               <p className="font-semibold">- The Rodriguez Family</p>
             </div>
-            <div className="bg-blue-800 rounded-lg p-6">
+            <div className="bg-slate-800 border border-amber-400/20 rounded-xl p-6">
               <p className="text-lg mb-4 italic">
                 "From start to finish, Dr. Jan was professional, knowledgeable, and always had our best 
                 interests at heart. Highly recommended!"
@@ -246,7 +246,7 @@ export default function AboutDrJan() {
               <p className="text-gray-600 mb-4">(702) 500-1955</p>
               <a 
                 href="tel:7025001955"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
               >
                 Call Now
               </a>
@@ -257,7 +257,7 @@ export default function AboutDrJan() {
               <p className="text-gray-600 mb-4">DrJanSells@UnionVillage.com</p>
               <a 
                 href="mailto:DrJanSells@UnionVillage.com"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
               >
                 Send Email
               </a>
@@ -271,14 +271,14 @@ export default function AboutDrJan() {
               </p>
               <a 
                 href="tel:7025001955"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
               >
                 Schedule Call
               </a>
             </div>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-8">
+          <div className="bg-amber-50 border border-amber-100 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Nevada License Information</h3>
             <p className="text-gray-600 mb-4">
               Dr. Jan Duffy is a licensed real estate agent in Nevada (License #S.0197614) 

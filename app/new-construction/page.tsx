@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { amenities, nap, photos, pricing } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 
 export const metadata: Metadata = {
   title: 'New Construction at Townes at Union Village | Century Process',
@@ -21,7 +22,7 @@ export default function NewConstructionPage() {
         title="Buying New with Century Communities"
         subtitle="TOWNES AT UNION VILLAGE PROCESS"
         lede="Open-concept townhomes, Century Home Connect®, and a builder contract that needs a buyer advocate."
-        image={photos.tour}
+        image={photos.newConstruction}
         breadcrumb={breadcrumbTrail('New construction', '/new-construction')}
         secondaryHref="/buyers"
         secondaryLabel="Buyer representation"
@@ -96,12 +97,14 @@ export default function NewConstructionPage() {
             </li>
           </ol>
           <p className="mt-8 text-center">
-            <Link href="/schedule-tour" className="text-blue-700 font-medium hover:underline">
+            <Link href="/schedule-tour" className="text-amber-800 font-medium hover:underline">
               Schedule a private tour
             </Link>
           </p>
         </div>
       </section>
+
+      <GuideLinks currentPath="/new-construction" />
 
       <CtaBand
         title="Do not buy new construction unrepresented"

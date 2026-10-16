@@ -95,16 +95,16 @@ export default function BuyersPage() {
           </p>
           <p className="text-sm text-gray-500 mb-8">{pricing.disclaimer}</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/new-construction" className="text-blue-700 font-medium hover:underline">
+            <Link href="/new-construction" className="text-amber-800 font-medium hover:underline">
               New construction process
             </Link>
-            <Link href="/union-village" className="text-blue-700 font-medium hover:underline">
+            <Link href="/union-village" className="text-amber-800 font-medium hover:underline">
               Union Village location
             </Link>
-            <Link href="/healthcare" className="text-blue-700 font-medium hover:underline">
+            <Link href="/healthcare" className="text-amber-800 font-medium hover:underline">
               Homes for doctors, nurses, and healthcare providers
             </Link>
-            <Link href="/financing" className="text-blue-700 font-medium hover:underline">
+            <Link href="/financing" className="text-amber-800 font-medium hover:underline">
               Financing overview
             </Link>
           </div>

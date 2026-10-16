@@ -148,6 +148,31 @@ export default function LuxuryFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/union-village-townhomes" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Union Village townhomes
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/henderson-townhomes" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Henderson townhomes
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/89011" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    New communities in 89011
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/answers" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Union Village Henderson answers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#atleigh-listings" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Nine Atleigh Avenue homes
+                  </Link>
+                </li>
+                <li>
                   <Link href="/schedule-tour" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
                     Schedule a Tour
                   </Link>
