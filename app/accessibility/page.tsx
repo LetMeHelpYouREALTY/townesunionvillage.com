@@ -155,7 +155,7 @@ export default function Accessibility() {
                 <strong>Address:</strong> 1001 Gearus Place, Henderson, NV 89011
               </p>
               <p className="text-gray-700 text-sm">
-                <strong>Sales office:</strong> {hours.builderModel}<br />
+                <strong>Office hours:</strong> {hours.builderModel}<br />
                 <strong>Emergency Accessibility Assistance:</strong> Available 24/7 for urgent matters
               </p>
             </div>

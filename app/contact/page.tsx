@@ -80,7 +80,7 @@ export default function Contact() {
                   <div className="flex items-center">
                     <div className="text-3xl mr-4">🕒</div>
                     <div>
-                      <p className="font-semibold text-gray-900">Sales office hours</p>
+                      <p className="font-semibold text-gray-900">Office hours</p>
                       <p className="text-gray-600">{hours.builderModel}</p>
                     </div>
                   </div>
