@@ -1,7 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import OfficeListingsBand from '../components/office-listings-band'
 import AgentPhoto from '../components/agent-photo'
-import { calendly } from '../config/community'
+import { calendly, hours } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
@@ -270,10 +270,7 @@ export default function AboutDrJan() {
             <div className="bg-gray-50 rounded-lg p-8">
               <div className="text-4xl mb-4">🕒</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Hours</h3>
-              <p className="text-gray-600 mb-4">
-                Monday-Sunday<br />
-                10:00 AM - 6:00 PM
-              </p>
+              <p className="text-gray-600 mb-4">{hours.builderModel}</p>
               <a 
                 href="tel:7025001955"
                 className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
@@ -339,7 +336,7 @@ export default function AboutDrJan() {
                   <div className="text-2xl mr-3">💼</div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Professional Service</h4>
-                    <p className="text-gray-600 text-sm">Available Monday-Sunday, 10 AM - 6 PM for consultations and property tours.</p>
+                    <p className="text-gray-600 text-sm">{hours.note}</p>
                   </div>
                 </div>
               </div>

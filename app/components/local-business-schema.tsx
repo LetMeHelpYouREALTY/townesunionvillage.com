@@ -1,4 +1,4 @@
-import { nap, priceRangeLabel, pricing, socialProfiles } from 'app/config/community'
+import { communityGeo, nap, priceRangeLabel, pricing, socialProfiles } from 'app/config/community'
 import { siteUrl } from 'app/config/site'
 
 const unionVillageAddress = {
@@ -55,12 +55,10 @@ export default function LocalBusinessSchema() {
     telephone: nap.phoneDisplay,
     email: nap.email,
     address: unionVillageAddress,
-    // Walk Score pin on the Zillow community page for The Townes at Union Village.
-    // https://www.zillow.com/community/townes-at-union-village/30528755_plid
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.074062',
-      longitude: '-115.0268',
+      latitude: communityGeo.latitude,
+      longitude: communityGeo.longitude,
     },
     areaServed: {
       '@type': 'City',
@@ -147,8 +145,8 @@ export function NewHomeDevelopmentSchema() {
     address: unionVillageAddress,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.074062',
-      longitude: '-115.0268',
+      latitude: communityGeo.latitude,
+      longitude: communityGeo.longitude,
     },
     developer: {
       '@type': 'Organization',

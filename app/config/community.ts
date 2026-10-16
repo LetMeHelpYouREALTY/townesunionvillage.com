@@ -52,8 +52,16 @@ export const searchConsolePlatforms = [
 export const hours = {
   note: 'Dr. Jan Duffy tours by appointment seven days a week.',
   builderModel:
-    'Century Communities lists the sales office at 1001 Gearus Place open 10:00 AM to 6:00 PM Saturday through Thursday, and noon to 6:00 PM on Friday. Confirm the same day before you drive over.',
+    'Century Communities lists the sales office at 1001 Gearus Place open 10:00 AM to 6:00 PM Saturday through Thursday, and noon to 6:00 PM on Friday, as of October 16, 2026. Confirm the same day before you drive over.',
 }
+
+/** Walk Score pin on the Zillow community page for The Townes at Union Village.
+ * https://www.zillow.com/community/townes-at-union-village/30528755_plid
+ */
+export const communityGeo = {
+  latitude: 36.074062,
+  longitude: -115.0268,
+} as const
 
 /** Century Communities listed these starting prices on 2026-08-29. Verify live inventory. */
 export const pricing = {

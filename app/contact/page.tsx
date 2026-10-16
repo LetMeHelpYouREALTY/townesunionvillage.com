@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import OfficeListingsBand from '../components/office-listings-band'
 import CalendlyEmbed from '../components/calendly-embed'
 import AgentPhoto from '../components/agent-photo'
-import { calendly, nap } from '../config/community'
+import { calendly, hours, nap } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
@@ -80,8 +80,8 @@ export default function Contact() {
                   <div className="flex items-center">
                     <div className="text-3xl mr-4">🕒</div>
                     <div>
-                      <p className="font-semibold text-gray-900">Business Hours</p>
-                      <p className="text-gray-600">Monday-Sunday: 10:00 AM - 6:00 PM</p>
+                      <p className="font-semibold text-gray-900">Sales office hours</p>
+                      <p className="text-gray-600">{hours.builderModel}</p>
                     </div>
                   </div>
                   <div className="flex items-center">

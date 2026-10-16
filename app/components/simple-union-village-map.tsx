@@ -1,6 +1,6 @@
 'use client'
 
-import { pricing } from 'app/config/community'
+import { communityGeo, pricing } from 'app/config/community'
 
 interface SimpleUnionVillageMapProps {
   className?: string
@@ -101,7 +101,7 @@ export function AdvancedUnionVillageMap({ className = '' }: { className?: string
         dangerouslySetInnerHTML={{
           __html: `
             function initUnionVillageMap() {
-              const unionVillageLocation = { lat: 36.074062, lng: -115.0268 };
+              const unionVillageLocation = { lat: ${communityGeo.latitude}, lng: ${communityGeo.longitude} };
               
               const map = new google.maps.Map(document.getElementById('union-village-map'), {
                 center: unionVillageLocation,
