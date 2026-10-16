@@ -12,14 +12,17 @@ const ogImage = {
  * Each public URL is its own canonical. A homepage canonical on the root
  * layout was telling Google every page was the homepage.
  * `path` is relative so metadataBase supplies https://www.townesunionvillage.com.
- * Open Graph is set here because a partial openGraph object replaces the layout's.
+ * Open Graph is set in full because a partial openGraph object replaces the layout's.
  */
 export function pageMeta(path: string, metadata: Metadata = {}): Metadata {
   const title = typeof metadata.title === 'string' ? metadata.title : siteName
-  const description = typeof metadata.description === 'string' ? metadata.description : siteDescription
+  const description =
+    typeof metadata.description === 'string' ? metadata.description : siteDescription
 
   return {
     ...metadata,
+    title,
+    description,
     alternates: { canonical: path },
     openGraph: {
       title,

@@ -53,32 +53,35 @@ const firstPartyGuides = [
 export default function Page() {
   return (
     <>
-    <section className="max-w-3xl mx-auto px-4 py-12">
+    <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
+      <div className="max-w-3xl mx-auto px-4 py-16">
       <BreadcrumbJsonLd items={breadcrumbTrail('Blog', '/blog')} />
-      <h1 className="font-semibold text-3xl mb-4 tracking-tight">
+      <p className="text-xs font-semibold tracking-[0.22em] text-amber-200 mb-3">THE TOWNES AT UNION VILLAGE</p>
+      <h1 className="font-light text-4xl md:text-5xl mb-4 tracking-wide">
         Union Village guides
       </h1>
-      <p className="text-neutral-700 dark:text-neutral-300 mb-4 leading-relaxed">
+      <p className="text-slate-200 font-light mb-4 leading-relaxed">
         These pages are written for this website by Dr. Jan Duffy, Berkshire
         Hathaway HomeServices Nevada Properties, Nevada license S.0197614.LLC.
         They cover The Townes at Union Village, 1001 Gearus Place, Henderson, NV
         89011. Call{' '}
-        <a className="underline" href="tel:7025001955">
+        <a className="text-amber-200 underline" href="tel:7025001955">
           (702) 500-1955
         </a>
         .
       </p>
-      <p className="text-neutral-700 dark:text-neutral-300 mb-8 leading-relaxed">
+      <p className="text-slate-200 font-light mb-2 leading-relaxed">
         This site does not host third-party or template articles. Every guide
         below is first-party content about this community.
       </p>
+      </div>
     </section>
     <OfficeListingsBand />
-    <section className="max-w-3xl mx-auto px-4 pb-12">
+    <section className="max-w-3xl mx-auto px-4 py-12">
       <ul className="space-y-4 mb-12">
         {firstPartyGuides.map((guide) => (
-          <li key={guide.href} className="border border-neutral-200 rounded-lg p-4">
-            <Link href={guide.href} className="font-medium text-blue-700 hover:underline">
+          <li key={guide.href} className="border border-stone-200 bg-white rounded-xl p-5 shadow-sm">
+            <Link href={guide.href} className="font-medium text-amber-800 hover:text-amber-950">
               {guide.title}
             </Link>
             <p className="text-sm text-neutral-600 mt-1">{guide.body}</p>

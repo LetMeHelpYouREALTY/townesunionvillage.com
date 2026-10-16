@@ -62,7 +62,7 @@ export default function HealthcarePage() {
                   <p className="text-xs font-semibold tracking-wide text-amber-700 mb-3">{audience.badge}</p>
                   <h3 className="text-2xl font-light text-gray-900 mb-3">{audience.cardTitle}</h3>
                   <p className="text-gray-700 leading-relaxed mb-6">{audience.cardBody}</p>
-                  <Link href={audience.path} className="text-blue-700 font-semibold hover:underline">
+                  <Link href={audience.path} className="text-amber-800 font-semibold hover:underline">
                     {audience.cardTitle} near Henderson Hospital
                   </Link>
                 </article>
@@ -132,7 +132,7 @@ export default function HealthcarePage() {
           <div className="mt-4 flex flex-col sm:flex-row gap-3">
             <a
               href={`tel:${nap.phoneTel}`}
-              className="flex-1 bg-green-700 text-white px-4 py-3 rounded-lg text-center font-semibold"
+              className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               Call {nap.phoneDisplay}
             </a>
@@ -140,7 +140,7 @@ export default function HealthcarePage() {
               href={googleMaps.directions}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-blue-700 text-white px-4 py-3 rounded-lg text-center font-semibold"
+              className="flex-1 inline-flex items-center justify-center bg-white border border-amber-300 text-amber-950 hover:bg-amber-50 px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               Directions
             </a>
@@ -148,7 +148,7 @@ export default function HealthcarePage() {
               href={googleMaps.reviews}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-slate-800 text-white px-4 py-3 rounded-lg text-center font-semibold"
+              className="flex-1 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               View Google Reviews
             </a>

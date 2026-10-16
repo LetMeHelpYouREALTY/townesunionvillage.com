@@ -74,13 +74,13 @@ export default function SEOOptimizedMap({
                   href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700 transition-colors text-center"
+                  className="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-slate-800 transition-colors tracking-wide text-center"
                 >
                   🗺️ Get Directions
                 </a>
                 <a
                   href={`tel:7025001955`}
-                  className="bg-green-600 text-white px-4 py-2 rounded text-sm hover:bg-green-700 transition-colors text-center"
+                  className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide text-center"
                 >
                   📞 Call (702) 500-1955
                 </a>
@@ -154,7 +154,7 @@ export default function SEOOptimizedMap({
                 href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700 transition-colors text-center flex-1"
+                className="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-slate-800 transition-colors tracking-wide text-center flex-1"
               >
                 🗺️ Get Directions
               </a>
@@ -162,13 +162,13 @@ export default function SEOOptimizedMap({
                 href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-600 text-white px-4 py-2 rounded text-sm hover:bg-gray-700 transition-colors text-center flex-1"
+                className="bg-white border border-amber-300 text-amber-950 px-4 py-2 rounded-lg text-sm hover:bg-amber-50 transition-colors tracking-wide text-center flex-1"
               >
                 📍 View on Maps
               </a>
               <a
                 href={`tel:7025001955`}
-                className="bg-green-600 text-white px-4 py-2 rounded text-sm hover:bg-green-700 transition-colors text-center flex-1"
+                className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide text-center flex-1"
               >
                 📞 Call Now
               </a>
@@ -236,19 +236,19 @@ export default function SEOOptimizedMap({
             href={`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700 transition-colors"
+            className="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm hover:bg-slate-800 transition-colors tracking-wide"
           >
             🗺️ Directions
           </a>
           <a
             href={`tel:7025001955`}
-            className="bg-green-600 text-white px-4 py-2 rounded text-sm hover:bg-green-700 transition-colors"
+            className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide"
           >
             📞 Call Dr. Jan
           </a>
           <a
             href="/floor-plans"
-            className="bg-gray-600 text-white px-4 py-2 rounded text-sm hover:bg-gray-700 transition-colors"
+            className="bg-white border border-amber-300 text-amber-950 px-4 py-2 rounded-lg text-sm hover:bg-amber-50 transition-colors tracking-wide"
           >
             🏠 View Floor Plans
           </a>

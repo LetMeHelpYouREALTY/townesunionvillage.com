@@ -157,16 +157,16 @@ export default function HealthcareAudiencePage({ slug }: HealthcareAudiencePageP
                 <Link
                   key={sibling.path}
                   href={sibling.path}
-                  className="text-blue-700 font-medium hover:underline"
+                  className="text-amber-800 font-medium hover:underline"
                 >
                   {sibling.cardTitle} in Union Village
                 </Link>
               )
             })}
-            <Link href="/floor-plans" className="text-blue-700 font-medium hover:underline">
+            <Link href="/floor-plans" className="text-amber-800 font-medium hover:underline">
               Union Village floor plans
             </Link>
-            <Link href="/union-village" className="text-blue-700 font-medium hover:underline">
+            <Link href="/union-village" className="text-amber-800 font-medium hover:underline">
               Union Village location
             </Link>
           </div>
@@ -186,7 +186,7 @@ export default function HealthcareAudiencePage({ slug }: HealthcareAudiencePageP
           <div className="mt-4 flex flex-col sm:flex-row gap-3">
             <a
               href={`tel:${nap.phoneTel}`}
-              className="flex-1 bg-green-700 text-white px-4 py-3 rounded-lg text-center font-semibold"
+              className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               Call {nap.phoneDisplay}
             </a>
@@ -194,7 +194,7 @@ export default function HealthcareAudiencePage({ slug }: HealthcareAudiencePageP
               href={googleMaps.directions}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-blue-700 text-white px-4 py-3 rounded-lg text-center font-semibold"
+              className="flex-1 inline-flex items-center justify-center bg-white border border-amber-300 text-amber-950 hover:bg-amber-50 px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               Directions
             </a>
@@ -202,7 +202,7 @@ export default function HealthcareAudiencePage({ slug }: HealthcareAudiencePageP
               href={googleMaps.reviews}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-slate-800 text-white px-4 py-3 rounded-lg text-center font-semibold"
+              className="flex-1 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               View Google Reviews
             </a>

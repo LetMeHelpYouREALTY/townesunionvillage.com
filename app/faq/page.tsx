@@ -23,7 +23,7 @@ export default function FaqPage() {
         title="Townes at Union Village Questions"
         subtitle="HENDERSON, NV 89011"
         lede="Short answers for buyers and sellers. Call if your lot, price, or HOA number needs a live check."
-        image={photos.living}
+        image={photos.questions}
         secondaryHref="/schedule-tour"
         secondaryLabel="Schedule a tour"
         breadcrumb={breadcrumbTrail('FAQ', '/faq')}

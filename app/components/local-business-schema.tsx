@@ -47,6 +47,7 @@ export default function LocalBusinessSchema() {
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
+    '@id': `${siteUrl}/#agent`,
     name: 'Dr. Jan Duffy - Real Estate Agent',
     description:
       'Nevada licensed real estate agent for new townhomes at The Townes at Union Village in Henderson, NV, including buyer representation for doctors, nurses, and healthcare providers beside Henderson Hospital.',
@@ -121,10 +122,32 @@ export default function LocalBusinessSchema() {
   )
 }
 
+export function WebSiteSchema() {
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteUrl}/#website`,
+    url: siteUrl,
+    name: 'The Townes at Union Village',
+    description:
+      'Century Communities townhomes at 1001 Gearus Place, Henderson, NV 89011, with buyer representation from Dr. Jan Duffy.',
+    publisher: { '@id': `${siteUrl}/#agent` },
+    about: { '@id': `${siteUrl}/#community` },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+    />
+  )
+}
+
 export function NewHomeDevelopmentSchema() {
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'ResidentialComplex',
+    '@id': `${siteUrl}/#community`,
     name: 'The Townes at Union Village',
     description: `New townhomes by Century Communities in Henderson, NV. Starting from ${pricing.startingFromLabel} with 3 floor plans available.`,
     url: siteUrl,

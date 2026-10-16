@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nearby, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 import { pageMeta } from '../lib/page-meta'
 
 export const metadata: Metadata = pageMeta('/henderson', {
@@ -74,7 +75,7 @@ export default function HendersonPage() {
             </ul>
             <p className="text-gray-700 leading-relaxed">
               Confirm assignment in the Clark County School District{' '}
-              <a href={nearby.zoningUrl} className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">
+              <a href={nearby.zoningUrl} className="text-amber-800 underline" target="_blank" rel="noopener noreferrer">
                 zoning search
               </a>
               . Boundaries change.
@@ -84,10 +85,12 @@ export default function HendersonPage() {
       </section>
 
       <section className="py-12 bg-white text-center">
-        <Link href="/community" className="text-blue-700 font-medium hover:underline">
+        <Link href="/community" className="text-amber-800 font-medium hover:underline">
           See community amenities and map
         </Link>
       </section>
+
+      <GuideLinks currentPath="/henderson" />
 
       <CtaBand
         title="Tour Henderson from Gearus Place"

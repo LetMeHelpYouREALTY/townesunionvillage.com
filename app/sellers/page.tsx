@@ -69,7 +69,7 @@ export default function SellersPage() {
               <h3 className="text-xl font-semibold mb-3">What is my number?</h3>
               <p className="text-gray-700 leading-relaxed">
                 Start with the{' '}
-                <Link href="/home-value" className="text-blue-700 underline">
+                <Link href="/home-value" className="text-amber-800 underline">
                   home value tool
                 </Link>
                 , then a CMA from Dr. Jan. Online estimates are not offers.

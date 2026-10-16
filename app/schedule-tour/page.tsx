@@ -56,7 +56,7 @@ export default function ScheduleTourPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={`tel:${nap.phoneTel}`}
-                className="bg-blue-700 text-white px-6 py-3 rounded-lg text-center font-semibold"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-3 rounded-lg text-center font-semibold tracking-wide"
               >
                 Call
               </a>
@@ -64,7 +64,7 @@ export default function ScheduleTourPage() {
                 href="https://www.google.com/maps/search/?api=1&query=1001+Gearus+Place+Henderson+NV+89011"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white px-6 py-3 rounded-lg text-center font-semibold"
+                className="inline-flex items-center justify-center bg-white border border-amber-300 text-amber-950 hover:bg-amber-50 px-6 py-3 rounded-lg text-center font-semibold tracking-wide"
               >
                 Directions
               </a>

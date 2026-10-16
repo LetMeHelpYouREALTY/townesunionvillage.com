@@ -1,19 +1,5 @@
 @import 'tailwindcss';
 
-/* Custom animations for homepage enhancements */
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-slow {
-  animation: spin-slow 20s linear infinite;
-}
-
 /* Performance optimizations for INP */
 .transform-gpu {
   transform: translateZ(0);
@@ -36,8 +22,8 @@
 }
 
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+  background-color: #f3e2c0;
+  color: #1c1917;
 }
 
 :root {

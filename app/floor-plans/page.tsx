@@ -1,9 +1,11 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import OfficeListingsBand from '../components/office-listings-band'
+import AtleighListings from '../components/atleigh-listings'
 import ContentImage from '../components/content-image'
 import { photos, pricing } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 import { pageMeta } from '../lib/page-meta'
 
 export const metadata = pageMeta('/floor-plans', {
@@ -60,6 +62,7 @@ export default function FloorPlans() {
       </section>
 
       <OfficeListingsBand />
+      <AtleighListings />
 
       {/* Floor Plans Grid */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -186,7 +189,7 @@ export default function FloorPlans() {
                 </div>
                 <div className="p-8 lg:order-1">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1478</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">From {plan1478.fromLabel}</div>
+                  <div className="text-4xl font-light text-amber-700 mb-6">From {plan1478.fromLabel}</div>
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -224,13 +227,13 @@ export default function FloorPlans() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="tel:7025001955"
-                      className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+                      className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
                     >
                       Call Dr. Jan: (702) 500-1955
                     </a>
                     <a 
                       href="mailto:DrJanSells@UnionVillage.com"
-                      className="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors text-center"
+                      className="bg-white border border-amber-300 text-amber-950 hover:bg-amber-50 px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
                     >
                       Email for Details
                     </a>
@@ -244,7 +247,7 @@ export default function FloorPlans() {
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="p-8">
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">Residence 1479</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-6">From {plan1479.fromLabel}</div>
+                  <div className="text-4xl font-light text-amber-700 mb-6">From {plan1479.fromLabel}</div>
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -280,13 +283,13 @@ export default function FloorPlans() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="tel:7025001955"
-                      className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+                      className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
                     >
                       Call Dr. Jan: (702) 500-1955
                     </a>
                     <a 
                       href="mailto:DrJanSells@UnionVillage.com"
-                      className="bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors text-center"
+                      className="bg-white border border-amber-300 text-amber-950 hover:bg-amber-50 px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
                     >
                       Email for Details
                     </a>
@@ -406,6 +409,8 @@ export default function FloorPlans() {
           </div>
         </div>
       </section>
+
+      <GuideLinks currentPath="/floor-plans" />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white relative overflow-hidden">
