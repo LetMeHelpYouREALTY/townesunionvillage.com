@@ -41,7 +41,7 @@ export default function FloorPlans() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-10 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
               SCHEDULE PRIVATE TOUR
             </a>
@@ -155,7 +155,7 @@ export default function FloorPlans() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="tel:7025001955"
-                      className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide"
+                      className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-4 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center tracking-wide"
                     >
                       SCHEDULE PRIVATE TOUR
                     </a>
@@ -227,7 +227,7 @@ export default function FloorPlans() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="tel:7025001955"
-                      className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
+                      className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
                     >
                       Call Dr. Jan: (702) 500-1955
                     </a>
@@ -283,7 +283,7 @@ export default function FloorPlans() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a 
                       href="tel:7025001955"
-                      className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
+                      className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-3 rounded-lg font-semibold tracking-wide transition-colors text-center"
                     >
                       Call Dr. Jan: (702) 500-1955
                     </a>
@@ -434,7 +434,7 @@ export default function FloorPlans() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-12 py-5 rounded-lg transition-all duration-300 text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 tracking-wide"
             >
               SCHEDULE PRIVATE TOUR
             </a>

@@ -1,7 +1,7 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import OfficeListingsBand from '../components/office-listings-band'
 import AgentPhoto from '../components/agent-photo'
-import { calendly } from '../config/community'
+import { calendly, hours } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
@@ -33,7 +33,7 @@ export default function AboutDrJan() {
             </a>
             <a
               href="/contact#book"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-4 rounded-lg font-semibold text-lg tracking-wide transition-colors"
             >
               {calendly.ctaLabel}
             </a>
@@ -251,7 +251,7 @@ export default function AboutDrJan() {
               <p className="text-gray-600 mb-4">(702) 500-1955</p>
               <a 
                 href="tel:7025001955"
-                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
+                className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
               >
                 Call Now
               </a>
@@ -262,7 +262,7 @@ export default function AboutDrJan() {
               <p className="text-gray-600 mb-4">DrJanSells@UnionVillage.com</p>
               <a 
                 href="mailto:DrJanSells@UnionVillage.com"
-                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
+                className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
               >
                 Send Email
               </a>
@@ -270,13 +270,10 @@ export default function AboutDrJan() {
             <div className="bg-gray-50 rounded-lg p-8">
               <div className="text-4xl mb-4">🕒</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Hours</h3>
-              <p className="text-gray-600 mb-4">
-                Monday-Sunday<br />
-                10:00 AM - 6:00 PM
-              </p>
+              <p className="text-gray-600 mb-4">{hours.builderModel}</p>
               <a 
                 href="tel:7025001955"
-                className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
+                className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
               >
                 Schedule Call
               </a>
@@ -339,7 +336,7 @@ export default function AboutDrJan() {
                   <div className="text-2xl mr-3">💼</div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Professional Service</h4>
-                    <p className="text-gray-600 text-sm">Available Monday-Sunday, 10 AM - 6 PM for consultations and property tours.</p>
+                    <p className="text-gray-600 text-sm">{hours.note}</p>
                   </div>
                 </div>
               </div>
@@ -376,7 +373,7 @@ export default function AboutDrJan() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">🤝</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Century Communities Partnership</h3>
@@ -385,7 +382,7 @@ export default function AboutDrJan() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">📊</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Market Expertise</h3>
@@ -394,7 +391,7 @@ export default function AboutDrJan() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">⚖️</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Negotiation Excellence</h3>
@@ -403,7 +400,7 @@ export default function AboutDrJan() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-800 to-amber-900 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">🏆</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Nevada Specialist</h3>

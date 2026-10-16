@@ -12,7 +12,7 @@ export default function NotFound() {
           <p className="mb-6 text-slate-200 font-light">The page you are looking for does not exist.</p>
           <a
             href="/"
-            className="inline-flex bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-3 rounded-lg font-semibold tracking-wide"
+            className="inline-flex bg-gradient-to-r from-amber-800 to-amber-900 text-white px-6 py-3 rounded-lg font-semibold tracking-wide"
           >
             Back to The Townes at Union Village
           </a>

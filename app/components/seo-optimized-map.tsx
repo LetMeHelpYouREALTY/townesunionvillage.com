@@ -1,6 +1,6 @@
 'use client'
 
-import { nap, pricing } from 'app/config/community'
+import { hours, nap, pricing } from 'app/config/community'
 
 interface SEOOptimizedMapProps {
   className?: string
@@ -22,18 +22,6 @@ export default function SEOOptimizedMap({
   const unionVillageAddress = "1001 Gearus Place, Henderson, NV 89011"
   const encodedAddress = encodeURIComponent(unionVillageAddress)
   const businessName = "The Townes at Union Village - Century Communities"
-  
-  // SEO-optimized keywords
-  const seoKeywords = [
-    "new homes Henderson NV",
-    "townhomes Henderson Nevada", 
-    "Century Communities Henderson",
-    "Union Village Henderson",
-    "new construction Henderson",
-    "Henderson real estate",
-    "Dr. Jan Duffy real estate agent",
-    "Henderson home builder"
-  ]
 
   if (variant === 'embedded') {
     return (
@@ -80,7 +68,7 @@ export default function SEOOptimizedMap({
                 </a>
                 <a
                   href={`tel:7025001955`}
-                  className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide text-center"
+                  className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-900 hover:to-amber-950 transition-colors tracking-wide text-center"
                 >
                   📞 Call (702) 500-1955
                 </a>
@@ -144,7 +132,7 @@ export default function SEOOptimizedMap({
           <div className="space-y-2 text-sm text-gray-600">
             <p><strong>Business Type:</strong> New Home Builder - Century Communities</p>
             <p><strong>Agent:</strong> Dr. Jan Duffy, Preferred Buyer Agent</p>
-            <p><strong>Hours:</strong> Monday-Sunday: 10:00 AM - 6:00 PM</p>
+            <p><strong>Hours:</strong> {hours.builderModel}</p>
             <p><strong>Starting Price:</strong> From {pricing.startingFromLabel}</p>
           </div>
 
@@ -168,18 +156,13 @@ export default function SEOOptimizedMap({
               </a>
               <a
                 href={`tel:7025001955`}
-                className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide text-center flex-1"
+                className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-900 hover:to-amber-950 transition-colors tracking-wide text-center flex-1"
               >
                 📞 Call Now
               </a>
             </div>
           )}
 
-          {/* SEO Keywords (hidden but crawlable) */}
-          <div className="hidden">
-            <p>{seoKeywords.join(', ')}</p>
-            <p>Henderson Nevada new homes, Century Communities Union Village, Dr. Jan Duffy real estate agent Henderson</p>
-          </div>
         </div>
       </div>
     )
@@ -242,7 +225,7 @@ export default function SEOOptimizedMap({
           </a>
           <a
             href={`tel:7025001955`}
-            className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-700 hover:to-amber-800 transition-colors tracking-wide"
+            className="bg-gradient-to-r from-amber-800 to-amber-900 text-white px-4 py-2 rounded-lg text-sm hover:from-amber-900 hover:to-amber-950 transition-colors tracking-wide"
           >
             📞 Call Dr. Jan
           </a>

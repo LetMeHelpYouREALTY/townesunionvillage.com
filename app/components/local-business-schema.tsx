@@ -1,4 +1,4 @@
-import { nap, priceRangeLabel, pricing, socialProfiles } from 'app/config/community'
+import { communityGeo, nap, priceRangeLabel, pricing, socialProfiles } from 'app/config/community'
 import { siteUrl } from 'app/config/site'
 
 const unionVillageAddress = {
@@ -57,8 +57,8 @@ export default function LocalBusinessSchema() {
     address: unionVillageAddress,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.0395',
-      longitude: '-115.0362',
+      latitude: communityGeo.latitude,
+      longitude: communityGeo.longitude,
     },
     areaServed: {
       '@type': 'City',
@@ -76,13 +76,13 @@ export default function LocalBusinessSchema() {
     ],
     priceRange: priceRangeLabel,
     openingHours: [
-      'Mo 10:00-18:00',
-      'Tu 10:00-18:00',
-      'We 10:00-18:00',
-      'Th 10:00-18:00',
-      'Fr 10:00-18:00',
-      'Sa 10:00-18:00',
-      'Su 10:00-18:00',
+      'Mo 08:00-20:00',
+      'Tu 08:00-20:00',
+      'We 08:00-20:00',
+      'Th 08:00-20:00',
+      'Fr 08:00-20:00',
+      'Sa 08:00-20:00',
+      'Su 08:00-20:00',
     ],
     image: [
       `${siteUrl}/images/dr-jan-duffy.jpg`,
@@ -100,15 +100,6 @@ export default function LocalBusinessSchema() {
       '@type': 'OfferCatalog',
       name: 'The Townes at Union Village Floor Plans',
       itemListElement: floorPlanOffers(),
-    },
-    makesOffer: {
-      '@type': 'Offer',
-      description:
-        'Expert real estate guidance for new home buyers at The Townes at Union Village',
-      price: '0',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      validFrom: '2024-01-01',
     },
   }
 
@@ -154,8 +145,8 @@ export function NewHomeDevelopmentSchema() {
     address: unionVillageAddress,
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '36.0395',
-      longitude: '-115.0362',
+      latitude: communityGeo.latitude,
+      longitude: communityGeo.longitude,
     },
     developer: {
       '@type': 'Organization',

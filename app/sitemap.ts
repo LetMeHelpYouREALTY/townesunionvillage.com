@@ -51,6 +51,7 @@ const reviewedOn: Record<string, string> = {
   '/henderson-townhomes': '2026-10-16',
   '/89011': '2026-10-16',
   '/answers': '2026-10-16',
+  '/quick-move-in': '2026-10-16',
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

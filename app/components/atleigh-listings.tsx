@@ -20,7 +20,7 @@ export default function AtleighListings({ anchor = false }: AtleighListingsProps
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide">
+          <div className="inline-flex items-center bg-amber-800 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide">
             Nine homes at The Townes
           </div>
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mt-4 mb-4 tracking-wide">
@@ -42,7 +42,7 @@ export default function AtleighListings({ anchor = false }: AtleighListingsProps
                 className="block h-full bg-white rounded-xl border-2 border-amber-400 shadow-lg p-6 hover:border-amber-600"
               >
                 <div className="flex items-center justify-between gap-3 mb-4">
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-600 text-white text-sm font-semibold">
+                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-800 text-white text-sm font-semibold">
                     {index + 1}
                   </span>
                   <span className="text-xs font-semibold tracking-wide text-amber-800 uppercase">
@@ -67,7 +67,7 @@ export default function AtleighListings({ anchor = false }: AtleighListingsProps
             href={townHomesSearchUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold"
+            className="inline-flex bg-amber-800 hover:bg-amber-900 text-white px-8 py-4 rounded-lg font-semibold"
           >
             Open the Town Homes search
           </a>

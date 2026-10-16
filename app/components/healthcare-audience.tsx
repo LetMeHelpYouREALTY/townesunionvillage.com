@@ -186,7 +186,7 @@ export default function HealthcareAudiencePage({ slug }: HealthcareAudiencePageP
           <div className="mt-4 flex flex-col sm:flex-row gap-3">
             <a
               href={`tel:${nap.phoneTel}`}
-              className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
+              className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
               Call {nap.phoneDisplay}
             </a>

@@ -74,7 +74,7 @@ export default function Page() {
           <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-8 mb-16">
             <a
               href="tel:7025001955"
-              className="group bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-6 rounded-xl text-lg font-bold shadow-2xl border border-amber-500/50 tracking-wide min-w-[280px] relative overflow-hidden"
+              className="group bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-12 py-6 rounded-xl text-lg font-bold shadow-2xl border border-amber-500/50 tracking-wide min-w-[280px] relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="relative flex items-center justify-center">
@@ -254,7 +254,7 @@ export default function Page() {
                     </div>
                     <Link
                       href={`/floor-plans#${plan.slug}`}
-                      className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
+                      className="w-full bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-8 py-4 rounded-lg transition-optimized font-semibold shadow-lg hover:shadow-xl hover:scale-105 text-center block tracking-wide transform-gpu"
                     >
                       EXPLORE DETAILS
                     </Link>
@@ -350,7 +350,7 @@ export default function Page() {
           <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
             <a
               href="tel:7025001955"
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-12 py-5 rounded-lg transition-optimized text-lg font-semibold shadow-2xl hover:shadow-3xl hover:scale-105 tracking-wide transform-gpu"
+              className="bg-gradient-to-r from-amber-800 to-amber-900 hover:from-amber-900 hover:to-amber-950 text-white px-12 py-5 rounded-lg transition-optimized text-lg font-semibold shadow-2xl hover:shadow-3xl hover:scale-105 tracking-wide transform-gpu"
             >
               SECURE PRIVATE CONSULTATION
             </a>
