@@ -15,13 +15,13 @@ import {
   medicalCampuses,
 } from '../config/healthcare'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/healthcare', {
   title: 'Realtor for Doctors, Nurses, and Healthcare Providers',
   description:
     'Buyer agent for doctors, nurses, and healthcare providers at The Townes at Union Village, 1001 Gearus Place, beside Henderson Hospital. Call (702) 500-1955.',
-  alternates: { canonical: '/healthcare' },
-}
+})
 
 export default function HealthcarePage() {
   return (

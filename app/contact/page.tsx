@@ -5,12 +5,13 @@ import AgentPhoto from '../components/agent-photo'
 import { calendly, nap } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/contact', {
   title: 'Contact Dr. Jan Duffy | Book a Union Village Tour',
   description:
     'Book a 15-minute strategy call with Dr. Jan Duffy or tour The Townes at Union Village at 1001 Gearus Place, Henderson, NV 89011. Call (702) 500-1955.',
-}
+})
 
 export default function Contact() {
 

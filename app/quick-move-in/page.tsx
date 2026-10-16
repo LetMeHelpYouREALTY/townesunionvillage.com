@@ -5,6 +5,11 @@ import ContentImage from '../components/content-image'
 import { photos } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
+
+export const metadata = pageMeta('/quick-move-in', {
+  title: 'Quick Move-In Homes',
+})
 
 export default function QuickMoveIn() {
   return (

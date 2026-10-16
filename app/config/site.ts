@@ -1,7 +1,7 @@
 import { pricing } from './community'
 
 /**
- * Canonical site origin. Production 307s apex → www, so sitemap,
+ * Canonical site origin. The apex host redirects here, so sitemap,
  * robots, Open Graph, and JSON-LD must use this host (no trailing slash).
  */
 export const siteUrl = 'https://www.townesunionvillage.com'

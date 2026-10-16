@@ -1,5 +1,7 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { pageMeta } from './lib/page-meta'
 import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
 import OfficeListingsBand from './components/office-listings-band'
@@ -10,6 +12,8 @@ import { healthcareAudiences, healthcareSlugs } from './config/healthcare'
 import { homePageFaqs } from './config/faqs'
 import GuideLinks from './components/guide-links'
 import AtleighListings from './components/atleigh-listings'
+
+export const metadata: Metadata = pageMeta('/')
 
 export default function Page() {
   return (

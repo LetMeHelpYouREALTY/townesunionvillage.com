@@ -6,12 +6,13 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nap, nearby, photos, pricing } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/buyers', {
   title: 'Buy a Townhome at Townes at Union Village | Henderson Buyers',
   description:
     'Buy a new Century Communities townhome at The Townes at Union Village in Henderson, NV. Independent buyer representation from Dr. Jan Duffy at 1001 Gearus Place.',
-}
+})
 
 export default function BuyersPage() {
   return (

@@ -6,12 +6,13 @@ import FaqJsonLd from '../components/faq-jsonld'
 import { nap, photos } from '../config/community'
 import { townesUnionVillageFaqs } from '../config/faqs'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/faq', {
   title: 'FAQ | Townes at Union Village Henderson NV',
   description:
     'FAQ for The Townes at Union Village in Henderson, NV: prices, floor plans, amenities, school names, touring 1001 Gearus Place, and buyer representation with Dr. Jan Duffy.',
-}
+})
 
 export default function FaqPage() {
   return (

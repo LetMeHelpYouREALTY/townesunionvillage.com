@@ -4,6 +4,11 @@ import AgentPhoto from '../components/agent-photo'
 import { calendly } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
+
+export const metadata = pageMeta('/about-dr-jan', {
+  title: 'About Dr. Jan Duffy',
+})
 
 export default function AboutDrJan() {
   return (

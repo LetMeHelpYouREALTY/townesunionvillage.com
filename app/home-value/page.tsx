@@ -2,6 +2,11 @@ import RealScoutHomeValue from '../components/realscout-home-value'
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
+
+export const metadata = pageMeta('/home-value', {
+  title: 'Home Value Estimate',
+})
 
 export default function HomeValue() {
   return (

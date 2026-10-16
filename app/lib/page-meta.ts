@@ -8,7 +8,12 @@ const ogImage = {
   alt: 'Sunset street of new townhomes at The Townes at Union Village in Henderson, NV',
 }
 
-/** Page canonical plus a full Open Graph object. A partial openGraph wipes the layout image. */
+/**
+ * Each public URL is its own canonical. A homepage canonical on the root
+ * layout was telling Google every page was the homepage.
+ * `path` is relative so metadataBase supplies https://www.townesunionvillage.com.
+ * Open Graph is set in full because a partial openGraph object replaces the layout's.
+ */
 export function pageMeta(path: string, metadata: Metadata = {}): Metadata {
   const title = typeof metadata.title === 'string' ? metadata.title : siteName
   const description =

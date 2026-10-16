@@ -1,6 +1,11 @@
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import { pageMeta } from '../lib/page-meta'
+
+export const metadata = pageMeta('/terms-of-service', {
+  title: 'Terms of Service',
+})
 
 export default function TermsOfService() {
   return (

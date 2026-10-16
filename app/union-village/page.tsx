@@ -8,12 +8,13 @@ import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import { amenities, nearby, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import GuideLinks from '../components/guide-links'
+import { pageMeta } from '../lib/page-meta'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta('/union-village', {
   title: 'Union Village Henderson | Townes at 1001 Gearus Place',
   description:
     'The Townes at Union Village sit in the Union Village area of Henderson, NV near Henderson Hospital, Galleria Drive, I-515, and Highway 95. Tour with Dr. Jan Duffy.',
-}
+})
 
 export default function UnionVillagePage() {
   return (
