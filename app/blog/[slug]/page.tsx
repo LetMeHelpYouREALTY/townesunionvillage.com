@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import OfficeListingsBand from 'app/components/office-listings-band'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { siteUrl } from 'app/config/site'
@@ -64,6 +65,7 @@ export default function Blog({ params }) {
   }
 
   return (
+    <>
     <section>
       <BreadcrumbJsonLd
         items={breadcrumbTrail(post.metadata.title, `/blog/${post.slug}`, {
@@ -101,9 +103,13 @@ export default function Blog({ params }) {
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
+    </section>
+    <OfficeListingsBand />
+    <section>
       <article className="prose">
         <CustomMDX source={post.content} />
       </article>
     </section>
+    </>
   )
 }

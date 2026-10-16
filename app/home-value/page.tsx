@@ -1,4 +1,5 @@
 import RealScoutHomeValue from '../components/realscout-home-value'
+import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 
@@ -41,6 +42,8 @@ export default function HomeValue() {
           </div>
         </div>
       </section>
+
+      <OfficeListingsBand />
 
       {/* Value Proposition */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">

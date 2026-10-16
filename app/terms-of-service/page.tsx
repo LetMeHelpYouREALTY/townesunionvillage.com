@@ -1,3 +1,4 @@
+import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 
@@ -16,6 +17,8 @@ export default function TermsOfService() {
           </p>
         </div>
       </section>
+
+      <OfficeListingsBand />
 
       {/* Content */}
       <section className="py-16">
