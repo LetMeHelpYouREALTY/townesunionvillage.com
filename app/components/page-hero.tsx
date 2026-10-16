@@ -1,5 +1,6 @@
 import ContentImage from './content-image'
 import BreadcrumbJsonLd, { type BreadcrumbItem } from './breadcrumb-jsonld'
+import OfficeListingsBand from './office-listings-band'
 import { nap } from 'app/config/community'
 
 type PageHeroProps = {
@@ -66,6 +67,7 @@ export default function PageHero({
         </div>
       </div>
     </section>
+    <OfficeListingsBand />
     </>
   )
 }

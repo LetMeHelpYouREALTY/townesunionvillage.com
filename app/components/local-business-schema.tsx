@@ -49,7 +49,7 @@ export default function LocalBusinessSchema() {
     '@type': 'RealEstateAgent',
     name: 'Dr. Jan Duffy - Real Estate Agent',
     description:
-      'Nevada licensed real estate agent specializing in new construction homes at The Townes at Union Village in Henderson, NV. Expert guidance for Century Communities new home buyers.',
+      'Nevada licensed real estate agent for new townhomes at The Townes at Union Village in Henderson, NV, including buyer representation for doctors, nurses, and healthcare providers beside Henderson Hospital.',
     url: siteUrl,
     telephone: nap.phoneDisplay,
     email: nap.email,
@@ -69,6 +69,9 @@ export default function LocalBusinessSchema() {
       'Buyer Representation',
       'Century Communities Homes',
       'Union Village Real Estate',
+      'Physician Buyer Representation',
+      'Nurse Buyer Representation',
+      'Healthcare Provider Buyer Representation',
     ],
     priceRange: priceRangeLabel,
     openingHours: [

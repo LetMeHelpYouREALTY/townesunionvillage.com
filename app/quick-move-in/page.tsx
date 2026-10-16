@@ -1,5 +1,5 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
-import RealScoutOfficeListings from '../components/realscout-office-listings'
+import OfficeListingsBand from '../components/office-listings-band'
 import ContentImage from '../components/content-image'
 import { photos } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
@@ -45,6 +45,8 @@ export default function QuickMoveIn() {
         </div>
       </section>
 
+      <OfficeListingsBand />
+
       {/* RealScout Search Widget */}
       {/* Limited Availability Alert */}
       <section className="py-16 bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white text-center relative overflow-hidden">
@@ -79,30 +81,6 @@ export default function QuickMoveIn() {
               CONTACT DR. JAN
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Neighborhood Properties */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="mb-4">
-              <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
-                NEIGHBORHOOD OPTIONS
-              </div>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
-              <span className="font-extralight">Explore Other Henderson Properties</span>
-            </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Need something different? Discover other exceptional homes in the Henderson area 
-              with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
-            </p>
-          </div>
-          <RealScoutOfficeListings 
-            title="Henderson Neighborhood Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
-          />
         </div>
       </section>
 

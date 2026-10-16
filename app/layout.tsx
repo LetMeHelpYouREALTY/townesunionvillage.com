@@ -1,5 +1,6 @@
 import './global.css'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
@@ -83,6 +84,11 @@ export default function RootLayout({
         <NewHomeDevelopmentSchema />
       </head>
       <body className="antialiased">
+        <Script
+          src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+          type="module"
+          strategy="afterInteractive"
+        />
         <Navbar />
         {children}
         <LuxuryFooter />

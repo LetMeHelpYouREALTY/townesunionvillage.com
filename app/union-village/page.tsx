@@ -76,6 +76,9 @@ export default function UnionVillagePage() {
       </section>
 
       <section className="py-12 bg-white text-center space-x-6">
+        <Link href="/healthcare" className="text-blue-700 font-medium hover:underline">
+          Realtor for doctors and nurses beside Henderson Hospital
+        </Link>
         <Link href="/henderson" className="text-blue-700 font-medium hover:underline">
           Henderson 89011 guide
         </Link>

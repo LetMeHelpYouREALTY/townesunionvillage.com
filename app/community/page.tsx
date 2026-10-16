@@ -1,5 +1,5 @@
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
-import RealScoutOfficeListings from '../components/realscout-office-listings'
+import OfficeListingsBand from '../components/office-listings-band'
 import PhotoGrid from '../components/photo-grid'
 import NapStrip from '../components/nap-strip'
 import ContentImage from '../components/content-image'
@@ -68,6 +68,7 @@ export default function Community() {
           </div>
         </div>
       </section>
+      <OfficeListingsBand />
       <NapStrip />
 
       {/* Community Overview */}
@@ -171,30 +172,6 @@ export default function Community() {
               CONTACT DR. JAN
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Neighborhood Properties */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="mb-4">
-              <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
-                NEIGHBORHOOD PROPERTIES
-              </div>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
-              <span className="font-extralight">Explore Other Henderson Homes</span>
-            </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Looking for something different? Discover other exceptional properties in the Henderson area 
-              with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
-            </p>
-          </div>
-          <RealScoutOfficeListings 
-            title="Henderson Neighborhood Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
-          />
         </div>
       </section>
 

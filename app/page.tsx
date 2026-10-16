@@ -2,10 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import SEOOptimizedMap from './components/seo-optimized-map'
 import RealScoutWidget from './components/realscout-widget'
-import RealScoutOfficeListings from './components/realscout-office-listings'
+import OfficeListingsBand from './components/office-listings-band'
 import ContentImage from './components/content-image'
 import FaqJsonLd from './components/faq-jsonld'
 import { photos, pricing } from './config/community'
+import { healthcareAudiences, healthcareSlugs } from './config/healthcare'
 import { homePageFaqs } from './config/faqs'
 
 export default function Page() {
@@ -143,6 +144,8 @@ export default function Page() {
         </div>
       </section>
 
+      <OfficeListingsBand />
+
       {/* RealScout Search Widget - Primary Lead Capture */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -269,6 +272,38 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Clinicians */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
+              HENDERSON HOSPITAL CAMPUS
+            </div>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mt-4 mb-4 tracking-wide">
+              Homes for Doctors, Nurses, and Healthcare Providers
+            </h2>
+            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
+              The Townes sit beside Henderson Hospital at 1050 W. Galleria Drive. Dr. Jan Duffy is the buyer agent
+              for clinicians who work this campus. Every qualified buyer can purchase.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {healthcareSlugs.map((slug) => {
+              const audience = healthcareAudiences[slug]
+              return (
+                <article key={slug} className="rounded-xl border border-gray-100 bg-gray-50 p-8 shadow-sm">
+                  <h3 className="text-2xl font-light text-gray-900 mb-3">{audience.cardTitle}</h3>
+                  <p className="text-gray-700 leading-relaxed mb-6">{audience.cardBody}</p>
+                  <Link href={audience.path} className="text-amber-700 font-semibold hover:text-amber-800">
+                    {audience.cardTitle} near Henderson Hospital
+                  </Link>
+                </article>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -296,30 +331,6 @@ export default function Page() {
               See all FAQ answers
             </Link>
           </p>
-        </div>
-      </section>
-
-      {/* Neighborhood Properties */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="mb-4">
-              <div className="inline-flex items-center bg-blue-600/10 px-4 py-2 rounded-full text-sm font-semibold text-blue-800 border border-blue-200">
-                NEIGHBORHOOD PROPERTIES
-            </div>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4 tracking-wide">
-              <span className="font-extralight">Explore Other Henderson Homes</span>
-            </h2>
-            <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Looking for something different? Discover other exceptional properties in the Henderson area 
-              with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
-            </p>
-          </div>
-          <RealScoutOfficeListings 
-            title="Henderson Neighborhood Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Properties $350K-$450K • Single Family & Other Homes"
-          />
         </div>
       </section>
 

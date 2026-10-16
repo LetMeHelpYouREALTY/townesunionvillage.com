@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { BlogPosts } from 'app/components/posts'
+import OfficeListingsBand from 'app/components/office-listings-band'
 import BreadcrumbJsonLd from 'app/components/breadcrumb-jsonld'
 import { pricing } from 'app/config/community'
 import { breadcrumbTrail } from 'app/lib/breadcrumbs'
@@ -50,6 +51,7 @@ const firstPartyGuides = [
 
 export default function Page() {
   return (
+    <>
     <section className="max-w-3xl mx-auto px-4 py-12">
       <BreadcrumbJsonLd items={breadcrumbTrail('Blog', '/blog')} />
       <h1 className="font-semibold text-3xl mb-4 tracking-tight">
@@ -69,6 +71,9 @@ export default function Page() {
         This site does not host third-party or template articles. Every guide
         below is first-party content about this community.
       </p>
+    </section>
+    <OfficeListingsBand />
+    <section className="max-w-3xl mx-auto px-4 pb-12">
       <ul className="space-y-4 mb-12">
         {firstPartyGuides.map((guide) => (
           <li key={guide.href} className="border border-neutral-200 rounded-lg p-4">
@@ -81,5 +86,6 @@ export default function Page() {
       </ul>
       <BlogPosts />
     </section>
+    </>
   )
 }
