@@ -8,7 +8,10 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import LuxuryFooter from './components/luxury-footer'
 import { siteDescription, siteName, siteUrl } from './config/site'
-import LocalBusinessSchema, { NewHomeDevelopmentSchema } from './components/local-business-schema'
+import LocalBusinessSchema, {
+  NewHomeDevelopmentSchema,
+  WebSiteSchema,
+} from './components/local-business-schema'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -82,6 +85,7 @@ export default function RootLayout({
       <head>
         <LocalBusinessSchema />
         <NewHomeDevelopmentSchema />
+        <WebSiteSchema />
       </head>
       <body className="antialiased">
         <Script
@@ -90,7 +94,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Navbar />
-        {children}
+        <main>{children}</main>
         <LuxuryFooter />
         <Analytics />
         <SpeedInsights />

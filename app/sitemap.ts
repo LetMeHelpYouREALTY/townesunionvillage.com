@@ -24,6 +24,10 @@ const staticPages: StaticPage[] = [
   { path: '/new-construction', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/henderson', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/union-village', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/union-village-townhomes', changeFrequency: 'monthly', priority: 0.9 },
+  { path: '/henderson-townhomes', changeFrequency: 'monthly', priority: 0.9 },
+  { path: '/89011', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/answers', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/schedule-tour', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/financing', changeFrequency: 'monthly', priority: 0.6 },
   { path: '/faq', changeFrequency: 'monthly', priority: 0.7 },
@@ -36,12 +40,22 @@ const staticPages: StaticPage[] = [
   { path: '/accessibility', changeFrequency: 'yearly', priority: 0.3 },
 ]
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date()
+const reviewedOn: Record<string, string> = {
+  '': '2026-10-16',
+  '/healthcare': '2026-10-16',
+  '/healthcare/doctors': '2026-10-16',
+  '/healthcare/nurses': '2026-10-16',
+  '/healthcare/providers': '2026-10-16',
+  '/union-village-townhomes': '2026-10-16',
+  '/henderson-townhomes': '2026-10-16',
+  '/89011': '2026-10-16',
+  '/answers': '2026-10-16',
+}
 
+export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = staticPages.map((page) => ({
     url: `${siteUrl}${page.path}`,
-    lastModified,
+    lastModified: new Date(reviewedOn[page.path] ?? '2026-08-29'),
     changeFrequency: page.changeFrequency,
     priority: page.priority,
   }))

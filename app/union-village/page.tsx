@@ -7,6 +7,7 @@ import ContentImage from '../components/content-image'
 import SimpleUnionVillageMap from '../components/simple-union-village-map'
 import { amenities, nearby, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 
 export const metadata: Metadata = {
   title: 'Union Village Henderson | Townes at 1001 Gearus Place',
@@ -86,6 +87,8 @@ export default function UnionVillagePage() {
           Quick move-in homes
         </Link>
       </section>
+
+      <GuideLinks currentPath="/union-village" />
 
       <CtaBand
         title="Walk Gearus Place with Dr. Jan"

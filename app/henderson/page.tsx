@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { nearby, photos } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 
 export const metadata: Metadata = {
   title: 'Henderson NV 89011 Real Estate | Townes at Union Village',
@@ -87,6 +88,8 @@ export default function HendersonPage() {
           See community amenities and map
         </Link>
       </section>
+
+      <GuideLinks currentPath="/henderson" />
 
       <CtaBand
         title="Tour Henderson from Gearus Place"

@@ -31,7 +31,7 @@ export default function RealScoutOfficeListings({
       `}</style>
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-6">
         <div className="text-center">
-          <h3 className="text-2xl font-light text-white mb-2 tracking-wide">{title}</h3>
+          <h2 className="text-2xl font-light text-white mb-2 tracking-wide">{title}</h2>
           <p className="text-blue-100 font-light text-sm">{subtitle}</p>
         </div>
       </div>

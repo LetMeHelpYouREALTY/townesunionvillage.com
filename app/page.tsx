@@ -8,6 +8,7 @@ import FaqJsonLd from './components/faq-jsonld'
 import { photos, pricing } from './config/community'
 import { healthcareAudiences, healthcareSlugs } from './config/healthcare'
 import { homePageFaqs } from './config/faqs'
+import GuideLinks from './components/guide-links'
 
 export default function Page() {
   return (
@@ -50,14 +51,14 @@ export default function Page() {
           </div>
           
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-tight mb-8 tracking-wide">
-            <span className="text-white font-extralight block mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-              Townes at Union Village
-            </span>
-            <span className="text-3xl md:text-5xl lg:text-6xl font-light text-amber-300 tracking-wider block" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
-              HOMES BY DR. JAN DUFFY
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-tight mb-6 tracking-wide">
+            <span className="text-white font-extralight block" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+              The Townes at Union Village
             </span>
           </h1>
+          <p className="text-2xl md:text-4xl font-light text-amber-300 tracking-wider mb-8" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>
+            Homes by Dr. Jan Duffy
+          </p>
           
           {/* Enhanced Pricing Display */}
           <div className="mb-12 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-2xl mx-auto">
@@ -145,6 +146,8 @@ export default function Page() {
       </section>
 
       <OfficeListingsBand />
+
+      <GuideLinks />
 
       {/* RealScout Search Widget - Primary Lead Capture */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">

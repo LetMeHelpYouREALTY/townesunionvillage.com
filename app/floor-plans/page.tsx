@@ -4,6 +4,7 @@ import ContentImage from '../components/content-image'
 import { photos, pricing } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 
 const [plan1405, plan1478, plan1479] = pricing.plans
 
@@ -400,6 +401,8 @@ export default function FloorPlans() {
           </div>
         </div>
       </section>
+
+      <GuideLinks currentPath="/floor-plans" />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white relative overflow-hidden">

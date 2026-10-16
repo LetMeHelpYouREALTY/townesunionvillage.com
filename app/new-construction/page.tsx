@@ -6,6 +6,7 @@ import CtaBand from '../components/cta-band'
 import ContentImage from '../components/content-image'
 import { amenities, nap, photos, pricing } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
+import GuideLinks from '../components/guide-links'
 
 export const metadata: Metadata = {
   title: 'New Construction at Townes at Union Village | Century Process',
@@ -102,6 +103,8 @@ export default function NewConstructionPage() {
           </p>
         </div>
       </section>
+
+      <GuideLinks currentPath="/new-construction" />
 
       <CtaBand
         title="Do not buy new construction unrepresented"
