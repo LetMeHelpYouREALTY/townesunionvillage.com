@@ -51,6 +51,18 @@ export const townesUnionVillageFaqs: FaqItem[] = [
     question: 'What is the phone number and email?',
     answer: `${nap.phoneDisplay} and ${nap.email}. Brokerage: ${nap.brokerage}.`,
   },
+  {
+    question: 'Do you work with doctors, nurses, and healthcare providers?',
+    answer: `Yes. Dr. Jan Duffy represents clinicians buying at ${nap.street}, beside ${nearby.hospitalName}. Any qualified buyer can purchase. Call ${nap.phoneDisplay}.`,
+  },
+  {
+    question: 'How close are the townhomes to Henderson Hospital?',
+    answer: `The sales office is at ${nap.street}. Henderson Hospital is at 1050 W. Galleria Drive, Henderson, NV 89011. Dr. Jan walks that route with you. A minute count is not published here.`,
+  },
+  {
+    question: 'Can I tour around a hospital shift?',
+    answer: `Yes. Tours are by appointment seven days a week. Call ${nap.phoneDisplay} and name the shift you are coming off.`,
+  },
 ]
 
 /** Subset for the homepage FAQ block (matches visible Q&A on that page). */

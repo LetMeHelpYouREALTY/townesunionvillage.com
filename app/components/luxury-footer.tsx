@@ -98,6 +98,26 @@ export default function LuxuryFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/healthcare" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Healthcare
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/healthcare/doctors" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Homes for doctors
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/healthcare/nurses" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Homes for nurses
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/healthcare/providers" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
+                    Healthcare providers
+                  </Link>
+                </li>
+                <li>
                   <Link href="/buyers" className="text-gray-300 hover:text-amber-400 transition-colors font-light">
                     Buyers
                   </Link>
