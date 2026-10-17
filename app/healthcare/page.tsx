@@ -150,7 +150,7 @@ export default function HealthcarePage() {
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-4 py-3 rounded-lg text-center font-semibold tracking-wide"
             >
-              View Google Reviews
+              View on Maps
             </a>
           </div>
         </div>

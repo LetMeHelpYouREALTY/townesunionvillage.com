@@ -237,12 +237,10 @@ export default function LuxuryFooter() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h4 className="text-2xl font-light text-white mb-4 tracking-wide">
-                  Your Exclusive Buyer Representative
+                  Your buyer representative
                 </h4>
                 <p className="text-gray-300 font-light leading-relaxed mb-6">
-                  Dr. Jan Duffy provides expert guidance and unwavering advocacy for your interests. 
-                  Experience the difference of having a dedicated buyer representative who works exclusively for you, 
-                  not the builder.
+                  Dr. Jan Duffy represents you, not the builder. She is an independent agent with {nap.brokerage}.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -266,8 +264,8 @@ export default function LuxuryFooter() {
                   <p className="text-amber-400 text-sm">{nap.brokerage}</p>
                   <p className="text-amber-400 text-sm mb-3">Nevada license {nap.license}</p>
                   <p className="text-gray-300 font-light text-sm">
-                    Exclusive Buyer Representative<br />
-                    Century Communities Partner
+                    Independent buyer representative<br />
+                    Not the builder&apos;s sales team
                   </p>
                 </div>
               </div>

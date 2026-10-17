@@ -52,6 +52,7 @@ const reviewedOn: Record<string, string> = {
   '/privacy-policy': contentUpdated,
   '/terms-of-service': contentUpdated,
   '/accessibility': contentUpdated,
+  '/quick-move-in': contentUpdated,
   '/healthcare': '2026-10-16',
   '/healthcare/doctors': '2026-10-16',
   '/healthcare/nurses': '2026-10-16',

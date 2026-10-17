@@ -127,7 +127,7 @@ export default function GuidePage({ id }: { id: GuideId }) {
               rel="noopener noreferrer"
               className={`${luxSlate} flex-1 px-4 py-3`}
             >
-              View Google Reviews
+              View on Maps
             </a>
           </div>
           <p className="mt-4 text-center text-sm text-stone-500 font-light">

@@ -197,44 +197,15 @@ export default function HomeValue() {
         </div>
       </section>
 
-      {/* Trust Indicators */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 tracking-wide">
-              <span className="font-extralight">Trusted by Henderson Homeowners</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-              Dr. Jan Duffy has helped hundreds of Henderson families with accurate property valuations 
-              and expert real estate guidance.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-amber-600 mb-2">500+</div>
-              <div className="text-gray-600 font-light">Properties Valued</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-amber-600 mb-2">15+</div>
-              <div className="text-gray-600 font-light">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-amber-600 mb-2">98%</div>
-              <div className="text-gray-600 font-light">Client Satisfaction</div>
-            </div>
-          </div>
-          
-          <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 text-center">
-            <blockquote className="text-xl text-gray-700 font-light italic mb-6 leading-relaxed">
-              "Dr. Jan Duffy provided the most accurate and detailed property valuation I've ever received. 
-              Her knowledge of the Henderson market is unmatched, and she helped me make informed decisions 
-              about my property investment."
-            </blockquote>
-            <div className="text-gray-600 font-medium">
-              — Sarah M., Henderson Homeowner
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6 tracking-wide">
+            What a valuation uses
+          </h2>
+          <p className="text-xl text-gray-600 font-light leading-relaxed">
+            Location, home condition, and recent comparable sales. Dr. Jan Duffy reviews those with you.
+            Call {nap.phoneDisplay}.
+          </p>
         </div>
       </section>
 

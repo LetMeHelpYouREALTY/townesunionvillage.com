@@ -105,7 +105,7 @@ export default function AboutDrJan() {
                 </div>
                 <div className="flex items-center">
                   <div className="text-2xl mr-4">✅</div>
-                  <span className="text-gray-700">Century Communities partnership</span>
+                  <span className="text-gray-700">Independent buyer representative, not the builder&apos;s sales team</span>
                 </div>
               </div>
             </div>
@@ -131,9 +131,9 @@ export default function AboutDrJan() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-8 text-center shadow-md">
               <div className="text-6xl mb-6">🤝</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Century Communities Partnership</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Independent of the builder</h3>
               <p className="text-gray-600">
-                I work directly with Century Communities to give you insider access while representing YOUR interests, not theirs.
+                Century Communities builds the townhomes. Dr. Jan Duffy represents you. Register her before the first visit.
               </p>
             </div>
             <div className="bg-white rounded-lg p-8 text-center shadow-md">
@@ -207,9 +207,9 @@ export default function AboutDrJan() {
               <div className="flex items-start">
                 <div className="text-3xl mr-4">🏦</div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Lender Connections</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Financing questions</h3>
                   <p className="text-gray-600">
-                    Access to preferred lenders who specialize in new construction financing.
+                    Dr. Jan can introduce lenders who finance new construction. Compare the written terms yourself.
                   </p>
                 </div>
               </div>
@@ -231,38 +231,6 @@ export default function AboutDrJan() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            What Clients Say About Dr. Jan
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-slate-800 border border-amber-400/20 rounded-xl p-6">
-              <p className="text-lg mb-4 italic">
-                "Dr. Jan made buying our new home so easy. Her expertise in new construction was invaluable, 
-                and she saved us thousands through negotiation."
-              </p>
-              <p className="font-semibold">- Sarah & Mike Johnson</p>
-            </div>
-            <div className="bg-slate-800 border border-amber-400/20 rounded-xl p-6">
-              <p className="text-lg mb-4 italic">
-                "We couldn't have asked for a better agent. Dr. Jan's knowledge of the Henderson market 
-                helped us make the perfect choice for our family."
-              </p>
-              <p className="font-semibold">- The Rodriguez Family</p>
-            </div>
-            <div className="bg-slate-800 border border-amber-400/20 rounded-xl p-6">
-              <p className="text-lg mb-4 italic">
-                "From start to finish, Dr. Jan was professional, knowledgeable, and always had our best 
-                interests at heart. Highly recommended!"
-              </p>
-              <p className="font-semibold">- Jennifer & David Chen</p>
             </div>
           </div>
         </div>
@@ -391,7 +359,7 @@ export default function AboutDrJan() {
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
             <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
-              EXCLUSIVE REPRESENTATION
+              BUYER REPRESENTATION
             </div>
           </div>
           <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
@@ -402,17 +370,16 @@ export default function AboutDrJan() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
-            Experience the difference of having an exclusive buyer representative who advocates solely for your interests. 
-            Dr. Jan Duffy provides expert guidance, insider access, and unwavering commitment to your success.
+            Dr. Jan Duffy is an independent buyer representative with {nap.brokerage}. Century Communities builds the townhomes. She represents you.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">🤝</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Century Communities Partnership</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Independent of the builder</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                Exclusive partnership providing insider access while maintaining unwavering commitment to YOUR interests, not the builder's.
+                She is not the builder&apos;s sales agent. Register her before the first visit so she can represent you.
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -451,19 +418,17 @@ export default function AboutDrJan() {
         <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-            EXCLUSIVE OPPORTUNITY
+            TOURS BY APPOINTMENT
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
             <span className="font-extralight">Work With Dr. Jan Duffy</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
-              YOUR EXCLUSIVE REPRESENTATIVE
+              YOUR BUYER REPRESENTATIVE
             </span>
           </h2>
           <p className="text-xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
-            Experience the difference of having an exclusive buyer representative who advocates solely for your interests. 
-            Secure your private consultation with Dr. Jan Duffy today.
+            {hours.note} Call {nap.phoneDisplay} to set a time at {nap.street}.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
             <a

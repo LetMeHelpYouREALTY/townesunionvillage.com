@@ -4,7 +4,7 @@ import AtleighListings from '../components/atleigh-listings'
 import PhotoGrid from '../components/photo-grid'
 import NapStrip from '../components/nap-strip'
 import ContentImage from '../components/content-image'
-import { gallery, photos, pricing } from '../config/community'
+import { gallery, hours, nap, photos, pricing } from '../config/community'
 import type { Metadata } from 'next'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
@@ -147,19 +147,17 @@ export default function Community() {
         <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-            EXCLUSIVE OPPORTUNITY
+            TOURS BY APPOINTMENT
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-            <span className="font-extralight">Limited Availability</span>
+            <span className="font-extralight">Tour the community</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
-              SECURE YOUR PLACE TODAY
+              CALL DR. JAN
             </span>
           </h2>
           <p className="text-xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
-            Experience the pinnacle of luxury living in Henderson, NV. With limited availability, 
-            secure your private consultation with Dr. Jan Duffy to learn about these exceptional homes.
+            The sales office is at {nap.street}, {nap.city}, {nap.state} {nap.zip}. {hours.note} Floor plans start from {pricing.startingFromLabel} as of {pricing.asOf}.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
             <a
@@ -240,8 +238,7 @@ export default function Community() {
               Why Choose Henderson, Nevada?
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              The Townes at Union Village is perfectly positioned in Henderson, Nevada at approximately 2,000 feet elevation, 
-              offering stunning views and ideal desert living.
+              The sales office is at {nap.street}, {nap.city}, {nap.state} {nap.zip}.
             </p>
           </div>
 
@@ -257,7 +254,7 @@ export default function Community() {
               <div className="text-4xl mb-4">🌅</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Valley Views</h3>
               <p className="text-gray-600">
-                Take in the beautiful Las Vegas Valley from the elevated position of Union Village.
+                The community is in Henderson, NV {nap.zip}, next to the Union Village area on Galleria Drive.
               </p>
             </div>
             <div className="text-center bg-white p-8 rounded-lg shadow-md">
@@ -317,7 +314,7 @@ export default function Community() {
               Area Information
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Everything you need is just minutes away from The Townes at Union Village.
+              Schools, shopping, and dining Century lists near the sales office. A drive time is not published here.
             </p>
           </div>
 
@@ -372,18 +369,17 @@ export default function Community() {
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/95 to-slate-800/95"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
-            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
-            LIMITED AVAILABILITY
+            ASK DR. JAN
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
             <span className="font-extralight">Quick Move-In Homes</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
-              AVAILABLE NOW
+              CONFIRM OPEN HOMESITES
             </span>
           </h2>
           <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
-            Several quick move-in homes are listed. Floor plans start from {pricing.startingFromLabel} as of {pricing.asOf}.
+            Ask Dr. Jan which homesites are open. Floor plans start from {pricing.startingFromLabel} as of {pricing.asOf}.
             Confirm the homesite price with Dr. Jan Duffy before you write an offer.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -410,7 +406,7 @@ export default function Community() {
             Ready to Make Union Village Your Home?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-600">
-            Contact Dr. Jan Duffy today for expert guidance and VIP access to The Townes at Union Village.
+            Call Dr. Jan Duffy at {nap.phoneDisplay} to tour The Townes at Union Village. {hours.note}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

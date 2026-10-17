@@ -1,6 +1,6 @@
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
-import { nap } from '../config/community'
+import { hours, nap } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
 
@@ -155,8 +155,8 @@ export default function Accessibility() {
                 <strong>Address:</strong> 1001 Gearus Place, Henderson, NV 89011
               </p>
               <p className="text-gray-700 text-sm">
-                <strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM PST<br />
-                <strong>Emergency Accessibility Assistance:</strong> Available 24/7 for urgent matters
+                <strong>Tours:</strong> {hours.note}<br />
+                <strong>Accessibility requests:</strong> Call {nap.phoneDisplay} or email {nap.email}.
               </p>
             </div>
 

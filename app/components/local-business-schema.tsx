@@ -97,14 +97,6 @@ export default function LocalBusinessSchema() {
       name: 'The Townes at Union Village Floor Plans',
       itemListElement: floorPlanOffers(),
     },
-    makesOffer: {
-      '@type': 'Offer',
-      description:
-        'Expert real estate guidance for new home buyers at The Townes at Union Village',
-      price: '0',
-      priceCurrency: 'USD',
-      validFrom: '2024-01-01',
-    },
   }
 
   return (

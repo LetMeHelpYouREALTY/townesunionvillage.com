@@ -99,24 +99,23 @@ export default function Contact() {
                 <ul className="space-y-3 text-gray-600">
                   <li>• ✅ Independent agent representing YOUR interests</li>
                   <li>• ✅ Expert knowledge of new construction homes</li>
-                  <li>• ✅ Century Communities partnership benefits</li>
+                  <li>• ✅ Independent buyer representative, not the builder&apos;s sales team</li>
                   <li>• ✅ Nevada License {nap.license}</li>
-                  <li>• ✅ Free consultation and market analysis</li>
-                  <li>• ✅ Negotiation power to save you money</li>
+                  <li>• ✅ A consultation on floor plans and open homesites</li>
+                  <li>• ✅ Representation on the written offer</li>
                 </ul>
               </div>
 
               <div className="bg-gray-900 text-white rounded-lg p-8">
-                <h3 className="text-2xl font-bold mb-4">Quick Response Guarantee</h3>
+                <h3 className="text-2xl font-bold mb-4">Homesite questions</h3>
                 <p className="text-gray-300 mb-4">
-                  Dr. Jan responds to all inquiries within 24 hours. For urgent questions about available homes, 
-                  call directly at (702) 500-1955.
+                  Call {nap.phoneDisplay} to confirm which homesites are open and the written price. {hours.note}
                 </p>
                 <a 
-                  href="tel:7025001955"
+                  href={`tel:${nap.phoneTel}`}
                   className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
                 >
-                  Call Now for Immediate Help
+                  Call {nap.phoneDisplay}
                 </a>
               </div>
           </div>
@@ -141,8 +140,7 @@ export default function Contact() {
                 How much does it cost to work with Dr. Jan?
               </h3>
               <p className="text-gray-600">
-                Working with Dr. Jan as your buyer's agent is completely free for you. The builder pays her commission, 
-                so you get expert representation at no cost to you.
+                Ask Dr. Jan how buyer representation is paid before you register. She will put the payment terms in writing.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
@@ -150,8 +148,7 @@ export default function Contact() {
                 How quickly can I get a response?
               </h3>
               <p className="text-gray-600">
-                Dr. Jan responds to all inquiries within 24 hours. For urgent questions about available homes or 
-                immediate assistance, call (702) 500-1955.
+                Call {nap.phoneDisplay} for a homesite question. {hours.note}
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
@@ -159,8 +156,7 @@ export default function Contact() {
                 Can Dr. Jan help with financing?
               </h3>
               <p className="text-gray-600">
-                Yes! Dr. Jan has connections with preferred lenders who specialize in new construction financing 
-                and can help you find the best rates and terms.
+                Dr. Jan can introduce lenders who finance new construction. Compare the lender&apos;s written terms. She does not quote a rate here.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md">
@@ -267,7 +263,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2 text-lg">Desert Living Excellence</h4>
-                    <p className="text-gray-600 font-light leading-relaxed">Experience the beauty of desert living at 2,000 feet with stunning mountain vistas and outdoor recreation opportunities.</p>
+                    <p className="text-gray-600 font-light leading-relaxed">The sales office is at {nap.street}, {nap.city}, {nap.state} {nap.zip}. Ask Dr. Jan which homesites have a mountain view.</p>
                   </div>
                 </div>
               </div>
