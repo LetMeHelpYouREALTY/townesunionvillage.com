@@ -1,10 +1,38 @@
 import SEOOptimizedMap from '../components/seo-optimized-map'
 import OfficeListingsBand from '../components/office-listings-band'
 import AgentPhoto from '../components/agent-photo'
-import { calendly } from '../config/community'
+import NapStrip from '../components/nap-strip'
+import { calendly, hours, nap, socialProfiles } from '../config/community'
+import { contentUpdated, siteUrl } from '../config/site'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
+
+const profilePageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  '@id': `${siteUrl}/about-dr-jan#profilepage`,
+  url: `${siteUrl}/about-dr-jan`,
+  isPartOf: { '@id': `${siteUrl}/#website` },
+  dateModified: contentUpdated,
+  mainEntity: {
+    '@type': 'Person',
+    '@id': `${siteUrl}/#person`,
+    name: nap.agentName,
+    jobTitle: 'Real Estate Agent',
+    worksFor: { '@type': 'Organization', name: nap.brokerage },
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'Nevada real estate license',
+      value: nap.license,
+    },
+    telephone: nap.phoneDisplay,
+    email: nap.email,
+    url: `${siteUrl}/about-dr-jan`,
+    image: `${siteUrl}/images/dr-jan-duffy.jpg`,
+    sameAs: Object.values(socialProfiles),
+  },
+}
 
 export const metadata = pageMeta('/about-dr-jan', {
   title: 'About Dr. Jan Duffy',
@@ -14,6 +42,10 @@ export default function AboutDrJan() {
   return (
     <div className="min-h-screen bg-gray-50">
       <BreadcrumbJsonLd items={breadcrumbTrail('About Dr. Jan Duffy', '/about-dr-jan')} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -41,6 +73,8 @@ export default function AboutDrJan() {
         </div>
       </section>
 
+      <NapStrip />
+
       <OfficeListingsBand />
 
       {/* Introduction */}
@@ -63,7 +97,7 @@ export default function AboutDrJan() {
                 </div>
                 <div className="flex items-center">
                   <div className="text-2xl mr-4">✅</div>
-                  <span className="text-gray-700">Nevada License S.0197614</span>
+                  <span className="text-gray-700">Nevada License {nap.license}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="text-2xl mr-4">✅</div>
@@ -120,7 +154,7 @@ export default function AboutDrJan() {
               <div className="text-6xl mb-6">🎯</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Henderson Specialist</h3>
               <p className="text-gray-600">
-                Nevada License S.0197614. Deep knowledge of Union Village and the entire Henderson metro area.
+                Nevada License {nap.license}. Deep knowledge of Union Village and the entire Henderson metro area.
               </p>
             </div>
           </div>
@@ -269,11 +303,8 @@ export default function AboutDrJan() {
             </div>
             <div className="bg-gray-50 rounded-lg p-8">
               <div className="text-4xl mb-4">🕒</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Hours</h3>
-              <p className="text-gray-600 mb-4">
-                Monday-Sunday<br />
-                10:00 AM - 6:00 PM
-              </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Tours</h3>
+              <p className="text-gray-600 mb-4">{hours.note}</p>
               <a 
                 href="tel:7025001955"
                 className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-6 py-2 rounded-lg tracking-wide transition-colors"
@@ -286,7 +317,7 @@ export default function AboutDrJan() {
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Nevada License Information</h3>
             <p className="text-gray-600 mb-4">
-              Dr. Jan Duffy is a licensed real estate agent in Nevada (License #S.0197614) 
+              Dr. Jan Duffy is a licensed real estate agent in Nevada (License {nap.license}) 
               specializing in new construction homes and buyer representation.
             </p>
             <p className="text-sm text-gray-500">
@@ -318,7 +349,7 @@ export default function AboutDrJan() {
                   <div className="text-2xl mr-3">🎓</div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Nevada Licensed Agent</h4>
-                    <p className="text-gray-600 text-sm">Licensed real estate agent in Nevada (License #S.0197614) specializing in new construction homes.</p>
+                    <p className="text-gray-600 text-sm">Licensed real estate agent in Nevada (License {nap.license}) specializing in new construction homes.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -339,7 +370,7 @@ export default function AboutDrJan() {
                   <div className="text-2xl mr-3">💼</div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Professional Service</h4>
-                    <p className="text-gray-600 text-sm">Available Monday-Sunday, 10 AM - 6 PM for consultations and property tours.</p>
+                    <p className="text-gray-600 text-sm">{hours.note}</p>
                   </div>
                 </div>
               </div>
@@ -408,7 +439,7 @@ export default function AboutDrJan() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Nevada Specialist</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                Nevada License S.0197614. Deep expertise in Union Village and comprehensive knowledge of the entire Las Vegas Valley market.
+                Nevada License {nap.license}. Deep expertise in Union Village and comprehensive knowledge of the entire Las Vegas Valley market.
               </p>
             </div>
           </div>

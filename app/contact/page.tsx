@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import OfficeListingsBand from '../components/office-listings-band'
 import CalendlyEmbed from '../components/calendly-embed'
 import AgentPhoto from '../components/agent-photo'
-import { calendly, nap } from '../config/community'
+import { calendly, hours, nap, nearby } from '../config/community'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
@@ -80,8 +80,8 @@ export default function Contact() {
                   <div className="flex items-center">
                     <div className="text-3xl mr-4">🕒</div>
                     <div>
-                      <p className="font-semibold text-gray-900">Business Hours</p>
-                      <p className="text-gray-600">Monday-Sunday: 10:00 AM - 6:00 PM</p>
+                      <p className="font-semibold text-gray-900">Tours</p>
+                      <p className="text-gray-600">{hours.note}</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -100,7 +100,7 @@ export default function Contact() {
                   <li>• ✅ Independent agent representing YOUR interests</li>
                   <li>• ✅ Expert knowledge of new construction homes</li>
                   <li>• ✅ Century Communities partnership benefits</li>
-                  <li>• ✅ Nevada License S.0197614</li>
+                  <li>• ✅ Nevada License {nap.license}</li>
                   <li>• ✅ Free consultation and market analysis</li>
                   <li>• ✅ Negotiation power to save you money</li>
                 </ul>
@@ -183,8 +183,7 @@ export default function Contact() {
             Ready to Start Your Home Buying Journey?
           </h2>
           <p className="text-xl mb-8 max-w-4xl mx-auto">
-            Don't wait - The Townes at Union Village is selling fast! Contact Dr. Jan Duffy today for expert guidance 
-            and VIP access to available homes.
+            Contact Dr. Jan Duffy for buyer representation and current homesite availability at The Townes at Union Village.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -227,7 +226,7 @@ export default function Contact() {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
               Discover the perfect blend of sophisticated living and convenient access in Henderson, Nevada. 
-              Experience exceptional new construction with expert guidance from Dr. Jan Duffy, your exclusive buyer representative.
+              Contact Dr. Jan Duffy for buyer representation and current homesite availability at The Townes at Union Village.
             </p>
           </div>
 
@@ -241,7 +240,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2 text-lg">Premium Healthcare Access</h4>
-                    <p className="text-gray-600 font-light leading-relaxed">Minutes from Henderson Hospital and top-tier medical facilities, ensuring exceptional healthcare convenience.</p>
+                    <p className="text-gray-600 font-light leading-relaxed">{nearby.hospitalName} is at {nearby.hospitalAddress}.</p>
                   </div>
                 </div>
                 <div className="flex items-start">

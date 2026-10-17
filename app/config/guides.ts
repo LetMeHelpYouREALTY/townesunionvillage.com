@@ -9,9 +9,9 @@ import { medicalCampuses, shiftDining } from './healthcare'
  */
 export const guidesChecked = 'October 16, 2026'
 
-const priceSentence = `Century Communities listed plans from ${pricing.startingFromLabel} as of ${pricing.asOf}.`
+export const priceSentence = `Century Communities listed plans from ${pricing.startingFromLabel} as of ${pricing.asOf}.`
 
-const planPoints = pricing.plans.map(
+export const planPoints = pricing.plans.map(
   (plan) =>
     `${plan.name}: ${plan.sqft.toLocaleString('en-US')} sq ft, ${plan.beds} bedrooms, ${plan.baths} baths, ${plan.garage} garage, from ${plan.fromLabel} as of ${pricing.asOf}.`
 )

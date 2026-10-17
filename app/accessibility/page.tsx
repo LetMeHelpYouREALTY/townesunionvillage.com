@@ -1,5 +1,6 @@
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { nap } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
 
@@ -141,7 +142,7 @@ export default function Accessibility() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-2">
                 <strong>Dr. Jan Duffy</strong><br />
-                Nevada License S.0197614<br />
+                Nevada License {nap.license}<br />
                 Accessibility Coordinator
               </p>
               <p className="text-gray-700 mb-2">

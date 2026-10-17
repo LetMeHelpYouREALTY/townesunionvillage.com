@@ -1,6 +1,7 @@
 import RealScoutHomeValue from '../components/realscout-home-value'
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { nap } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
 
@@ -88,7 +89,7 @@ export default function HomeValue() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Local Knowledge</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                Nevada License S.0197614 with comprehensive understanding of Henderson neighborhoods and property values.
+                Nevada License {nap.license} with comprehensive understanding of Henderson neighborhoods and property values.
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -189,8 +190,7 @@ export default function HomeValue() {
                 <h3 className="text-2xl font-bold text-gray-900">Location Value</h3>
               </div>
               <p className="text-gray-600 font-light leading-relaxed text-center">
-                Henderson's proximity to Las Vegas, excellent schools, and quality amenities 
-                continues to drive property values higher.
+                Location, home condition, and recent comparable sales drive a Henderson home's value.
               </p>
             </div>
           </div>

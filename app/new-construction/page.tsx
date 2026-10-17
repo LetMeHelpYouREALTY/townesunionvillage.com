@@ -42,7 +42,7 @@ export default function NewConstructionPage() {
             {pricing.plans.map((plan) => (
               <div key={plan.name} className="bg-gray-50 rounded-xl p-8 border border-gray-100">
                 <h3 className="text-2xl font-light mb-2">{plan.name}</h3>
-                <p className="text-amber-700 text-xl mb-4">From {plan.fromLabel}</p>
+                <p className="text-amber-700 text-xl mb-4">From {plan.fromLabel} as of {pricing.asOf}</p>
                 <ul className="text-gray-700 space-y-2">
                   <li>{plan.sqft.toLocaleString()} square feet</li>
                   <li>

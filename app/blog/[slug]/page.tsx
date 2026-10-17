@@ -1,7 +1,9 @@
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import OfficeListingsBand from 'app/components/office-listings-band'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
+import { nap } from 'app/config/community'
 import { siteUrl } from 'app/config/site'
 import BreadcrumbJsonLd from 'app/components/breadcrumb-jsonld'
 import { breadcrumbTrail } from 'app/lib/breadcrumbs'
@@ -90,7 +92,9 @@ export default function Blog({ params }) {
             url: `${siteUrl}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'Dr. Jan Duffy',
+              '@id': `${siteUrl}/#person`,
+              name: nap.agentName,
+              url: `${siteUrl}/about-dr-jan`,
             },
           }),
         }}
@@ -101,6 +105,9 @@ export default function Blog({ params }) {
       <div className="flex justify-between items-center mt-3 mb-8 text-sm">
         <p className="text-sm text-amber-800 tracking-wide">
           {formatDate(post.metadata.publishedAt)}
+        </p>
+        <p className="text-sm text-slate-700">
+          By <Link href="/about-dr-jan" className="underline">{nap.agentName}</Link>
         </p>
       </div>
     </section>

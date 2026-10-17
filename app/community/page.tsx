@@ -383,7 +383,7 @@ export default function Community() {
             </span>
           </h2>
           <p className="text-xl mb-10 font-light max-w-4xl mx-auto leading-relaxed">
-            Several quick move-in homes are listed. Floor plans start from {pricing.startingFromLabel}.
+            Several quick move-in homes are listed. Floor plans start from {pricing.startingFromLabel} as of {pricing.asOf}.
             Confirm the homesite price with Dr. Jan Duffy before you write an offer.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

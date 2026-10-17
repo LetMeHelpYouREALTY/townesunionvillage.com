@@ -79,6 +79,7 @@ export default function RootLayout({
       )}
     >
       <head>
+        <link rel="describedby" href="/llms.txt" />
         <LocalBusinessSchema />
         <NewHomeDevelopmentSchema />
         <WebSiteSchema />

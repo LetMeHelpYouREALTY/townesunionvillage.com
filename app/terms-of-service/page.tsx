@@ -1,5 +1,6 @@
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { nap } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
 
@@ -40,7 +41,7 @@ export default function TermsOfService() {
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Real Estate Services</h3>
             <p className="text-gray-700 mb-6">
-              Dr. Jan Duffy is a licensed real estate professional in Nevada (License S.0197614) providing comprehensive real estate services including buyer representation, property consultations, market analysis, and transaction coordination. When you engage our services, you enter into a professional client-agent relationship governed by Nevada real estate laws and regulations, in addition to these terms.
+              Dr. Jan Duffy is a licensed real estate professional in Nevada (License {nap.license}) providing comprehensive real estate services including buyer representation, property consultations, market analysis, and transaction coordination. When you engage our services, you enter into a professional client-agent relationship governed by Nevada real estate laws and regulations, in addition to these terms.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Website Usage</h3>
@@ -201,7 +202,7 @@ export default function TermsOfService() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-2">
                 <strong>Dr. Jan Duffy</strong><br />
-                Nevada License S.0197614
+                Nevada License {nap.license}
               </p>
               <p className="text-gray-700 mb-2">
                 <strong>Phone:</strong> <a href="tel:7025001955" className="text-amber-800 hover:underline">(702) 500-1955</a>

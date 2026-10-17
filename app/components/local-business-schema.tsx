@@ -24,7 +24,6 @@ function floorPlanOffers() {
     url: `${siteUrl}/floor-plans#${plan.slug}`,
     price: plan.from,
     priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
     businessFunction: 'https://purl.org/goodrelations/v1#Sell',
     itemOffered: {
       '@type': 'House',
@@ -75,15 +74,12 @@ export default function LocalBusinessSchema() {
       'Healthcare Provider Buyer Representation',
     ],
     priceRange: priceRangeLabel,
-    openingHours: [
-      'Mo 10:00-18:00',
-      'Tu 10:00-18:00',
-      'We 10:00-18:00',
-      'Th 10:00-18:00',
-      'Fr 10:00-18:00',
-      'Sa 10:00-18:00',
-      'Su 10:00-18:00',
-    ],
+    employee: {
+      '@type': 'Person',
+      '@id': `${siteUrl}/#person`,
+      name: nap.agentName,
+      url: `${siteUrl}/about-dr-jan`,
+    },
     image: [
       `${siteUrl}/images/dr-jan-duffy.jpg`,
       `${siteUrl}/og-image.jpg`,
@@ -107,7 +103,6 @@ export default function LocalBusinessSchema() {
         'Expert real estate guidance for new home buyers at The Townes at Union Village',
       price: '0',
       priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
       validFrom: '2024-01-01',
     },
   }
@@ -149,7 +144,7 @@ export function NewHomeDevelopmentSchema() {
     '@type': 'ResidentialComplex',
     '@id': `${siteUrl}/#community`,
     name: 'The Townes at Union Village',
-    description: `New townhomes by Century Communities in Henderson, NV. Starting from ${pricing.startingFromLabel} with 3 floor plans available.`,
+    description: `New townhomes by Century Communities at ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}. Century Communities listed three floor plans from ${pricing.startingFromLabel} as of ${pricing.asOf}.`,
     url: siteUrl,
     address: unionVillageAddress,
     geo: {

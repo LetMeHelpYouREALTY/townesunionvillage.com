@@ -9,7 +9,7 @@ import { pageMeta } from 'app/lib/page-meta'
 export const metadata = pageMeta('/blog', {
   title: 'Union Village Guides | Henderson Townhomes',
   description:
-    `First-party guides from Dr. Jan Duffy on The Townes at Union Village in Henderson, NV: floor plans from ${pricing.startingFromLabel}, inventory, and how to tour 1001 Gearus Place.`,
+    `First-party guides from Dr. Jan Duffy on The Townes at Union Village in Henderson, NV: floor plans from ${pricing.startingFromLabel} as of ${pricing.asOf}, inventory, and how to tour 1001 Gearus Place.`,
 })
 
 const firstPartyGuides = [

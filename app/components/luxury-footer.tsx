@@ -208,6 +208,9 @@ export default function LuxuryFooter() {
             {/* Floor Plans */}
             <div>
               <h4 className="text-lg font-semibold text-amber-400 mb-6 tracking-wide">Floor Plans</h4>
+              <p className="text-gray-400 text-sm font-light mb-4">
+                Century Communities prices as of {pricing.asOf}.
+              </p>
               <ul className="space-y-3">
                 {pricing.plans.map((plan) => (
                   <li key={plan.slug}>
@@ -217,7 +220,7 @@ export default function LuxuryFooter() {
                     >
                       {plan.name}
                     </Link>
-                    <span className="text-amber-400 block text-sm">From {plan.fromLabel}</span>
+                    <span className="text-amber-400 block text-sm">From {plan.fromLabel} as of {pricing.asOf}</span>
                   </li>
                 ))}
               </ul>
@@ -260,7 +263,8 @@ export default function LuxuryFooter() {
                 <div className="text-center">
                   <AgentPhoto size={112} className="mx-auto mb-4 ring-2 ring-amber-400" />
                   <h5 className="text-lg font-semibold text-white mb-2">Dr. Jan Duffy</h5>
-                  <p className="text-amber-400 text-sm mb-3">Nevada License S.0197614</p>
+                  <p className="text-amber-400 text-sm">{nap.brokerage}</p>
+                  <p className="text-amber-400 text-sm mb-3">Nevada license {nap.license}</p>
                   <p className="text-gray-300 font-light text-sm">
                     Exclusive Buyer Representative<br />
                     Century Communities Partner
@@ -276,7 +280,7 @@ export default function LuxuryFooter() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm font-light mb-4 md:mb-0">
-                The Townes at Union Village | Homes by Dr. Jan Duffy All rights reserved  © 2024 Nevada License S.0197614
+                The Townes at Union Village | Homes by Dr. Jan Duffy All rights reserved  © 2024 Nevada License {nap.license}
               </div>
               <div className="flex space-x-6 text-sm">
                 <Link href="/privacy-policy" className="text-gray-400 hover:text-amber-400 transition-colors font-light">

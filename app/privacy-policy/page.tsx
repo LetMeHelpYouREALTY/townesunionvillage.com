@@ -1,5 +1,6 @@
 import OfficeListingsBand from '../components/office-listings-band'
 import BreadcrumbJsonLd from '../components/breadcrumb-jsonld'
+import { nap } from '../config/community'
 import { breadcrumbTrail } from '../lib/breadcrumbs'
 import { pageMeta } from '../lib/page-meta'
 
@@ -156,7 +157,7 @@ export default function PrivacyPolicy() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-2">
                 <strong>Dr. Jan Duffy</strong><br />
-                Nevada License S.0197614
+                Nevada License {nap.license}
               </p>
               <p className="text-gray-700 mb-2">
                 <strong>Phone:</strong> <a href="tel:7025001955" className="text-amber-800 hover:underline">(702) 500-1955</a>

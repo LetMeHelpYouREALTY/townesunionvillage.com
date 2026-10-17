@@ -11,4 +11,7 @@ export const baseUrl = siteUrl
 
 export const siteName = 'Townes at Union Village | Homes by Dr. Jan Duffy'
 
-export const siteDescription = `New townhomes for sale in Henderson, NV starting from ${pricing.startingFromLabel}. Expert guidance from Dr. Jan Duffy, your preferred buyer agent. Century Communities.`
+/** Deploy date for sitemap lastmod on pages whose visible copy changed. Not a fact-check date. */
+export const contentUpdated = '2026-10-17'
+
+export const siteDescription = `New townhomes for sale in Henderson, NV. Century Communities listed plans from ${pricing.startingFromLabel} as of ${pricing.asOf}. Buyer agent Dr. Jan Duffy.`

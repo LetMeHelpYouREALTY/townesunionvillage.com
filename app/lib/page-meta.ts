@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { markdownUrlFor } from 'app/lib/markdown-pages'
 import { siteDescription, siteName } from 'app/config/site'
 
 const ogImage = {
@@ -19,11 +20,16 @@ export function pageMeta(path: string, metadata: Metadata = {}): Metadata {
   const description =
     typeof metadata.description === 'string' ? metadata.description : siteDescription
 
+  const markdown = markdownUrlFor(path)
+
   return {
     ...metadata,
     title,
     description,
-    alternates: { canonical: path },
+    alternates: {
+      canonical: path,
+      ...(markdown ? { types: { 'text/markdown': markdown } } : {}),
+    },
     openGraph: {
       title,
       description,

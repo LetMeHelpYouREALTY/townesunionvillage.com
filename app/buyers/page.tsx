@@ -21,7 +21,7 @@ export default function BuyersPage() {
         badge="HENDERSON BUYERS"
         title="Buy a Townes at Union Village Home"
         subtitle="INDEPENDENT REPRESENTATION IN 89011"
-        lede={`Century Communities lists townhomes from ${pricing.startingFromLabel}. Dr. Jan Duffy represents you, not the builder.`}
+        lede={`Century Communities listed townhomes from ${pricing.startingFromLabel} as of ${pricing.asOf}. Dr. Jan Duffy represents you, not the builder.`}
         image={photos.keys}
         primaryHref={`tel:${nap.phoneTel}`}
         primaryLabel={`Call ${nap.phoneDisplay}`}

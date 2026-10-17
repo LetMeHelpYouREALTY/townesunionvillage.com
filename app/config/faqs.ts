@@ -1,4 +1,4 @@
-import { amenities, nap, nearby, pricing } from './community'
+import { amenities, nap, nearby, planPriceList, pricing } from './community'
 
 function hoursNote() {
   return 'Tours are by appointment. Confirm builder model hours the same day.'
@@ -67,3 +67,26 @@ export const townesUnionVillageFaqs: FaqItem[] = [
 
 /** Subset for the homepage FAQ block (matches visible Q&A on that page). */
 export const homePageFaqs = townesUnionVillageFaqs.slice(0, 5)
+
+/** Visible Q&A on /floor-plans. JSON-LD must use this same array. */
+export const floorPlanFaqs: FaqItem[] = [
+  {
+    question: 'How much do the floor plans cost at The Townes at Union Village?',
+    answer: `As of ${pricing.asOf}, Century Communities listed ${planPriceList}. ${pricing.disclaimer}`,
+  },
+  {
+    question: 'How big are the floor plans?',
+    answer: pricing.plans
+      .map((plan) => `${plan.name} has ${plan.sqft.toLocaleString('en-US')} square feet.`)
+      .join(' '),
+  },
+  {
+    question: 'How many bedrooms, bathrooms, and garage spaces do the plans have?',
+    answer: pricing.plans
+      .map(
+        (plan) =>
+          `${plan.name} lists ${plan.beds} bedrooms, ${plan.baths} baths, and a ${plan.garage} garage.`
+      )
+      .join(' '),
+  },
+]

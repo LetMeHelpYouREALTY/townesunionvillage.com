@@ -7,13 +7,25 @@ import RealScoutWidget from './components/realscout-widget'
 import OfficeListingsBand from './components/office-listings-band'
 import ContentImage from './components/content-image'
 import FaqJsonLd from './components/faq-jsonld'
-import { photos, pricing } from './config/community'
+import {
+  homeQuickAnswer,
+  hours,
+  nap,
+  photos,
+  planPriceNote,
+  pricing,
+  qualifiedBuyerLine,
+} from './config/community'
+import NapStrip from './components/nap-strip'
 import { healthcareAudiences, healthcareSlugs } from './config/healthcare'
 import { homePageFaqs } from './config/faqs'
 import GuideLinks from './components/guide-links'
 import AtleighListings from './components/atleigh-listings'
 
-export const metadata: Metadata = pageMeta('/')
+export const metadata: Metadata = pageMeta('/', {
+  title: 'The Townes at Union Village | Townhomes for Sale in Henderson NV',
+  description: `Century Communities townhomes at ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}. Plans from ${pricing.startingFromLabel} as of ${pricing.asOf}. Buyer agent ${nap.agentName}, ${nap.phoneDisplay}.`,
+})
 
 export default function Page() {
   return (
@@ -36,7 +48,7 @@ export default function Page() {
         <div className="relative z-20 text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Enhanced Badge */}
           <div className="inline-flex max-w-[92vw] items-center justify-center bg-amber-700 text-white px-5 py-3 md:px-8 md:py-4 rounded-full text-xs md:text-sm font-bold mb-8 md:mb-12 shadow-2xl border border-amber-300/40 text-center leading-snug">
-            Exclusive new construction. Limited release.
+            New construction by Century Communities
           </div>
           
           {/* Main Headline */}
@@ -51,7 +63,9 @@ export default function Page() {
           
           {/* Enhanced Pricing Display */}
           <div className="mb-12 bg-slate-950/75 rounded-2xl p-8 border border-white/15 max-w-2xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-200 font-light mb-3 tracking-wide">PRICED FROM</p>
+            <p className="text-xl md:text-2xl text-gray-200 font-light mb-3 tracking-wide">
+              Century Communities starting price as of {pricing.asOf}
+            </p>
             <div className="text-6xl md:text-7xl font-light text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
               {pricing.startingFromLabel}
             </div>
@@ -67,7 +81,7 @@ export default function Page() {
           <p className="text-xl md:text-2xl mb-16 text-gray-200 max-w-5xl mx-auto font-light leading-relaxed tracking-wide">
             Sophisticated new construction featuring premium finishes, Century Home Connect® smart technology, 
             and exceptional attention to detail. Experience the pinnacle of modern living with expert guidance 
-            from Dr. Jan Duffy, your exclusive buyer representative.
+            from Dr. Jan Duffy, your buyer agent.
           </p>
           
           {/* Enhanced CTA Buttons */}
@@ -110,7 +124,7 @@ export default function Page() {
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="text-5xl font-light text-white mb-3 group-hover:text-amber-300 transition-colors duration-300" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}>3</div>
-                <div className="text-gray-300 text-lg font-light tracking-wide group-hover:text-white transition-colors duration-300 uppercase">Exclusive Floor Plans</div>
+                <div className="text-gray-300 text-lg font-light tracking-wide group-hover:text-white transition-colors duration-300 uppercase">Floor Plans</div>
                 <div className="text-gray-400 text-sm mt-2">Residence 1405 • 1478 • 1479</div>
               </div>
             </div>
@@ -134,6 +148,16 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="quick-answer" className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-light tracking-wide text-slate-900 mb-6">
+            The Townes at Union Village at a glance
+          </h2>
+          <p className="text-lg text-slate-700 leading-relaxed">{homeQuickAnswer}</p>
+        </div>
+      </section>
+      <NapStrip />
+
       <OfficeListingsBand />
 
       <AtleighListings anchor />
@@ -154,12 +178,12 @@ export default function Page() {
             </h2>
             <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
               Search all available properties in Henderson, NV and surrounding areas with expert guidance from Dr. Jan Duffy, 
-              your exclusive buyer representative.
+              your buyer agent.
             </p>
           </div>
           <RealScoutWidget 
             title="Search All Henderson Properties"
-            subtitle="Expert guidance from Dr. Jan Duffy • Your exclusive buyer representative"
+            subtitle="Expert guidance from Dr. Jan Duffy • Your buyer agent"
           />
         </div>
       </section>
@@ -169,13 +193,11 @@ export default function Page() {
         <div className="absolute inset-0 bg-gradient-to-r from-amber-900/90 via-amber-800/90 to-amber-900/90" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-white/20">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse" />
-            EXCLUSIVE OPPORTUNITY
+            THREE FLOOR PLANS
           </div>
-          <h2 className="text-4xl md:text-5xl font-light mb-4 tracking-wide">LIMITED AVAILABILITY</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4 tracking-wide">Residence 1405, 1478, and 1479</h2>
           <p className="text-xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
-            Only 3 exclusive floor plans remain. Townes at Union Village represents the pinnacle of luxury new construction. 
-            Secure your private consultation with Dr. Jan Duffy before these exceptional homes are claimed.
+            Century Communities builds three townhome plans at The Townes at Union Village. Homesite availability and prices change. Call Dr. Jan Duffy at {nap.phoneDisplay} to confirm what is open before you tour.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a
@@ -199,7 +221,7 @@ export default function Page() {
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
             <div className="inline-flex items-center bg-amber-600/10 px-4 py-2 rounded-full text-sm font-semibold text-amber-800 border border-amber-200">
-              EXCLUSIVE FLOOR PLANS
+              FLOOR PLANS
             </div>
           </div>
           <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-6 tracking-wide">
@@ -209,9 +231,12 @@ export default function Page() {
               EXCEPTIONAL FLOOR PLANS
             </span>
           </h2>
-          <p className="text-xl text-gray-600 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 mb-4 font-light max-w-4xl mx-auto leading-relaxed">
             Discover three meticulously crafted floor plans featuring premium finishes, Century Home Connect® smart technology, 
             and exceptional attention to detail. Each residence represents the pinnacle of modern luxury living.
+          </p>
+          <p className="text-base text-gray-600 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
+            {planPriceNote}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
             {pricing.plans.map((plan, index) => {
@@ -232,7 +257,7 @@ export default function Page() {
                   <div className="p-8">
                     <div className="mb-6">
                       <h3 className="text-3xl font-light text-gray-900 mb-2 tracking-wide">{plan.name}</h3>
-                      <div className="text-3xl font-light text-amber-600 mb-4">From {plan.fromLabel}</div>
+                      <div className="text-3xl font-light text-amber-600 mb-4">From {plan.fromLabel} as of {pricing.asOf}</div>
                     </div>
                     <div className="space-y-3 mb-8">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100">
@@ -278,7 +303,7 @@ export default function Page() {
             </h2>
             <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
               The Townes sit beside Henderson Hospital at 1050 W. Galleria Drive. Dr. Jan Duffy is the buyer agent
-              for clinicians who work this campus. Every qualified buyer can purchase.
+              for clinicians who work this campus. {qualifiedBuyerLine}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -328,24 +353,31 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="py-16 bg-stone-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-light tracking-wide text-slate-900 mb-8 text-center">
+            Visit the sales office at {nap.street}
+          </h2>
+          <SEOOptimizedMap variant="business-profile" />
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white text-center py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/95 to-slate-800/95" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="inline-flex items-center bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-amber-400/30">
-            <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse" />
-            FINAL OPPORTUNITY
+            TOUR WITH DR. JAN
           </div>
           <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-            <span className="font-extralight">Don't Miss This</span>
+            <span className="font-extralight">Schedule a Tour</span>
             <br />
             <span className="text-2xl md:text-3xl font-light text-amber-200 tracking-wider">
-              EXCLUSIVE OPPORTUNITY
+              {nap.street}, {nap.city}
             </span>
           </h2>
           <p className="text-xl mb-10 font-light max-w-3xl mx-auto leading-relaxed">
-            With only 3 exclusive floor plans remaining, these exceptional homes represent the pinnacle of luxury new construction. 
-            Secure your private consultation with Dr. Jan Duffy before these remarkable residences are claimed.
+            Dr. Jan Duffy registers you with Century Communities before your first model visit and represents you, not the builder. {hours.note}
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-6 sm:space-y-0 sm:space-x-8">
             <a

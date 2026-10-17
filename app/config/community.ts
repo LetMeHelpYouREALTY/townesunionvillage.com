@@ -99,6 +99,17 @@ export const pricing = {
 /** Floor-plan starting range for visible copy and JSON-LD. Confirm before quoting a buyer. */
 export const priceRangeLabel = `${pricing.startingFromLabel} - ${pricing.plans[pricing.plans.length - 1].fromLabel}`
 
+export const qualifiedBuyerLine =
+  'Any qualified buyer can purchase. Occupation is not a condition of sale.'
+
+export const planPriceList = new Intl.ListFormat('en-US', { type: 'conjunction' }).format(
+  pricing.plans.map((plan) => `${plan.name} from ${plan.fromLabel}`)
+)
+
+export const planPriceNote = `Century listed these starting prices on ${pricing.asOf}. ${pricing.disclaimer}`
+
+export const homeQuickAnswer = `The Townes at Union Village are Century Communities townhomes for sale at ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}. As of ${pricing.asOf}, Century listed ${planPriceList}. Call buyer agent ${nap.agentName} at ${nap.phoneDisplay} to confirm the homesite price. ${qualifiedBuyerLine}`
+
 export const amenities = ['Dog park', 'Walking trail', 'Picnic areas'] as const
 
 export const nearby = {

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getBlogPosts } from 'app/blog/utils'
-import { siteUrl } from 'app/config/site'
+import { contentUpdated, siteUrl } from 'app/config/site'
 
 export { siteUrl, baseUrl } from 'app/config/site'
 
@@ -42,7 +42,16 @@ const staticPages: StaticPage[] = [
 ]
 
 const reviewedOn: Record<string, string> = {
-  '': '2026-10-16',
+  '': contentUpdated,
+  '/floor-plans': contentUpdated,
+  '/about-dr-jan': contentUpdated,
+  '/contact': contentUpdated,
+  '/home-value': contentUpdated,
+  '/buyers': contentUpdated,
+  '/community': contentUpdated,
+  '/privacy-policy': contentUpdated,
+  '/terms-of-service': contentUpdated,
+  '/accessibility': contentUpdated,
   '/healthcare': '2026-10-16',
   '/healthcare/doctors': '2026-10-16',
   '/healthcare/nurses': '2026-10-16',
