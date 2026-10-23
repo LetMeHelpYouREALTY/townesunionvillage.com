@@ -89,7 +89,7 @@ export default function HomeValue() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Local Knowledge</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                Nevada License {nap.license} with comprehensive understanding of Henderson neighborhoods and property values.
+                In real estate since 1983, with comprehensive understanding of Henderson neighborhoods and property values.
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">

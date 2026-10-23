@@ -5,7 +5,7 @@ export default function NapStrip() {
     <section className="bg-slate-900 text-white py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
         <p className="font-light">
-          {nap.agentName} · {nap.brokerage} · NV {nap.license}
+          {nap.agentName} · REALTOR®
         </p>
         <p className="font-light">
           {nap.street}, {nap.city}, {nap.state} {nap.zip}

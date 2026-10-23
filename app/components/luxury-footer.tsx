@@ -240,7 +240,7 @@ export default function LuxuryFooter() {
                   Your buyer representative
                 </h4>
                 <p className="text-gray-300 font-light leading-relaxed mb-6">
-                  Dr. Jan Duffy represents you, not the builder. She is an independent agent with {nap.brokerage}.
+                  Dr. Jan Duffy represents you, not the builder. She is an independent agent, in real estate since 1983.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
@@ -261,8 +261,7 @@ export default function LuxuryFooter() {
                 <div className="text-center">
                   <AgentPhoto size={112} className="mx-auto mb-4 ring-2 ring-amber-400" />
                   <h5 className="text-lg font-semibold text-white mb-2">Dr. Jan Duffy</h5>
-                  <p className="text-amber-400 text-sm">{nap.brokerage}</p>
-                  <p className="text-amber-400 text-sm mb-3">Nevada license {nap.license}</p>
+                  <p className="text-amber-400 text-sm mb-3">REALTOR®, in real estate since 1983</p>
                   <p className="text-gray-300 font-light text-sm">
                     Independent buyer representative<br />
                     Not the builder&apos;s sales team
@@ -278,7 +277,8 @@ export default function LuxuryFooter() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm font-light mb-4 md:mb-0">
-                The Townes at Union Village | Homes by Dr. Jan Duffy All rights reserved  © 2024 Nevada License {nap.license}
+                The Townes at Union Village | Homes by Dr. Jan Duffy All rights reserved  © 2024<br />
+                {nap.brokerage} since September 2008 · License {nap.license}
               </div>
               <div className="flex space-x-6 text-sm">
                 <Link href="/privacy-policy" className="text-gray-400 hover:text-amber-400 transition-colors font-light">

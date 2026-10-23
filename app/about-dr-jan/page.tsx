@@ -97,7 +97,7 @@ export default function AboutDrJan() {
                 </div>
                 <div className="flex items-center">
                   <div className="text-2xl mr-4">✅</div>
-                  <span className="text-gray-700">Nevada License {nap.license}</span>
+                  <span className="text-gray-700">In real estate since 1983</span>
                 </div>
                 <div className="flex items-center">
                   <div className="text-2xl mr-4">✅</div>
@@ -154,7 +154,7 @@ export default function AboutDrJan() {
               <div className="text-6xl mb-6">🎯</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Henderson Specialist</h3>
               <p className="text-gray-600">
-                Nevada License {nap.license}. Deep knowledge of Union Village and the entire Henderson metro area.
+                In real estate since 1983. Deep knowledge of Union Village and the entire Henderson metro area.
               </p>
             </div>
           </div>
@@ -285,7 +285,7 @@ export default function AboutDrJan() {
           <div className="bg-amber-50 border border-amber-100 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Nevada License Information</h3>
             <p className="text-gray-600 mb-4">
-              Dr. Jan Duffy is a licensed real estate agent in Nevada (License {nap.license}) 
+              Dr. Jan Duffy is a licensed real estate agent in Nevada, in real estate since 1983, 
               specializing in new construction homes and buyer representation.
             </p>
             <p className="text-sm text-gray-500">
@@ -317,7 +317,7 @@ export default function AboutDrJan() {
                   <div className="text-2xl mr-3">🎓</div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Nevada Licensed Agent</h4>
-                    <p className="text-gray-600 text-sm">Licensed real estate agent in Nevada (License {nap.license}) specializing in new construction homes.</p>
+                    <p className="text-gray-600 text-sm">Licensed real estate agent in Nevada, in real estate since 1983, specializing in new construction homes.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -370,7 +370,7 @@ export default function AboutDrJan() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
-            Dr. Jan Duffy is an independent buyer representative with {nap.brokerage}. Century Communities builds the townhomes. She represents you.
+            Dr. Jan Duffy is an independent buyer representative. Century Communities builds the townhomes. She represents you.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
@@ -406,7 +406,7 @@ export default function AboutDrJan() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 tracking-wide">Nevada Specialist</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                Nevada License {nap.license}. Deep expertise in Union Village and comprehensive knowledge of the entire Las Vegas Valley market.
+                In real estate since 1983. Deep expertise in Union Village and comprehensive knowledge of the entire Las Vegas Valley market.
               </p>
             </div>
           </div>

@@ -105,7 +105,7 @@ function pageClose(path: string): string {
   return [
     '',
     '',
-    `${nap.agentName}, ${nap.brokerage}, Nevada license ${nap.license}. ${nap.phoneDisplay}. ${nap.email}. Sales office: ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}.`,
+    `${nap.agentName}, REALTOR®, in real estate since 1983. ${nap.phoneDisplay}. ${nap.email}. Sales office: ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}.`,
     '',
     qualifiedBuyerLine,
     '',

@@ -111,7 +111,7 @@ export const healthcareAudiences: Record<HealthcareSlug, HealthcareAudience> = {
     faqs: [
       {
         question: 'Can a physician hire Dr. Jan Duffy at The Townes at Union Village?',
-        answer: `Yes. She is an independent buyer agent with ${nap.brokerage}, license ${nap.license}. Call ${nap.phoneDisplay} before the first model visit. ${sharedClose}`,
+        answer: `Yes. She is an independent buyer agent, in real estate since 1983. Call ${nap.phoneDisplay} before the first model visit. ${sharedClose}`,
       },
       {
         question: 'Where is Henderson Hospital relative to the townhomes?',
@@ -232,7 +232,7 @@ export const healthcareAudiences: Record<HealthcareSlug, HealthcareAudience> = {
       },
       {
         question: 'Who is the buyer agent?',
-        answer: `${nap.agentName}, ${nap.brokerage}, Nevada license ${nap.license}. Email ${nap.email}. Office address ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}.`,
+        answer: `${nap.agentName}, REALTOR®, in real estate since 1983. Email ${nap.email}. Office address ${nap.street}, ${nap.city}, ${nap.state} ${nap.zip}.`,
       },
     ],
   },

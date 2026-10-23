@@ -131,7 +131,7 @@ export default function SEOOptimizedMap({
           {/* Business Information */}
           <div className="space-y-2 text-sm text-gray-600">
             <p><strong>Builder:</strong> Century Communities</p>
-            <p><strong>Buyer agent:</strong> {nap.agentName}, {nap.brokerage}</p>
+            <p><strong>Buyer agent:</strong> {nap.agentName}</p>
             <p><strong>Tours:</strong> {hours.note} {hours.builderModel}</p>
             <p><strong>Starting price:</strong> from {pricing.startingFromLabel} as of {pricing.asOf}</p>
           </div>

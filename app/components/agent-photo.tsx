@@ -10,7 +10,7 @@ export default function AgentPhoto({ size = 80, className = '', priority = false
   return (
     <Image
       src="/images/dr-jan-duffy.jpg"
-      alt="Dr. Jan Duffy, REALTOR, Berkshire Hathaway HomeServices Nevada Properties"
+      alt="Dr. Jan Duffy, REALTOR"
       width={size}
       height={size}
       priority={priority}

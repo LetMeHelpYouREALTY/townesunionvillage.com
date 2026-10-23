@@ -14,7 +14,7 @@ export const townesUnionVillageFaqs: FaqItem[] = [
   {
     question: 'Who builds the townhomes?',
     answer:
-      'Century Communities. Dr. Jan Duffy is an independent buyer representative with Berkshire Hathaway HomeServices Nevada Properties, license S.0197614.LLC.',
+      'Century Communities. Dr. Jan Duffy is an independent buyer representative, in real estate since 1983.',
   },
   {
     question: 'What do the homes cost?',
@@ -49,7 +49,7 @@ export const townesUnionVillageFaqs: FaqItem[] = [
   },
   {
     question: 'What is the phone number and email?',
-    answer: `${nap.phoneDisplay} and ${nap.email}. Brokerage: ${nap.brokerage}.`,
+    answer: `${nap.phoneDisplay} and ${nap.email}.`,
   },
   {
     question: 'Do you work with doctors, nurses, and healthcare providers?',

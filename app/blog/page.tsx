@@ -61,8 +61,8 @@ export default function Page() {
         Union Village guides
       </h1>
       <p className="text-slate-200 font-light mb-4 leading-relaxed">
-        These pages are written for this website by Dr. Jan Duffy, Berkshire
-        Hathaway HomeServices Nevada Properties, Nevada license S.0197614.LLC.
+        These pages are written for this website by Dr. Jan Duffy, REALTOR®,
+        in real estate since 1983.
         They cover The Townes at Union Village, 1001 Gearus Place, Henderson, NV
         89011. Call{' '}
         <a className="text-amber-200 underline" href="tel:7025001955">

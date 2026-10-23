@@ -16,7 +16,7 @@ export const planPoints = pricing.plans.map(
     `${plan.name}: ${plan.sqft.toLocaleString('en-US')} sq ft, ${plan.beds} bedrooms, ${plan.baths} baths, ${plan.garage} garage, from ${plan.fromLabel} as of ${pricing.asOf}.`
 )
 
-const buyerLine = `Dr. Jan Duffy, ${nap.brokerage}, license ${nap.license}, represents the buyer. Call ${nap.phoneDisplay}. Any qualified buyer can purchase. Occupation is not a condition of sale.`
+const buyerLine = `Dr. Jan Duffy, REALTOR® in real estate since 1983, represents the buyer. Call ${nap.phoneDisplay}. Any qualified buyer can purchase. Occupation is not a condition of sale.`
 
 export const guideIds = [
   'henderson-townhomes',
@@ -213,7 +213,7 @@ const unionVillageTownhomes: Guide = {
     },
     {
       question: 'Who sells Union Village townhomes?',
-      answer: `Century Communities is the builder. Dr. Jan Duffy is an independent buyer agent with ${nap.brokerage}. The on-site sales team works for the builder.`,
+      answer: `Century Communities is the builder. Dr. Jan Duffy is an independent buyer agent. The on-site sales team works for the builder.`,
     },
   ],
   ctaTitle: 'Tour Union Village townhomes',

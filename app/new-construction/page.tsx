@@ -109,7 +109,7 @@ export default function NewConstructionPage() {
 
       <CtaBand
         title="Do not buy new construction unrepresented"
-        body="Dr. Jan Duffy, NV license S.0197614.LLC, walks the paperwork with you."
+        body="Dr. Jan Duffy, in real estate since 1983, walks the paperwork with you."
       />
     </div>
   )

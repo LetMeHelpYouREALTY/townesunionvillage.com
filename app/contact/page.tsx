@@ -100,7 +100,7 @@ export default function Contact() {
                   <li>• ✅ Independent agent representing YOUR interests</li>
                   <li>• ✅ Expert knowledge of new construction homes</li>
                   <li>• ✅ Independent buyer representative, not the builder&apos;s sales team</li>
-                  <li>• ✅ Nevada License {nap.license}</li>
+                  <li>• ✅ Licensed REALTOR®, in real estate since 1983</li>
                   <li>• ✅ A consultation on floor plans and open homesites</li>
                   <li>• ✅ Representation on the written offer</li>
                 </ul>
