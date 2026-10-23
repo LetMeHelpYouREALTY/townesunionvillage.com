@@ -54,7 +54,7 @@ export default function AboutDrJan() {
             About Dr. Jan Duffy
           </h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Your Preferred Buyer Agent and New Home Expert
+            Top 1% Las Vegas REALTOR® · Your Preferred Buyer Agent and New Home Expert
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
