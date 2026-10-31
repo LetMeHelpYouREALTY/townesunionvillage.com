@@ -14,7 +14,8 @@ const profilePageSchema = {
   '@id': `${siteUrl}/about-dr-jan#profilepage`,
   url: `${siteUrl}/about-dr-jan`,
   isPartOf: { '@id': `${siteUrl}/#website` },
-  dateModified: contentUpdated,
+  // Google reads ProfilePage dateModified as a DateTime: a bare date fails Search Console validation.
+  dateModified: `${contentUpdated}T00:00:00-07:00`,
   mainEntity: {
     '@type': 'Person',
     '@id': `${siteUrl}/#person`,
