@@ -12,6 +12,7 @@ import LocalBusinessSchema, {
   NewHomeDevelopmentSchema,
   WebSiteSchema,
 } from './components/local-business-schema'
+import RealtorAnalytics from "../components/analytics/RealtorAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -107,6 +108,7 @@ e.parentNode.insertBefore(t,e);})
 window.widgetTracker("create", "WT-XQHVYQWW");
 window.widgetTracker("send", "pageview");
         `}</Script>
+  <RealtorAnalytics siteName="townesunionvillage.com" />
 </body>
     </html>
   )
